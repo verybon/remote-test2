@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <link rel="stylesheet" href="../common/css/audioPlayer.css">
+    <style>
+        .sub-tab-box > .bg {
+            width: 1003px;
+            height: 465px;
+            background-color: #FFECCF;
+        }
+        .bg > .bg01 {
+            width: 970px;
+            height: 266px;
+            left: 15px;
+            top: 64px;
+            position: absolute;
+            border-radius: 20px;
+            /* background-color: white; */
+        }
+        .image_box,.img-poster .cut,img{
+            width: 93%;
+        }
+        .scene-button-box .button .rect-num{
+            margin-left: -30px;
+            pointer-events: none;
+        }
+        .page-02 .bullet-box .dir-rect{
+            top: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="main" data-main-tabs="애니메이션, 물음 ">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+
+
+            <div class="content page-01" data-content="cut-ani">
+                <div class="direction bullet-box">
+                    <div class="text">남자아이가 어떻게 발표하는지 살펴보세요.</div>
+                </div>
+
+                <div class="cut-ani-box">
+                    <div class="img-poster">
+                        <img src="./images/nkor_0201_02_0304_201_0.png" alt="">
+                    </div>
+                    <div class="cut">
+                        <div class="illustration-inner">
+                            <div class="illustration-item">
+                                <img src="./images/nkor_0201_02_0304_201_1.png" alt="" />
+                                <span class="rect-num num-01 color-01"></span>
+                                <div class="speech-box color-04 tail-01">
+                                    <div class="bg"></div>
+                                    <div class="arrow br"></div>
+                                    <div class="speech-box-inner ti">
+                                        다음 시간에는 자신의 꿈에 대해 발표해 볼 거에요.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="illustration-item">
+                                <img src="./images/nkor_0201_02_0304_201_2.png" alt="" />
+                                <span class="rect-num num-02 color-01"></span>
+                                <div class="speech-box color-04 tail-02">
+                                    <div class="bg"></div>
+                                    <div class="arrow br"></div>
+                                    <div class="speech-box-inner ti">
+                                        내 꿈에 대해 뭐라고 발표하면 좋을까?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cut">
+                        <div class="illustration-inner">
+                            <div class="illustration-item">
+                                <img src="./images/nkor_0201_02_0304_201_3.png" alt="" />
+                                <span class="rect-num num-03 color-01"></span>
+                                <div class="speech-box color-04 tail-02">
+                                    <div class="bg"></div>
+                                    <div class="arrow br"></div>
+                                    <div class="speech-box-inner ti">
+                                        수의사가 하는 일은?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="illustration-item">
+                                <img src="./images/nkor_0201_02_0304_201_4.png" alt="" />
+                                <span class="rect-num num-04 color-01"></span>
+                                <div class="speech-box color-04 tail-01">
+                                    <div class="bg"></div>
+                                    <div class="arrow br"></div>
+                                    <div class="speech-box-inner ti">
+                                        제 꿈은 수의사입니다.
+                                    </div>
+                                </div>
+                                <div class="speech-box color-04 tail-02">
+                                    <div class="bg"></div>
+                                    <div class="arrow br"></div>
+                                    <div class="speech-box-inner ti">
+                                        알맞은 크기의 목소리로 또박또박 이야기하네.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cut">
+                        <div class="illustration-inner">
+                            <div class="illustration-item">
+                                <img src="./images/nkor_0201_02_0304_201_5.png" alt="" />
+                                <span class="rect-num num-05 color-01"></span>
+                                <div class="speech-box color-04 tail-01">
+                                    <div class="bg"></div>
+                                    <div class="arrow br"></div>
+                                    <div class="speech-box-inner ti">
+                                        수의사는 아픈 동물을 치료해 줍니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="illustration-item">
+                                <img src="./images/nkor_0201_02_0304_201_6.png" alt="" />
+                                <span class="rect-num num-06 color-01"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--
+                        direction 한 줄 top:-10px
+                        direction 두 줄 top:-40px
+                    -->
+                    <div class="center-play-button" style="top:-10px"></div>
+                </div>
+
+                <div class="scene-button-box">
+                    <button type="button" class="button">장면 1</button>
+                    <button type="button" class="button">장면 2</button>
+                    <button type="button" class="button">장면 3</button>
+                </div>
+                <div class="audio-player"></div>
+            </div>
+
+            <div class="content page-02">
+                <div class="direction bullet-box">
+                    <div class="text">남자아이가 어떻게 발표했는지 친구들과 이야기해 보세요.</div>
+                </div>
+                <div class="direction">
+                <div class="content-inner">
+                    <div class="bullet-box empty-circle color-01">
+                        그림 <span class="dir-rect color-01">1</span>
+                    </div>
+                    <div class="content-inner">
+                        <div class="bg-color-box bg-color-05">
+                            <div class="hidden-box no-bg">
+                                <div class="text ti">남자아이는 말할 내용을 미리 생각하고 발표를 하였습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bullet-box empty-circle color-01">
+                        그림 <span class="dir-rect color-01">2</span>
+                    </div>
+                    <div class="content-inner">
+                        <div class="bg-color-box bg-color-05">
+                            <div class="hidden-box no-bg">
+                                <div class="text ti" style="letter-spacing: -2.7px;">남자아이는 알맞은 크기의 목소리로 또박또박 이야기하고 있습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bullet-box empty-circle color-01">
+                        그림 <span class="dir-rect color-01">3</span>
+                    </div>
+                    <div class="content-inner">
+                        <div class="bg-color-box bg-color-05">
+                            <div class="hidden-box no-bg">
+                                <div class="text ti" style="letter-spacing: -1.7px;">남자아이는 듣는 친구들을 바라보며 바른 자세로 자신 있게 말하고 있습니다.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="bg-color-box bg-color-05">
+                        <div class="hidden-box no-bg">
+                            <div class="text ti">부끄러움을 많이 타는 아이입니다.</div>
+                        </div>
+                    </div> -->
+                  </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-01" style="letter-spacing: -2.2px;">
+            그림을 보고 남자아이가 어떻게 발표하는지 친구들과 이야기해 봅시다.
+        </div>
+    </div>
+
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/playerProgress.js"></script>
+    <script src="../common/js/audioPlayer.js"></script>
+    <script src="../common/js/content.js"></script>
+
+    <script src="./js/nkor_0201_02_0304_201.js"></script>
+
+</body>
+
+</html>
