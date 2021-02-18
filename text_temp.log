@@ -1,7 +1,89 @@
-
-590.html할머니 아픈 허리는 왜 밟아야 시원할까요?
-아이쿠! 아이쿠! 하면서도 “꼭꼭 밟아라.”하십니다
-그래도 나는 겁이 나 자근자근 밟습니다.
-
+“꼭꼭 밟아라.”하십니다
 ‘나’
-<span class="quot-open">「</span>정인이의 고민<span class="quot-close">」</span>
+
+#컨텐츠 이너 #히든박스
+<div class="bg-color-box bg-color-05">
+    <div class="hidden-box no-bg">
+        <div class="text ti">
+            예보기
+        </div>
+    </div>
+</div>
+#
+class="top-line-box type-qna"
+#탭 박스 #이미지박스
+<div class="tab-box bottom-tab">
+    <div class="tab-content-box">
+        <div class="tab-content content-01">
+        </div>
+        <div class="tab-content content-02">
+        </div>
+    </div>
+    <div class="button-box">
+        <div class="prev-button"></div>
+        <div class="button"></div>
+        <div class="button"></div>
+        <div class="next-button"></div>
+    </div>
+</div>
+#기본탭
+<div class="main normal" data-main-tabs="1, 2">
+#서브탭
+<div class="sub-tab-box" data-sub-tabs="1,2,3,4">
+    <div class="sub-content sub-page-01"></div>
+</div>
+#어휘 쏙쏙
+<span class="click-induced word button-mini-01">문고</span>
+<div class="popup-mini word mini-01" data-button=".button-mini-01" style="top:170px; left:500px; width:auto;">
+    <div class="box-top">
+        <div class="popup-title">어휘 쏙쏙</div>
+        <div class="button-close"></div>
+    </div>
+    <div class="box-content">
+        <div class="word">문고</div>
+        <div class="explain-word">
+            <div class="text">
+                책을 보관하는 집이나 방.
+            </div>
+        </div>
+    </div>
+</div>
+#손가락
+<span class="click-induced button-mini-02">운율</span>
+<div class="popup-mini mini-02" data-button=".button-mini-02" style="left:443PX; top:360px">
+    <div class="box-top">
+        <div class="popup-title">일반 팝업</div>
+        <div class="button-close"></div>
+    </div>
+    <div class="box-content">
+        <!-- bullet-box empty-circle -->
+        <div class="ti">
+            <span class="emp">운율</span>은 시가...
+        </div>
+    </div>
+</div>
+#말풍선
+<div class="speech-box color-01 tail-01" style="top: 30px;left: -60px;width: 370px;">
+    <div class="bg"></div>
+    <div class="arrow br" style="left: auto;right: 60px;"></div>
+    <div class="speech-box-inner ti">
+        우리 모둠 이름은…….
+    </div>
+</div>
+#약물
+<span class="ex-rect-icon"></span>
+<span class="bullet-box rect-num bg-w num-03 color-01"></span>
+<span class="rect-num num-01 color-01"></span>
+<div class="rect-kor kor-01 bg-w color-01"></div>
+<span class="dir-rect color-01">3</span>
+<span class="dir-o"></span>
+<span class="quot-open">「</span>ㅃㅃ<span class="quot-close">」</span>
+#패스
+<svg width="400" height="300" viewBox="0 0 400 300" style="position: absolute;top: 50px;left: 480px;">
+	<path d="M 350 50 C 50 0 50 300 350 250"
+		stroke="#f68e64"
+		fill="#fff"
+		stroke-width="4"
+		stroke-linecap="round"
+		fill-opacity="0.2" />
+</svg>
