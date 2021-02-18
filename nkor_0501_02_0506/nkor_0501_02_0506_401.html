@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+
+    <!-- gate ani -->
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/resetAll.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/commonAll.css" />
+
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main confirm-quiz" data-content="confirm-quiz">
+
+            <div class="quiz-box">
+                <div class="header hide">
+                    <div class="title image-box">
+                        <img src="../common/images/title_confirm_quiz.png" alt="">
+                    </div>
+                    <div class="character">
+                        <div class="image-box">
+                            <img src="../common/images/confirm_quiz_char.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-tab-box" data-sub-tabs="문제 1,문제 2">
+
+                    <div class="sub-content sub-page-01">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text ">상상한 이야기가 비슷하거나 다른 까닭을 바르게 설명하고 있는 사람을 고르시오.</div>
+                            </div>
+                        </div>
+
+                        <div class="single-choice speech" data-quiz="singleChoice" data-answer="1" data-mark="0" data-mark-gap="580;20" style="top: -10px;">
+                            <div class="button color-03">
+                                <div class="face type-03"></div>
+                                <div class="speech-box">
+                                    <div class="arrow"></div>
+                                    <div class="round-box">서로 경험이 같기 때문입니다.</div>
+                                </div>
+                            </div>
+
+                            <div class="button color-01">
+                                <div class="face type-01"></div>
+                                <div class="speech-box">
+                                    <div class="arrow"></div>
+                                    <div class="round-box">사람마다 인상 깊은 장면이 다르기 때문입니다.</div>
+                                </div>
+                            </div>
+
+                            <div class="button color-04">
+                                <div class="face type-07"></div>
+                                <div class="speech-box">
+                                    <div class="arrow"></div>
+                                    <div class="round-box">읽는 사람의 생각이나 느낌이 모두 같기 때문입니다.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                    </div>
+
+                    <div class="sub-content sub-page-02">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text">경험을 떠올리며 이야기를 읽으면 좋은 점이 <span class="underline">아닌</span> 것을 고르시오. </div>
+                            </div>
+                        </div>
+
+                        <!--
+                            싱글 : data-quiz="singleChoice" data-answer="0"
+                            멀티 : data-quiz="multipleChoice" data-answer="0;3"
+                        -->
+                        <div class="single-choice" data-quiz="singleChoice" data-answer="3">
+                            <div class="button">
+                                <div class="bullet-box circle-num num-01 color-01">
+                                    내용을 더 쉽게 잘 이해할 수 있습니다.
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-02 color-01">
+                                    이야기를 좀 더 생생하게 느낄 수 있습니다.
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-03 color-01">
+                                    글의 내용을 더 깊이 있게 이해할 수 있습니다.
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-04 color-01">
+                                    자신이 모르는 내용과 비교하며 글을 읽을 수 있습니다.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="gate_container checkquiz">
+            <div class="gate_topbox">
+                <div class="gate_title">확인 문제</div>
+                <div class="gate_btn"><span class="start-button">시작</span></div>
+            </div>
+            <div class="gate_ani">
+                <div id="animation_container">
+                    <canvas id="canvas"></canvas>
+                    <div id="dom_overlay_container" class="gate_ani_cover"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gate ani -->
+    <script src="../common/js/gateAni/createjs-2015.11.26.min.js"></script>
+    <script src="../common/js/gateAni/commonConfirm_Main.js"></script>
+    <script src="../common/js/gateAni/canvasMain.js"></script>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
