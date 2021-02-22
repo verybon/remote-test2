@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+
+    <!-- gate ani -->
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/resetAll.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/commonAll.css" />
+
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .ex-box .item-box{
+            position: relative;
+            /* font-size: 35px;
+            font-family: notoB; */
+            /* width: 350px; */
+            margin: -10px auto 10px auto;
+        }
+        .item-box .text {
+            margin: auto 20px;
+        }
+        .main.confirm-quiz .question-choice {
+            justify-content: space-around;
+            margin: 10px auto;
+            padding: 0 100px;
+        }
+        .main.confirm-quiz .question-choice .mark{
+            display: none;
+        }
+        .main.confirm-quiz .question-choice .button{
+            min-width: 220px;
+        }
+        .main.confirm-quiz .question-choice .button:after{
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #f7f7f7;
+            background-image: url(../common/images/que_button_01.png);
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 48px 48px;
+        }
+        .sub-page-02 .question-choice .button.correct:after{
+            transition: background-color .2s ease;
+            background-size: 0 0;
+            background-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main confirm-quiz" data-content="confirm-quiz">
+
+            <div class="quiz-box">
+                <div class="header hide">
+                    <div class="title image-box">
+                        <img src="../common/images/title_confirm_quiz.png" alt="">
+                    </div>
+                    <div class="character">
+                        <div class="image-box">
+                            <img src="../common/images/confirm_quiz_char.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-tab-box" data-sub-tabs="문제 1,문제 2">
+
+                    <div class="sub-content sub-page-01">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text ls-2">마음을 나타내는 말을 다른 말로 바꾸어 쓰려고 할 때, 알맞은 것을 고르시오.</div>
+                            </div>
+                        </div>
+
+                        <div class="round-bg-box ta-c">
+                            행복해요
+                        </div>
+
+                        <div class="single-choice word" data-quiz="singleChoice" data-answer="0" data-visible=".empty-rect .text">
+                            <div class="button">
+                                <div class="bullet-box circle-num num-01 color-01">
+                                    기뻐요
+                                </div>
+                            </div>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-02 color-01">
+                                    슬퍼요
+                                </div>
+                            </div>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-03 color-01">
+                                    뿌듯해요
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                    </div>
+
+                    <div class="sub-content sub-page-02">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text">
+                                    다음 그림이 어떤 마음을 나타내고 있는지 어울리는 말을 <span class="ex-rect-icon"></span>에서 고르시오.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ex-box align-cc">
+                            <div class="icon"></div>
+                            <div>
+                                <div class="item-box align-cc">
+                                    <div class="text">기뻐요</div>
+                                    <div class="text">놀라워요</div>
+                                    <div class="text">무서워요</div>
+                                    <div class="text">화나요</div>
+                                    <div class="text">창피해요</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-wrap" style="justify-content: space-around; margin-top: 20px;padding: 0 100px;">
+                            <div class="grid-item">
+                                <div class="img-box" style="width: 220px;height: 220px;background: #bbb url(./images/nkor_0201_03_0304_401_1.jpg) no-repeat 0 0 / contain;">
+                                </div>
+                                <!-- <span class="hidden-text" style="width: 100%;margin-top: 10px;">기뻐요</span> -->
+                            </div>
+                            <div class="grid-item">
+                                <div class="img-box" style="width: 220px;height: 220px;background: #bbb url(./images/nkor_0201_03_0304_401_2.jpg) no-repeat 0 0 / contain;">
+                                </div>
+                                <!-- <span class="hidden-text" style="width: 100%;margin-top: 10px;">무서워요</span> -->
+                            </div>
+                        </div>
+                        <div class="single-choice question-choice grid-wrap" data-quiz="multipleChoice" data-answer="0;1" data-visible=".empty-rect .text">
+                            <div class="button grid-item">
+                                <div class="bullet-box">
+                                    기뻐요
+                                </div>
+                            </div>
+                            <div class="button grid-item">
+                                <div class="bullet-box">
+                                    무서워요
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                        <!-- <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div> -->
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="gate_container checkquiz">
+            <div class="gate_topbox">
+                <div class="gate_title">확인 문제</div>
+                <div class="gate_btn"><span class="start-button">시작</span></div>
+            </div>
+            <div class="gate_ani">
+                <div id="animation_container">
+                    <canvas id="canvas"></canvas>
+                    <div id="dom_overlay_container" class="gate_ani_cover"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gate ani -->
+    <script src="../common/js/gateAni/createjs-2015.11.26.min.js"></script>
+    <script src="../common/js/gateAni/commonConfirm_Main.js"></script>
+    <script src="../common/js/gateAni/canvasMain.js"></script>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
