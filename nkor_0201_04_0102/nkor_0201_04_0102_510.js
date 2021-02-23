@@ -6,17 +6,19 @@ function addModules() {
                 box: amt.get(".narration", page),
                 audioList: ["./media/audios/nkor_0201_04_0102_510.mp3"],
                 sceneTimes: [
-                    { start: 5, end: 10 },
-                    { start: 10, end: 20 },
-                    { start: 20, end: 30 }
+                    { start: 5, end: 14 },
+                    { start: 14, end: 23 },
+                    { start: 23, end: 30 }
                 ],
                 textTimes: [
                     { start: 5, end: 8},
                     { start: 8, end: 11},
                     { start: 11, end: 14},
+
                     { start: 14, end: 17},
                     { start: 17, end: 20},
                     { start: 20, end: 23},
+
                     { start: 23, end: 26},
                     { start: 26, end: 29},
                     { start: 29, end: 100}
