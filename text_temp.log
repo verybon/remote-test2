@@ -125,11 +125,11 @@
     </div>
     <div class="box-content">
         <div class="ti">
-	    블릿없는경우
-	</div>
-	<div class="bullet-box empty-circle">
-	    블릿있는경우
-	</div>
+            블릿없는경우
+        </div>
+        <div class="bullet-box empty-circle">
+            블릿있는경우
+        </div>
     </div>
 </div>
 
