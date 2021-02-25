@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+        <title></title>
+        <link rel="stylesheet" href="../common/css/sanitize.css" />
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/audioPlayer.css" />
+        <link rel="stylesheet" href="../common/css/content.css" />
+        <style>
+            .single-choice .mark{display:none;}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="main jejae quiz" data-content="jejae-quiz">
+                <div class="quiz-box">
+                    <div class="image-box">
+                        <img src="../common/images/jejae_quiz_bg.png" alt="" />
+                    </div>
+                    <div class="header">
+                        <div class="title image-box">
+                            <img src="../common/images/title_jejae_quiz.png" alt="" />
+                        </div>
+                        <div class="character">
+                            <div class="image-box">
+                                <img src="../common/images/jejae_quiz_subtitle.png" alt="" />
+                            </div>
+                            <div class="sub-title">사과는 빨개</div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-tab-box" data-sub-tabs="1,2,3,4,5">
+
+                        <!-- 초성 -->
+                        <div class="sub-content sub-page-01">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">
+                                        <span class="dir-rect ml"><span>ㅅ</span></span>
+                                        <span class="dir-rect"><span>ㄱ</span></span>
+                                        는 빨갛습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-box">
+                                <div class="hidden-box que icon-size-02" data-visible=".explanatory-01">
+                                    <div class="text">사과</div>
+                                </div>
+                            </div>
+                            <!-- <div class="explanatory explanatory-01 hide">
+                                <div class="bullet-box">
+                                    해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다.
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <!-- OX -->
+                        <div class="sub-content sub-page-03">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">딸기는 큽니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="single-choice" data-quiz="singleChoice" data-answer="1" data-visible=".explanatory-02" data-mark="1">
+                                <div class="button button-01"></div><!--o : 0-->
+                                <div class="button button-02"></div><!--x : 1-->
+                            </div>
+                            <div class="explanatory line-one explanatory-02 hide">
+                                <div class="bullet-box">딸기는 <span class="emp">작다</span>고 하였습니다.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 초성 -->
+                        <div class="sub-content sub-page-03">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">
+                                        작은 것은
+                                        <span class="dir-rect ml"><span>ㅇ</span></span>
+                                        <span class="dir-rect"><span>ㄱ</span></span>
+                                        입니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-box">
+                                <div class="hidden-box que icon-size-02" data-visible=".explanatory-03">
+                                    <div class="text">아기</div>
+                                </div>
+                            </div>
+                            <!-- <div class="explanatory explanatory-01 hide">
+                                <div class="bullet-box">
+                                    해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다.
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <!-- 초성 -->
+                        <div class="sub-content sub-page-04">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">
+                                        귀여운 곰 인형은
+                                        <span class="dir-rect ml"><span>ㅍ</span></span>
+                                        <span class="dir-rect"><span>ㄱ</span></span>
+                                        합니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-box">
+                                <div class="hidden-box que icon-size-02" data-visible=".explanatory-04">
+                                    <div class="text">포근</div>
+                                </div>
+                            </div>
+                            <!-- <div class="explanatory explanatory-01 hide">
+                                <div class="bullet-box">
+                                    해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다.
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <!-- 단답 -->
+                        <div class="sub-content sub-page-05">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">
+                                        포근한 것은 무엇인가요?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-box">
+                                <div class="hidden-box que icon-size-02">
+                                    <div class="text">봄</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="prev-button"></div>
+                        <div class="next-button"></div>
+                    </div>
+                </div>
+
+                <div class="home-box">
+                    <div class="image-box">
+                        <img src="../common/images/jejae_quiz_home_bg.png" alt="" />
+                    </div>
+                    <div class="title-box">
+                        <div class="title">사과는 빨개</div>
+                        <!-- <div class="writer">작가 이름</div> -->
+                    </div>
+                    <div class="start-button"></div>
+                </di,4,5v>
+            </div>
+        </div>
+
+        <script src="../common/js/libs/underscore-min.js"></script>
+        <script src="../common/js/libs/anime.min.js"></script>
+        <script src="../amt/js/amt.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="../common/js/quiz.js"></script>
+        <script src="../common/js/content.js"></script>
+    </body>
+</html>
