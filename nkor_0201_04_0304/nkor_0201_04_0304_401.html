@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+
+    <!-- gate ani -->
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/resetAll.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/commonAll.css" />
+
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .sub-page-01 .content-inner{display: flex;}
+        .sub-page-01 .content-inner .round-bg-box{flex: 5;width: auto;}
+        .sub-page-01 .content-inner .single-choice{flex: 4;width: auto;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main confirm-quiz" data-content="confirm-quiz">
+
+            <div class="quiz-box">
+                <div class="header hide">
+                    <div class="title image-box">
+                        <img src="../common/images/title_confirm_quiz.png" alt="">
+                    </div>
+                    <div class="character">
+                        <div class="image-box">
+                            <img src="../common/images/confirm_quiz_char.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-tab-box" data-sub-tabs="문제 1,문제 2">
+
+                    <div class="sub-content sub-page-01">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text">다음 노랫말에서 반복되는 말을 고르시오.</div>
+                            </div>
+                        </div>
+                        <div class="content-inner">
+                            <div class="round-bg-box">
+                                <div class="text ti">높다 높다 하늘이 높다</div>
+                                <div class="text ti">높다 높다 나무가 높다</div>
+                                <div class="text ti">높다 높다 산이 높다</div>
+                                <div class="text ti">높다 높다 건물이 높다</div>
+                                <div class="text ti">높다 높다 미끄럼틀이 높다</div>
+                            </div>
+                            <div class="single-choice" data-quiz="singleChoice" data-answer="3">
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-01 color-01">
+                                        나무
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-02 color-01">
+                                        하늘
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-03 color-01">
+                                        미끄럼틀
+                                    </div>
+                                </div>
+                                <br/>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-04 color-01">
+                                        높다 높다
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+
+                    </div>
+
+                    <div class="sub-content sub-page-02">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text" style="letter-spacing: -0.4px;">다음 말로 시작하는 꽁지 따기 말놀이의 일부분으로 알맞지 <span class="underline">않은</span> 것을 고르시오.</div>
+                            </div>
+                        </div>
+                        <div class="round-bg-box ta-c">
+                            사과는 빨개
+                        </div>
+                        <div class="single-choice" data-quiz="singleChoice" data-answer="3">
+                            <div class="button">
+                                <div class="bullet-box circle-num num-01 color-01">
+                                    빨가면 장미
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-02 color-01">
+                                    장미는 예뻐
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-03 color-01">
+                                    예쁜 것은 곰 인형
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-04 color-01">
+                                    키가 큰 것은 기린
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="gate_container checkquiz">
+            <div class="gate_topbox">
+                <div class="gate_title">확인 문제</div>
+                <div class="gate_btn"><span class="start-button">시작</span></div>
+            </div>
+            <div class="gate_ani">
+                <div id="animation_container">
+                    <canvas id="canvas"></canvas>
+                    <div id="dom_overlay_container" class="gate_ani_cover"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gate ani -->
+    <script src="../common/js/gateAni/createjs-2015.11.26.min.js"></script>
+    <script src="../common/js/gateAni/commonConfirm_Main.js"></script>
+    <script src="../common/js/gateAni/canvasMain.js"></script>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
