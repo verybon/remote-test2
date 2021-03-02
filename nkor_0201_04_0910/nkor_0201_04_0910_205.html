@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .box-base-example{display: flex;margin: 0 0 15px}
+        .box-base-example .image-box{width: 240px;height: 160px;}
+        .box-base-example .text-box{display: flex;flex-wrap: wrap;align-items: center;justify-content: center;width: calc(100% - 240px);}
+        .box-base-example .text-box > .text{width: 33%;text-align: center;}
+        .box-base{padding: 15px;}
+        .grid-1 > .emp{margin: 0 0 10px;text-align: center;letter-spacing: -2px;}
+        .hidden-box{justify-content: center;min-height: 180px;}
+        .hidden-box .text{text-align: center;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <div class="title-02" aria-label="교과서 활동"></div>
+            </div>
+
+            <div class="content">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        우리가 먹는 김밥의 이름은 어떻게 지었을지 생각해 보세요.
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="box-base color-05 box-base-example">
+                        <div class="image-box">
+                            <img src="./images/nkor_0201_04_0910_205.jpg" alt="" />
+                        </div>
+                        <div class="text-box">
+                            <span class="text">참치김밥</span>
+                            <span class="text">소고기김밥</span>
+                            <span class="text">꼬마김밥</span>
+                            <span class="text"><span class="click-induced word button-mini-01">삼각</span>김밥</span>
+                            <span class="text">멸치김밥</span>
+                        </div>
+                        <div class="popup-mini word mini-01" data-button=".button-mini-01" style="top:175px; left:430px; width:auto;">
+                            <div class="box-top">
+                                <div class="popup-title">어휘 쏙쏙</div>
+                                <div class="button-close"></div>
+                            </div>
+                            <div class="box-content">
+                                <div class="word">삼각</div>
+                                <div class="explain-word">
+                                    <div class="text">
+                                        세 개의 각이 있는 모양.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-wrap">
+                        <div class="grid-1 box-base bgcolor-05">
+                            <div class="emp">재료에 따라</div>
+                            <div class="box-base">
+                                <div class="hidden-box no-bg">
+                                    <div class="text">
+                                        참치김밥<br>
+                                        소고기김밥<br>
+                                        멸치김밥
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-1 box-base bgcolor-04">
+                            <div class="emp">크기에 따라</div>
+                            <div class="box-base">
+                                <div class="hidden-box no-bg">
+                                    <div class="text">
+                                        꼬마김밥
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-1 box-base bgcolor-01">
+                            <div class="emp">모양에 따라</div>
+                            <div class="box-base">
+                                <div class="hidden-box no-bg">
+                                    <div class="text">
+                                        삼각김밥
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-05" style="letter-spacing: -1.5px;">
+            우리가 먹는 김밥의 이름을 어떻게 지었는지 생각해 봅시다.
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
