@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .popup-full .hidden-text{position: absolute;}
+        .popup-full .hidden-text.n1{top: 50px;left: 100px;}
+        .popup-full .hidden-text.n2{top: 250px;left: 100px;}
+        .popup-full .hidden-text.n3{top: 450px;left: 100px;}
+        .popup-full .hidden-text.n4{top: 50px;left: 800px;}
+        .popup-full .hidden-text.n5{top: 250px;left: 800px;}
+        .popup-full .hidden-text.n6{top: 450px;left: 800px;}
+        .popup-full .hidden-text:before,
+        .popup-full .hidden-text:after{content: "";position: absolute;}
+        .popup-full .hidden-text:before{width: 100px;border-top: 4px solid #ff9800;}
+        .popup-full .hidden-text.point-line-l:before{right: 100%;}
+        .popup-full .hidden-text.point-line-r:before{left: 100%;}
+        .popup-full .hidden-text:after{display: block;width: 20px;height: 20px;border: 3px solid #ffe899;border-radius: 50%;background: #ff9800;}
+        .popup-full .hidden-text.point-line-l:after{right: calc(100% + 100px);}
+        .popup-full .hidden-text.point-line-r:after{left: calc(100% + 100px);}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">동물원에는 어떤 동물이 있을까요?</div>
+                </div>
+                <div class="info-box one-line"><span class="emp">동물원 지도</span>를 클릭하세요.</div>
+                <div class="content-inner">
+                    <button type="button" class="activity-button-image" aria-label="활동하기">
+                        <img src="./images/nkor_0201_04_0708_201_1.jpg" alt="" style="width: 100%;height: auto;">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="teacher-question num-01">
+            동물원에 어떤 동물이 있는지 살펴봅시다.
+        </div>
+
+        <div class="popup-full" data-button=".activity-button-image">
+            <div class="full-content">
+                <div class="bullet-box empty-circle color-01">
+                    <div class="text">동물원에 어떤 동물이 있는지 살펴 보세요.</div>
+                </div>
+                <div class="content-inner">
+                    <div class="image-box">
+                        <div class="img"><img src="./images/nkor_0201_04_0708_201_2.jpg" alt=""></div>
+                        <span class="hidden-text n1 point-line-r">코끼리</span>
+                        <span class="hidden-text n2 point-line-r">호랑이</span>
+                        <span class="hidden-text n3 point-line-r">악어</span>
+                        <span class="hidden-text n4 point-line-l">펭귄</span>
+                        <span class="hidden-text n5 point-line-l">사슴</span>
+                        <span class="hidden-text n6 point-line-l">기린</span>
+                    </div>
+                </div>
+            </div>
+            <div class="button-close"></div>
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
