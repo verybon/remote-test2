@@ -89,9 +89,9 @@
 ==================================
 #말풍선
 
-<div class="speech-box color-01 tail-01" style="top: 30px;left: -60px;width: 370px;">
+<div class="speech-box color-01 tail-01" style="top: 10px;left: 60px;width: 370px;">
     <div class="bg"></div>
-    <div class="arrow br" style="left: auto;right: 60px;"></div>
+    <div class="arrow br"></div>
     <div class="speech-box-inner ti">
         우리 모둠 이름은…….
     </div>
