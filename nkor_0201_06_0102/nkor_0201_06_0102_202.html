@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <link rel="stylesheet" href="../common/css/audioPlayer.css">
+
+    <style>
+        .cut-ani-box{
+            height: 440px;
+        }
+        .cut-ani-box .img-poster,
+        .cut-ani-box .cut .image-box{
+            width: 1000px;
+            height: 100%;
+            margin: 0 auto;
+        }
+        .cut-ani-box .img-poster{
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .cut-ani-box .img-poster img,
+        .cut-ani-box .image-box img{
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main" data-main-tabs="이야기, 물음 ">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+
+            <!-- 모두 읽기 -->
+            <div class="content page-01" data-content="cut-ani">
+                <div class="direction bullet-box">
+                    <div class="text">여자아이가 들려주는 신데렐라 이야기를 들어 보세요.</div>
+                </div>
+
+                <div class="cut-ani-box">
+                    <div class="img-poster">
+                        <img src="./images/nkor_0201_06_0102_202_1.png" alt="" />
+                    </div>
+                    <div class="cut">
+                        <div class="image-box">
+                            <img src="./images/nkor_0201_06_0102_202_1.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="cut">
+                        <div class="image-box">
+                            <img src="./images/nkor_0201_06_0102_202_2.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="cut">
+                        <div class="image-box">
+                            <img src="./images/nkor_0201_06_0102_202_3.png" alt="" />
+                        </div>
+                    </div>
+
+                    <!--
+                        direction 한 줄 top:-10px
+                        direction 두 줄 top:-40px
+                    -->
+                    <div class="center-play-button" style="top:-10px"></div>
+                </div>
+
+                <div class="scene-button-box">
+                    <button type="button" class="button">밤</button>
+                    <button type="button" class="button">오후</button>
+                    <button type="button" class="button">아침</button>
+                </div>
+                <div class="audio-player"></div>
+            </div>
+
+            <div class="content page-02">
+                <div class="direction bullet-box">
+                    <div class="text">이야기가 자연스러운가요? 이상하게 느껴진다면 그 까닭은 무엇일까요?</div>
+                </div>
+                <div class="content-inner">
+                    <div class="bg-color-box bg-color-05">
+                        <div class="hidden-box no-bg">
+                            <div class="text ti">
+                                <span class="quot-open">「</span>신데렐라<span class="quot-close">」</span>의 내용을 일이 일어난 차례대로 말하지 않았기 때문입니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-02">
+            그림을 보고 남자아이가 여자아이의 말을 이상하게 생각한 까닭을 말해 봅시다.
+        </div>
+    </div>
+
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/playerProgress.js"></script>
+    <script src="../common/js/audioPlayer.js"></script>
+    <script src="../common/js/content.js"></script>
+
+    <script src="./js/nkor_0201_06_0102_202.js"></script>
+
+</body>
+
+</html>
