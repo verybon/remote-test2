@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+
+    <!-- gate ani -->
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/resetAll.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/commonAll.css" />
+
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .single-choice .button{min-width: 220px;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main confirm-quiz" data-content="confirm-quiz">
+
+            <div class="quiz-box">
+                <div class="header hide">
+                    <div class="title image-box">
+                        <img src="../common/images/title_confirm_quiz.png" alt="">
+                    </div>
+                    <div class="character">
+                        <div class="image-box">
+                            <img src="../common/images/confirm_quiz_char.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-tab-box" data-sub-tabs="문제 1,문제 2">
+
+                    <div class="sub-content sub-page-01">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text">다음 빈칸에 알맞은 말을 고르시오.</div>
+                            </div>
+                        </div>
+
+                        <div class="round-bg-box ti ls-1p5">
+                            일이 일어난 차례를 나타내는 말 가운데에서 ‘아침, 어제, 토요일, 봄’ 등과 같은 말을 가리켜 <span class="empty-rect"><span class="text hide">시간</span></span>을 나타내는 말이라고 합니다.
+                        </div>
+
+                        <div class="single-choice word" data-quiz="singleChoice" data-answer="2" data-visible=".empty-rect .text">
+                            <div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-01 color-01">
+                                        사람
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-03 color-01">
+                                        공간
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-02 color-01">
+                                        시간
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-04 color-01">
+                                        사건
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                    </div>
+
+
+                    <div class="sub-content sub-page-02">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text">시간을 나타내는 말을 <span class="underline">모두</span> 고르시오.</div>
+                            </div>
+                        </div>
+
+                        <!--
+                            싱글 : data-quiz="singleChoice" data-answer="0"
+                            멀티 : data-quiz="multipleChoice" data-answer="0;3"
+                        -->
+                        <div class="single-choice word" data-quiz="multipleChoice" data-answer="0;1">
+                            <div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-01 color-01">
+                                        아침
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-03 color-01">
+                                        저녁
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-02 color-01">
+                                        통째
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-04 color-01">
+                                        호랑이
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="gate_container checkquiz">
+            <div class="gate_topbox">
+                <div class="gate_title">확인 문제</div>
+                <div class="gate_btn"><span class="start-button">시작</span></div>
+            </div>
+            <div class="gate_ani">
+                <div id="animation_container">
+                    <canvas id="canvas"></canvas>
+                    <div id="dom_overlay_container" class="gate_ani_cover"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gate ani -->
+    <script src="../common/js/gateAni/createjs-2015.11.26.min.js"></script>
+    <script src="../common/js/gateAni/commonConfirm_Main.js"></script>
+    <script src="../common/js/gateAni/canvasMain.js"></script>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
