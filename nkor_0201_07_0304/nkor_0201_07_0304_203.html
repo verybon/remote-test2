@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+
+    <style>
+        .content-inner{padding-right: 220px;}
+        .content-inner .ex-box{width: 100%;margin: 0 0 10px;padding: 15px 30px;}
+        .content-inner .ex-box .item-box{display: flex;align-items: center;justify-content: space-around;width: 100%;padding: 0 30px;}
+        .content-inner .text-box .bullet-box + .bullet-box{margin-top: 10px;}
+        .content-inner .face-box{height: 100%;display: flex;flex-direction: column;justify-content: space-around;position: absolute;right: 0;top: 0;}
+        .content-inner .face-box .char-bg-ani-box,
+        .content-inner .face-box .char-ani-box{position: relative;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <div class="title-03"></div>
+            </div>
+
+            <div class="content">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        설명하는 과정에 맞게 <span class="ex-rect-icon"></span>에서 알맞은 말을 골라 보세요.
+                    </div>
+                </div>
+                <div class="info-box one-line"><span class="emp">인물</span>을 클릭하세요.</div>
+
+                <div class="content-inner">
+                    <div class="ex-box align-cc">
+                        <div class="icon"></div>
+                        <div class="item-box">
+                            <div class="text">대상</div>
+                            <div class="text">궁금해할 내용</div>
+                            <div class="text">까닭</div>
+                        </div>
+                    </div>
+                    <div class="text-box bg-color-02">
+                        <div class="bullet-box empty-circle">
+                            설명하려는 <span class="hidden-text">대상</span>을 결정합니다.
+                        </div>
+                        <div class="bullet-box empty-circle">
+                            설명하려는 <span class="hidden-text">까닭</span>을 생각합니다.
+                        </div>
+                        <div class="bullet-box empty-circle">
+                            설명을 듣거나 읽는 사람이 <span class="hidden-text">궁금해할 내용</span>을 생각해 봅니다.
+                        </div>
+                    </div>
+                    <div class="face-box">
+                        <div class="char-bg-ani-box ani-01" data-name="bust05" data-color="color-01" data-tail="tail-01" data-audio="./media/audios/nkor_0201_07_0304_203_1.mp3" data-audio-id="audio01"></div>
+                        <div class="char-bg-ani-box ani-01" data-name="bust01" data-color="color-01" data-tail="tail-01" data-audio="./media/audios/nkor_0201_07_0304_203_2.mp3" data-audio-id="audio01"></div>
+                    </div>
+                </div>
+
+                <div class="button-helper">
+                    <span>톡톡 도움말</span>
+                </div>
+                <div class="popup-mini helper" data-button=".button-helper" style="width: 420px;">
+                    <div class="box-top">
+                        <div class="popup-title-box">
+                            <span class="popup-title">톡톡 도움말</span>
+                            <span class="popup-sub-title"></span>
+                        </div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="ti">
+                            글을 쓸 때 설명하려는 내용이 잘 드러나는 제목도 붙여야 해요.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-03">
+            옛날 전화기에 대해 설명하는 과정에 맞게 <span class="ex-rect-icon"></span>에서 알맞은 말을 골라 빈칸에 써 봅시다.
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
