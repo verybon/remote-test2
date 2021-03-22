@@ -120,6 +120,26 @@
 
 
 ==================================
+#ex-box & text-box & bullet-box
+
+<div class="ex-box align-cc">
+    <div class="icon"></div>
+        <div>
+            <div class="item-box">
+                <div class="text">대상</div>
+                <div class="text">궁금해할 내용</div>
+                <div class="text">까닭</div>
+            </div>
+        </div>
+    </div>
+    <div class="text-box bg-color-02">
+        <div class="bullet-box empty-circle">
+        </div>
+    </div>
+</div>
+
+
+==================================
 #톡톡 도움말
 
 <div class="button-helper">
