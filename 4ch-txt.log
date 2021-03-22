@@ -23,3 +23,362 @@
         }
     })();
 </script>
+
+
+
+
+===============================================
+
+
+
+/**
+* KB_61_03/nkor_0601_90_0100
+*/
+
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+        <title></title>
+        <link rel="stylesheet" href="../common/css/sanitize.css" />
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/content.css" />
+
+        <style>
+            .single-choice{position: relative}
+            .single-choice .button{text-align: center;}
+            .single-choice .mark{left:50%; margin-left:-39px;}
+            .button.correct{background:#fffc6b}
+            .box-base button{font-size:30px; font-family: notoB;}
+
+            .ic182 span{opacity:0}
+            .ic182 span.on{opacity:1}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="teacher-question num-01" >
+               형태가 바뀌는 낱말을 알아봅시다.
+            </div>
+
+            <div class="main normal" data-main-tabs="1,2" data-content="confirm-quiz">
+                <div class="header">
+                    <h1 class="title-02" aria-label="교과서 활동"></h1>
+                </div>
+
+                <div class="content page-01"  data-content="confirm-quiz">
+                    <span class="start-button remove">시작</span>
+                    <div class="bullet-box direction">
+                        <div class="text" style="letter-spacing: -2px;">
+                            아래의 낱말 가운데에서 <span class="click-induced button-mini-02">형태가 바뀌는 낱말</span>을 찾아보세요.
+                        </div>
+                    </div>
+
+                    <div class="popup-mini mini-02" data-button=".button-mini-02" style="top:90px; left:420px;">
+                        <div class="box-top">
+                        <div class="popup-title">형태가 바뀌는 낱말</div>
+                            <div class="button-close"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="ti">
+                                사람이나 사물의 움직임을 나타내는 낱말 또는 사람이나 사물의 성질이나 상태를 나타내는 낱말을 말합니다.
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="info-box"><span class="emp">낱말</span>을 클릭하세요.</div>
+
+                    <div class="content-inner" style="margin-top: 10px;">
+                        <div class="single-choice" data-quiz="multipleChoice" data-answer="0;2;3;4;5;7;8;9;11"  data-mark="1" data-mark-pos="center" style="width: 100%;">
+                            <div class="grid-wrap">
+                                <button type="button" class="button box-base color-02 grid-1">
+                                    잡다
+                                    <div class="mark"></div>
+                                </button>
+                                <button type="button" class="button box-base color-01 grid-1">
+                                    동생
+                                    <div class="mark"></div>
+                                </button>
+                                <button type="button" class="button box-base color-02 grid-1">
+                                    먹다
+                                    <div class="mark"></div>
+                                </button>
+                                <button type="button" class="button box-base color-01 grid-1">
+                                    작다
+                                    <div class="mark"></div>
+                                </button>
+                            </div>
+                            <div class="grid-wrap">
+                                <button type="button" class="button box-base color-01 grid-1">
+                                    웃다
+                                    <div class="mark"></div>
+                                </button>
+                                <button type="button" class="button box-base color-02 grid-1">
+                                    달리다
+                                    <div class="mark"></div>
+                                </button>
+                                <button type="button" class="button box-base color-01 grid-1">
+                                    도서관
+                                    <div class="mark"></div>
+                                </button>
+                                <button type="button" class="button box-base color-02 grid-1">
+                                    넓다
+                                    <div class="mark"></div>
+                                </button>
+                            </div>
+                            <div class="grid-wrap">
+                                <button type="button" class="button box-base color-02 grid-1">
+                                    일어서다
+                                    <div class="mark"></div>
+                                </button>
+                                <button type="button" class="button box-base color-01 grid-1">
+                                    많다
+                                    <div class="mark"></div>
+                                </button>
+                                <button type="button" class="button box-base color-02 grid-1">
+                                    소금
+                                    <div class="mark"></div>
+                                </button>
+                                <button type="button" class="button box-base color-01 grid-1">
+                                    높다
+                                    <div class="mark"></div>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bullet-box direction">
+                        <div class="text">
+                            형태가 바뀌지 않는 낱말은 무엇인가요?
+                        </div>
+                    </div>
+                    <div class="content-inner">
+                        <div class="bg-color-box bg-color-05">
+                            <div class="hidden-box no-bg">
+                                <div class="text ti">
+                                    동생, 도서관, 소금
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-button button-answer">
+                        <div class="text">정답 확인</div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="content page-02">
+                    <div class="bullet-box direction">
+                        <div class="text">
+                            앞에서 나눈 ‘형태가 바뀌는 낱말’을 움직임을 나타내는 낱말과 <span class="click-induced word button-mini-01">성질</span>이나 <span class="click-induced word button-mini-02">상태</span>를 나타내는 낱말로 나누어 보세요.
+                        </div>
+                    </div>
+                    <div class="info-box"><span class="emp">낱말</span>을 클릭하세요.</div>
+
+                    <div class="popup-mini word mini-01" data-button=".button-mini-01" style="width: 350px; top:90px; left:90px;">
+                        <div class="box-top">
+                            <div class="popup-title">어휘 쏙쏙</div>
+                            <div class="button-close"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="word">성질</div>
+                            <div class="explain-word">
+                                <div>
+                                    사물이나 현상이 가지고 있는 고유의 특성.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="popup-mini word mini-01" data-button=".button-mini-02" style="width: 350px; top:90px; left:90px;">
+                        <div class="box-top">
+                            <div class="popup-title">어휘 쏙쏙</div>
+                            <div class="button-close"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="word">상태</div>
+                            <div class="explain-word">
+                                <div>
+                                    사물·현상이 놓여 있는 모양이나 형편.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-inner">
+                        <div class="box-base bgcolor-01 ic18" style="text-align: center;">
+                            <button type="button" data-n="1">먹다, </button>
+                            <button type="button" data-n="2">작다, </button>
+                            <button type="button" data-n="3">잡다,</button>
+                            <button type="button" data-n="4">웃다, </button>
+                            <button type="button" data-n="5">달리다, </button>
+                            <button type="button" data-n="6">넓다, </button>
+                            <button type="button" data-n="7">일어서다, </button>
+                            <button type="button" data-n="8">많다, </button>
+                            <button type="button" data-n="9">높다</button>
+
+                        </div>
+
+                        <div class="table-box color-02 ic182  text-answer" style="margin-top: 20px;">
+                            <table class="table">
+                                <!-- <caption>Table Caption</caption> -->
+                                <colgroup>
+                                    <col style="width:14%" />
+                                    <col style="width:10%" />
+                                    <col style="width:10%" />
+                                    <col style="width:14%" />
+
+                                    <col style="width:26%" />
+                                    <col style="width:26%">
+                                    <!-- <col style="width:90%" /> -->
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col" colspan="4">움직임을 나타내는 낱말
+                                        </th>
+                                        <th scope="col" colspan="2">성질이나 상태를 나타내는 낱말
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="ta-c"><span class="n1">잡다</span> </td>
+                                        <td class="ta-c" colspan="2"><span class="n2">먹다</span></td>
+                                        <td class="ta-c"><span class="n4">웃다</span></td>
+
+                                        <td class="ta-c"><span class="n3">작다</span></td>
+                                        <td class="ta-c"><span class="n6">넓다</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ta-c" colspan="2"><span class="n5">달리다</span></td>
+                                        <td class="ta-c" colspan="2"><span class="n7">일어서다</span></td>
+
+                                        <td class="ta-c"><span class="n8">많다</span></td>
+                                        <td class="ta-c"><span class="n9">높다</span></td>
+                                    </tr>
+
+
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="bottom-button button-answer ic18">
+                        <div class="text">정답 확인</div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+        </div>
+
+        <script src="../common/js/libs/underscore-min.js"></script>
+        <script src="../common/js/libs/anime.min.js"></script>
+        <script src="../amt/js/amt.js"></script>
+        <script src="../common/js/quiz.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="../common/js/canvasAnimation.js"></script>
+        <script src="../common/js/canvasAnimationData.js"></script>
+        <script src="../common/js/content.js"></script>
+
+        <script>
+            (function(){
+                var ic18btn = document.querySelectorAll('.ic18 button');
+                var allbtn = document.querySelector('.button-answer.ic18');
+                var allbtnText = allbtn.querySelector('.text');
+                allbtn.dataset.on = 'off';
+
+                for(var i=0; i < ic18btn.length; i++) {
+                    ic18btn[i].addEventListener('click', function(){
+                        console.log(this.dataset.n);
+                        var n = this.dataset.n;
+                        var c8 = document.querySelector('.n' + n);
+                        c8.classList.add('on');
+                        c8.dataset.on = 'on';
+                        check();
+                    });
+                }
+
+                function check(){
+                    var ic18span= document.querySelectorAll('.ic182 span');
+                    var all = 0;
+
+                    for(var j=0; j < ic18span.length; j++) {
+                        if(ic18span[j].dataset.on === 'on') {
+                            all = all + 1;
+                        }
+                        console.log(all)
+                        if (all === ic18span.length) {
+                            allbtn.dataset.on = 'on';
+                            allbtn.classList.add('on');
+                            allbtnText.innerText = '정답 가리기';
+                        } else {
+                            allbtn.dataset.on = 'off';
+                            allbtn.classList.remove('on');
+                            allbtnText.innerText = '정답 확인';
+                        }
+                    }
+                }
+
+                function checkToggle(v){
+                    var ic18span= document.querySelectorAll('.ic182 span');
+
+                    for(var j=0; j < ic18span.length; j++) {
+                        if(v) {
+                            ic18span[j].classList.add('on');
+                            ic18span[j].dataset.on = 'on';
+                            allbtn.dataset.on = 'on';
+                            allbtn.classList.add('on');
+                            allbtnText.innerText = '정답 가리기';
+
+                        }else {
+                            ic18span[j].classList.remove('on');
+                            ic18span[j].dataset.on = 'off';
+                            allbtn.dataset.on = 'off';
+                            allbtn.classList.remove('on');
+                            allbtnText.innerText = '정답 확인';
+                        }
+
+                        // if (all === ic18span.length) {
+                        //     allbtn.dataset.on = 'on';
+                        //     allbtn.classList.add('on');
+                        //     allbtnText.innerText = '정답 가리기';
+                        // } else {
+                        //     allbtn.dataset.on = 'off';
+                        //     allbtn.classList.remove('on');
+                        //     allbtnText.innerText = '정답 확인';
+                        // }
+                    }
+                }
+
+                allbtn.addEventListener('click', function(){
+                    console.log(this.dataset.n);
+                    var n = this.dataset.n;
+                    var c8 = document.querySelector('.n' + n);
+
+                    if (allbtn.dataset.on === 'off') {
+                        checkToggle(true)
+                    } else {
+                        checkToggle(false)
+                    }
+                    //c8.classList.add('on');
+                });
+            })();
+
+
+        </script>
+    </body>
+</html>
+
+
+
+
+
