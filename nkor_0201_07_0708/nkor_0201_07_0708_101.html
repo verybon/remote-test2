@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .box-base-contain{padding: 30px;}
+        .item-wordcard-quiz{display: flex;align-items: center;justify-content: space-around;}
+        .item-wordcard-quiz > .box-base{min-width: 95px;text-align: center;}
+        .item-wordcard-answer{display: flex;align-items: center;justify-content: center;margin-top: 40px;}
+        .item-wordcard-answer .hidden-text{margin: 0 20px;}
+        .item-wordcard-quiz .box-base.on{background-color: #fffc6b;color: #01a1ff;}
+        .page-02 .grid-wrap + .grid-wrap{margin-top: 30px;}
+        .page-02 .grid-1{display: flex;align-items: center;justify-content: center;}
+        .page-02 .grid-1 .box-base.color-06{display: inline-block;min-width: 95px;text-align: center;}
+        .page-02 .grid-1 .box-base.color-06 + .box-base.color-06{margin-left: 20px;}
+        .page-02 .grid-1 .box-base.color-03{min-width: 280px;text-align: center;opacity: 0;transition: opacity 0s ease;}
+        .page-02 .grid-1 .box-base.color-03.on{opacity: 1;transition-duration: .3s;}
+        .page-02 .grid-1 .box-base .hidden-text{padding: 0 8px;background: transparent;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal" data-main-tabs="1,2">
+            <div class="header">
+                <h1 class="title-03" aria-label="생각 열기"></h1>
+            </div>
+
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        섞여 있는 낱말 카드를 보고 숨어 있는 낱말을 찾아보세요.
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="box-base bgcolor-06 box-base-contain">
+                        <div class="item-wordcard-quiz">
+                            <div class="box-base color-06 n1">우</div>
+                            <div class="box-base color-06 n2">길</div>
+                            <div class="box-base color-06 n3">동</div>
+                            <div class="box-base color-06 n4">여</div>
+                            <div class="box-base color-06 n5">물</div>
+                            <div class="box-base color-06 n6">이</div>
+                            <div class="box-base color-06 n7">원</div>
+                        </div>
+                        <div class="item-wordcard-answer">
+                            <div class="hidden-text bt_n1">
+                                여우
+                            </div>
+                            <div class="hidden-text bt_n2">
+                                길이
+                            </div>
+                            <div class="hidden-text bt_n3">
+                                동물원
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="content page-02">
+                <div class="bullet-box direction">
+                    <div class="text" style="letter-spacing: -2.5px;">
+                        찾은 낱말 가운데에서 받침이 뒷말 첫소리가 되는 낱말은 무엇인가요?
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="box-base bgcolor-06 box-base-contain">
+                        <div class="grid-wrap">
+                            <div class="grid-1">
+                                <div class="box-base color-06">길</div>
+                                <div class="box-base color-06"><span class="hidden-text bt_n4">이</span></div>
+                            </div>
+                            <div class="arrow-b"></div>
+                            <div class="grid-1">
+                                <div class="box-base color-03 bt_n4_answer">[기<span style="color: #006ee6">리</span>]</div>
+                            </div>
+                        </div>
+                        <div class="grid-wrap">
+                            <div class="grid-1">
+                                <div class="box-base color-06">동</div>
+                                <div class="box-base color-06">물</div>
+                                <div class="box-base color-06"><span class="hidden-text bt_n5">원</span></div>
+                            </div>
+                            <div class="arrow-b"></div>
+                            <div class="grid-1">
+                                <div class="box-base color-03 bt_n5_answer">[동무<span style="color: #006ee6">뤈</span>]</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bullet-box direction">
+                    <div class="text">
+                        앞말의 받침이 뒷말의 첫소리가 되는 까닭은 무엇일까요?
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="bg-color-box bg-color-05">
+                        <div class="hidden-box no-bg">
+                            <div class="text ti">
+                                쉽게 소리 내기 위해서입니다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-color-box bg-color-05">
+                        <div class="hidden-box no-bg">
+                            <div class="text ti">
+                                발음하기 어렵기 때문입니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="teacher-question bullet-circle">
+            <div class="text">
+                뒤죽박죽 낱말 찾기 놀이를 해 봅시다.
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/playerProgress.js"></script>
+    <script src="../common/js/audioPlayer.js"></script>
+    <script src="../common/js/content.js"></script>
+    <!-- <script src="./js/nkpt_211_2.js"></script> -->
+    <script>
+        (function(){
+            var item_wordcard_quiz = document.querySelectorAll( ".item-wordcard-quiz .box-base" );
+            var bt_n1 = document.querySelector( ".bt_n1" );
+            var bt_n2 = document.querySelector( ".bt_n2" );
+            var bt_n3 = document.querySelector( ".bt_n3" );
+            var bt_n4 = document.querySelector( ".bt_n4" );
+            var bt_n5 = document.querySelector( ".bt_n5" );
+            var bt_n4_answer = document.querySelector( ".bt_n4_answer" );
+            var bt_n5_answer = document.querySelector( ".bt_n5_answer" );
+            function wordcard_reset(){
+                for (var i = 0; i < item_wordcard_quiz.length; i++){
+                    item_wordcard_quiz[i].classList.remove( "on" );
+                }
+            }
+            bt_n1.addEventListener("click", function(){
+                wordcard_reset();
+                item_wordcard_quiz[0].classList.add( "on" );
+                item_wordcard_quiz[3].classList.add( "on" );
+            });
+            bt_n2.addEventListener("click", function(){
+                wordcard_reset();
+                item_wordcard_quiz[1].classList.add( "on" );
+                item_wordcard_quiz[5].classList.add( "on" );
+            });
+            bt_n3.addEventListener("click", function(){
+                wordcard_reset();
+                item_wordcard_quiz[2].classList.add( "on" );
+                item_wordcard_quiz[4].classList.add( "on" );
+                item_wordcard_quiz[6].classList.add( "on" );
+            });
+            bt_n4.addEventListener("click", function(){
+                bt_n4_answer.classList.add( "on" );
+            });
+            bt_n5.addEventListener("click", function(){
+                bt_n5_answer.classList.add( "on" );
+            });
+            document.addEventListener('click',function(e){
+                if(e.target && e.target.className == "main-tab-button on"){
+                    wordcard_reset();
+                    bt_n4_answer.classList.remove( "on" );
+                    bt_n5_answer.classList.remove( "on" );
+                }
+            });
+            // document.querySelector( ".main-tab-button-box" ).addEventListener("click", function(){
+            //     wordcard_reset();
+            //     bt_n4_answer.classList.remove( "on" );
+            //     bt_n5_answer.classList.remove( "on" );
+            // });
+
+        })();
+    </script>
+</body>
+
+</html>
