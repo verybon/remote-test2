@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <link rel="stylesheet" href="../common/css/audioPlayer.css">
+    <style>
+        .page-01 .content-inner{height: 290px;}
+        .page-01 .single-choice{display: flex;flex-wrap: wrap;align-items: center;justify-content: space-around;width: 100%;height: 100%;margin-top: 50px;}
+        .page-01 .single-choice .button{min-width: 240px;margin: 10px 15px;}
+        .page-01 .single-choice .button .box-base{text-align: center;}
+        .scene-button-box .dir-rect{width: 24px;height: 24px;margin-left: 2px;background: #fff;font-size: 18px;}
+        .cut-ani-box{height: 387px;}
+        .cut-ani-box img{width: auto;height: 100%;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal" data-main-tabs="1,2">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+            <div class="content page-01" data-content="confirm-quiz">
+                <span class="start-button remove">시작</span>
+                <div class="bullet-box direction">
+                    <div class="text">
+                        받침이 뒷말 첫소리가 되는 낱말에 <span class="dir-o"></span>표를 해 보세요.
+                    </div>
+                </div>
+                <div class="info-box one-line-bottom"><span class="emp">각 상자</span>를 클릭하세요.</div>
+                <div class="content-inner">
+                    <div class="single-choice box-base bgcolor-05" data-quiz="multipleChoice" data-answer="0;1;2;5" data-mark-pos="center">
+                        <div class="button n1">
+                            <div class="box-base color-03">집으로</div>
+                        </div>
+                        <div class="button n2">
+                            <div class="box-base color-03">떨어진</div>
+                        </div>
+                        <div class="button n3">
+                            <div class="box-base color-03">입에</div>
+                        </div>
+                        <div class="button n4">
+                            <div class="box-base color-03">다리를</div>
+                        </div>
+                        <div class="button n5">
+                            <div class="box-base color-03">고기를</div>
+                        </div>
+                        <div class="button n6">
+                            <div class="box-base color-03">강물에</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bottom-button button-answer remove">
+                    <div class="text">정답 확인</div>
+                </div>
+
+            </div>
+
+            <div class="content page-02" data-content="cut-ani">
+                <div class="bullet-box direction">
+                    <div class="text ls-2">
+                        받침이 뒷말 첫소리가 되는 낱말에 주의하며 <span class="quot-open">「</span>욕심 많은 개<span class="quot-close">」</span>를 다시 읽어 보세요.
+                    </div>
+                </div>
+                <div class="cut-ani-box">
+                    <div class="img-poster">
+                        <img src="./images/nkor_0201_07_0708_203_1.png" >
+                    </div>
+                    <div class="cut">
+                        <img src="./images/nkor_0201_07_0708_203_1.png" >
+                    </div>
+                    <div class="cut">
+                        <img src="./images/nkor_0201_07_0708_203_2.png" >
+                    </div>
+                    <div class="cut">
+                        <img src="./images/nkor_0201_07_0708_203_3.png" >
+                    </div>
+
+                    <!--
+                        direction 한 줄 top:-10px
+                        direction 두 줄 top:-40px
+                    -->
+                    <div class="center-play-button" style="top:-10px"></div>
+                </div>
+
+                <div class="scene-button-box">
+                    <button type="button" class="button">장면 <span class="dir-rect color-01">1</span></button>
+                    <button type="button" class="button">장면 <span class="dir-rect color-01">2</span></button>
+                    <button type="button" class="button">장면 <span class="dir-rect color-01">3</span></button>
+                </div>
+                <div class="audio-player"></div>
+
+            </div>
+        </div>
+
+        <div class="teacher-question num-03" style="letter-spacing: -3.1px;">
+            받침이 뒷말 첫소리가 되는 낱말을 바르게 읽어 봅시다.
+        </div>
+
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/playerProgress.js"></script>
+    <script src="../common/js/audioPlayer.js"></script>
+    <script src="../common/js/content.js"></script>
+    <script src="./js/nkor_0201_07_0708_203.js"></script>
+</body>
+
+</html>
