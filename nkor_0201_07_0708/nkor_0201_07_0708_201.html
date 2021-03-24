@@ -24,6 +24,16 @@
         .page-01 .single-choice .button.n6{top: 265px;left: 50%;margin-left: 200px;}
         .page-01 .single-choice .button.n7{top: 385px;left: 50%;margin-left: -120px;}
         .page-01 .single-choice .button .box-base{width: 100%;text-align: center;}
+        .page-02 .content-inner{display: flex;align-items: center;justify-content: space-between;}
+        .page-02 .content-inner + .content-inner{margin-top: 20px;}
+        .page-02 .content-inner > .box-base{width: 220px;padding: 12px;text-align: center;}
+        .page-02 .content-inner > .box-base:last-child{display: flex;align-items: center;justify-content: center;width: 320px;}
+        .page-02 .content-inner > .box-base:last-child .box-base{flex: 1;margin-right: 12px;}
+        .page-02 .hidden-text{background: transparent;}
+        /* .page-02 .clip-word01:before,
+        .page-02 .clip-word01:after{content: "구름이";display: block;position: absolute;top: 12px;left: 59px;color: red;}
+        .page-02 .clip-word01:before{clip-path: polygon(35px 32px, 60px 32px, 60px 44px, 35px 44px);}
+        .page-02 .clip-word01:after{clip: rect(10px, 20px, 30px, 40px);} */
     </style>
 </head>
 
@@ -73,6 +83,89 @@
                     <div class="text">정답 확인</div>
                 </div>
 
+            </div>
+
+            <div class="content page-02">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        낱말의 소리가 어떻게 달라지는지 살펴보세요.
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="box-base color-03">
+                        <div class="text">구름 + 이</div>
+                    </div>
+                    <div class="arrow-b"></div>
+                    <div class="box-base color-06">
+                        <div class="text" style="background: url(./images/nkor_0201_07_0708_201_1.png) no-repeat 50% 50% / auto 100%;color: rgba(0,0,0,0);">구름이</div>
+                    </div>
+                    <div class="arrow-b"></div>
+                    <div class="box-base bgcolor-04">
+                        <div class="box-base ta-c">
+                            <div class="text">[구르미]</div>
+                        </div>
+                        <div class="audio-box">
+                            <div class="button-play-audio" data-module="simple-audio" data-src="./media/audios/nkor_0201_07_0708_201_1.mp3" data-audio-id="audio-01"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="box-base color-03">
+                        <div class="text">구름 + 은</div>
+                    </div>
+                    <div class="arrow-b"></div>
+                    <div class="box-base color-06">
+                        <div class="text" style="background: url(./images/nkor_0201_07_0708_201_1.png) no-repeat 50% 50% / auto 100%;color: rgba(0,0,0,0);">구름은</div>
+                    </div>
+                    <div class="arrow-b"></div>
+                    <div class="box-base bgcolor-04">
+                        <div class="box-base ta-c">
+                            <div class="hidden-text">
+                                [구르믄]
+                            </div>
+                        </div>
+                        <div class="audio-box">
+                            <div class="button-play-audio" data-module="simple-audio" data-src="./media/audios/nkor_0201_07_0708_201_2.mp3" data-audio-id="audio-01"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="box-base color-03">
+                        <div class="text">구름 + 에</div>
+                    </div>
+                    <div class="arrow-b"></div>
+                    <div class="box-base color-06">
+                        <div class="text" style="background: url(./images/nkor_0201_07_0708_201_1.png) no-repeat 50% 50% / auto 100%;color: rgba(0,0,0,0);">구름에</div>
+                    </div>
+                    <div class="arrow-b"></div>
+                    <div class="box-base bgcolor-04">
+                        <div class="box-base ta-c">
+                            <div class="hidden-text">
+                                [구르메]
+                            </div>
+                        </div>
+                        <div class="audio-box">
+                            <div class="button-play-audio" data-module="simple-audio" data-src="./media/audios/nkor_0201_07_0708_201_3.mp3" data-audio-id="audio-01"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="button-helper">
+                    <span>톡톡 도움말</span>
+                </div>
+                <div class="popup-mini helper" data-button=".button-helper" style="width: 790px;">
+                    <div class="box-top">
+                        <div class="popup-title-box">
+                            <span class="popup-title">톡톡 도움말</span>
+                            <span class="popup-sub-title"></span>
+                        </div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="ti">
+                            ‘구름을’에서 받침 ‘ㅁ’이 뒤에 오는 ‘ㅇ’을 만나면 뒷말 첫소리고 자연스럽게 이어져 [구르믈]이라고 소리가 나요.
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
