@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .page-01 .content-inner{height: 500px;}
+        .page-01 .image-box{width: 100%;height: 500px;}
+        .page-01 .image-box img{width: 100%;height: auto;border-radius: 20px;}
+        .page-01 .single-choice{width: 100%;height: 100%;}
+        .page-01 .single-choice .button{position: absolute;margin-bottom: 0;}
+        .page-01 .single-choice .button.n1{top: 30px;left: 420px;}
+        .page-01 .single-choice .button.n2{top: 120px;left: 320px;}
+        .page-01 .single-choice .button.n3{top: 160px;left: 120px;}
+        .page-01 .single-choice .button.n4{top: 260px;left: 100px;}
+        .page-01 .single-choice .button.n5{top: 440px;left: 250px;}
+        .page-01 .single-choice .button.n6{top: 360px;left: 320px;}
+        .page-01 .single-choice .button.n7{top: 230px;left: 400px;}
+        .page-01 .single-choice .button.n8{top: 180px;left: 500px;}
+        .page-01 .single-choice .button.n9{top: 110px;left: 640px;}
+        .page-01 .single-choice .button.n10{top: 40px;left: 700px;}
+        .page-01 .single-choice .button.n11{top: 200px;left: 860px;}
+        .page-01 .single-choice .button.n12{top: 180px;left: 720px;}
+        .page-01 .single-choice .button.n13{top: 310px;left: 740px;}
+        .page-01 .single-choice .button.n14{top: 310px;left: 610px;}
+        .page-01 .single-choice .button.n15{top: 440px;left: 550px;}
+        .page-01 .single-choice .button.n16{top: 420px;left: 690px;}
+        /* .page-02 .clip-word01:before,
+        .page-02 .clip-word01:after{content: "구름이";display: block;position: absolute;top: 12px;left: 59px;color: red;}
+        .page-02 .clip-word01:before{clip-path: polygon(35px 32px, 60px 32px, 60px 44px, 35px 44px);}
+        .page-02 .clip-word01:after{clip: rect(10px, 20px, 30px, 40px);} */
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+            <div class="content page-01" data-content="confirm-quiz">
+                <span class="start-button remove">시작</span>
+                <div class="bullet-box direction">
+                    <div class="text">
+                        받침이 뒷말 첫소리가 되는 낱말을 고르세요.
+                    </div>
+                </div>
+                <div class="info-box one-line"><span class="emp">낱말</span>을 클릭하세요.</div>
+                <div class="content-inner">
+                    <div class="image-box">
+                        <img src="./images/nkor_0201_07_0708_205.png" alt="" />
+                    </div>
+                    <div class="single-choice" data-quiz="multipleChoice" data-answer="1;3;4;6" data-mark-pos="center">
+                        <div class="button n1">할머니</div>
+                        <div class="button n2">할아버지</div>
+                        <div class="button n3">생일로</div>
+                        <div class="button n4">생일은</div>
+                        <div class="button n5">물건과</div>
+                        <div class="button n6">물건을</div>
+                        <div class="button n7">길로</div>
+                        <div class="button n8">길을</div>
+                        <div class="button n9">수요일</div>
+                        <div class="button n10">목요일</div>
+                        <div class="button n11">부모님께</div>
+                        <div class="button n12">부모님의</div>
+                        <div class="button n13">마음도</div>
+                        <div class="button n14">마음이</div>
+                        <div class="button n15">공원도</div>
+                        <div class="button n16">공원이</div>
+                    </div>
+                </div>
+                <div class="bottom-button button-answer hide">
+                    <div class="text">정답 확인</div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="teacher-question num-05" style="letter-spacing: -2.8px">
+            받침이 뒷말 첫소리가 되는 낱말을 골라 읽으며 미로를 빠져나가 봅시다.
+        </div>
+
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
