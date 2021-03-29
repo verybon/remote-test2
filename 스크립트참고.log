@@ -83,6 +83,44 @@ function clickReset(e){
 
 
 
+===============================================
+
+/**
+* nkor_act_0201_06_0506_201.html
+*/
+
+(function(){
+    var button_n1 = document.querySelector( ".button-n1" );
+    var button_n2 = document.querySelector( ".button-n2" );
+    var button_n3 = document.querySelector( ".button-n3" );
+    var picbox_01 = document.querySelector( ".page2-picbox-01" );
+    var picbox_02 = document.querySelector( ".page2-picbox-02" );
+    var picbox_03 = document.querySelector( ".page2-picbox-03" );
+    button_n1.addEventListener("click", function(){
+        picbox_01.classList.add( "on" );
+    });
+    button_n2.addEventListener("click", function(){
+        picbox_02.classList.add( "on" );
+    });
+    button_n3.addEventListener("click", function(){
+        picbox_03.classList.add( "on" );
+    });
+    document.addEventListener( "click", function(e){
+        if (hasClass(e.target, 'main-tab-button')) {
+            picbox_01.classList.remove( "on" );
+            picbox_02.classList.remove( "on" );
+            picbox_03.classList.remove( "on" );
+        }
+    }, false);
+    function hasClass(elem, className){
+        return elem.className.split(' ').indexOf(className) > -1;
+    }
+})();
+
+
+
+
+
 
 ===============================================
 
