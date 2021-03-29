@@ -13,20 +13,34 @@
         <style>
             .page-01 .pic-box.sole .image-box{height: 100%;}
 
-            .page-02 .pic-box{font-size: 34px;width: 24%;height:auto;border:0;}
+            .page-02 .pic-box{font-size: 34px;width: calc(25% - 10px);height:auto;border:0;}
+            .page-02 .page2-picbox-01,
+            .page-02 .page2-picbox-02,
+            .page-02 .page2-picbox-03{width: 0;opacity: 0;transition: opacity 0s ease;}
+            .page-02 .page2-picbox-01.on,
+            .page-02 .page2-picbox-02.on,
+            .page-02 .page2-picbox-03.on{width: auto;opacity: 1;transition: opacity .2s ease;}
             .page-02 .pic-box .rect-num::after{z-index: 1;background: #fff;left:10px;top:10px;}
             .page-02 .pic-box .image{width: 100%;height: 298px;}
             .page-02 .hidden-text-wrap .button{position: absolute;width: 80px;height: 80px;background-color: #ffffff;border-radius: 15px;border: 2px solid #dedede;}
             .page-02 .hidden-text-wrap{position: absolute;left:80px; width:1000px; height:100px; bottom:50px; top:auto;}
-            .page-02 .hidden-text-wrap .button:nth-child(1){left: calc(0% + 95px);top: 0;}
-            .page-02 .hidden-text-wrap .button:nth-child(2){left: calc(25% + 95px);top: 0;}
-            .page-02 .hidden-text-wrap .button:nth-child(3){left: calc(50% + 95px);top: 0;}
-            .page-02 .hidden-text-wrap .button:nth-child(4){left: calc(75% + 95px);top: 0;}
+            .page-02 .hidden-text-wrap .button:nth-child(1){left: calc(0% + 90px);top: 0;}
+            .page-02 .hidden-text-wrap .button:nth-child(2){left: calc(25% + 90px);top: 0;}
+            .page-02 .hidden-text-wrap .button:nth-child(3){left: calc(50% + 90px);top: 0;}
+            .page-02 .hidden-text-wrap .button:nth-child(4){left: calc(75% + 90px);top: 0;cursor: default;}
             .page-02 .hidden-text-wrap .rect-num::after{top: 50%;left: 50%;transform: translate(-50%, -50%);}
             .page-02 .ico-arrow-01{position:absolute; top:30px}
             .page-02 .ico-arrow-01.n1{ left: calc(25% - 20px);}
             .page-02 .ico-arrow-01.n2{ left: calc(50% - 20px);}
             .page-02 .ico-arrow-01.n3{ left: calc(75% - 20px);}
+            .page-03 .ex-box{width: 280px;height: 420px;}
+            .page-03 .ex-box .item-box{display: flex;flex-direction: column;align-items: center;justify-content: space-around;height: 100%;padding: 40px 0;}
+            .page-03 .top-line-box{height: 420px;}
+            .page-03 .top-line-box .sub-tab-box{height: 420px;}
+            .page-03 .pic-box.sole{height: 420px;margin-left: 20px;}
+            .page-03 .pic-box.sole .image-box{height: calc(100% - 120px);}
+            .page-03 .pic-box.sole .text-box{justify-content: flex-start;height: 120px;border-radius: 0;}
+            .page-03 .pic-box .text-box span{text-align: left;}
         </style>
     </head>
     <body>
@@ -64,7 +78,7 @@
                             </div>
 
                             <div class="sub-content sub-page-02">
-                                <div class="pic-box sole pic-box-01">
+                                <div class="pic-box sole pic-box-02">
                                     <div class="rect-num num-02 color-01"></div>
                                     <div class="image-box">
                                         <div class="image"></div>
@@ -80,7 +94,7 @@
                             </div>
 
                             <div class="sub-content sub-page-03">
-                                <div class="pic-box sole pic-box-01">
+                                <div class="pic-box sole pic-box-03">
                                     <div class="rect-num num-03 color-01"></div>
                                     <div class="image-box">
                                         <div class="image"></div>
@@ -89,7 +103,7 @@
                             </div>
 
                             <div class="sub-content sub-page-04">
-                                <div class="pic-box sole pic-box-01">
+                                <div class="pic-box sole pic-box-04">
                                     <div class="rect-num num-04 color-01"></div>
                                     <div class="image-box">
                                         <div class="image"></div>
@@ -103,7 +117,7 @@
                 <div class="content page-02">
                     <div class="direction bullet-box">
                         <div class="text ls-0p5">
-                            어떤 일이 있었을지 생각하며 일이 일어난 <span class="click-induced word button-mini-01">차례</span>에 따라 <span class="dir-rect color-01" style="margin-top: -2px;">1</span>~<span class="dir-rect color-01" style="margin-top: -2px;">4</span>를 써 보세요.
+                            어떤 일이 있었을지 생각하며 일이 일어난 <span class="click-induced word button-mini-01">차례</span>에 따라 <span class="dir-rect color-01" style="margin-top: -1px;">1</span>~<span class="dir-rect color-01" style="margin-top: -1px;">4</span>를 써 보세요.
                         </div>
                     </div>
                     <div class="popup-mini word mini-01" data-button=".button-mini-01" style="top: 85px;left: 780px;width: 300px;">
@@ -123,50 +137,50 @@
                     <div class="content-inner">
                         <div class="pic-wrap">
                             <div class="pic-box pic-box-01">
-                                <div class="image-box">
+                                <div class="image-box  page2-picbox-01">
                                     <div class="click-induced pic button-pic-01">
                                         <div class="image"
-                                        style="background: url('./images/nkor_act_0201_06_0506_201_1.png') no-repeat top center / cover;"></div>
+                                        style="background: #fafafa url('./images/nkor_act_0201_06_0506_201_1.png') no-repeat top center / cover;"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="pic-box pic-box-02">
-                                <div class="image-box">
+                                <div class="image-box  page2-picbox-02">
                                     <div class="click-induced pic button-pic-02">
                                         <div class="image"
-                                        style="background: url('./images/nkor_act_0201_06_0506_201_2.png') no-repeat top center / cover;"></div>
+                                        style="background: #fafafa url('./images/nkor_act_0201_06_0506_201_2.png') no-repeat top center / cover;"></div>
                                     </div>
                                 </div>
                             </div>
                             <div class="pic-box pic-box-03">
-                                <div class="image-box">
+                                <div class="image-box  page2-picbox-03">
                                     <div class="click-induced pic button-pic-03">
                                         <div class="image"
-                                        style="background: url('./images/nkor_act_0201_06_0506_201_3.png') no-repeat top center / cover;"></div>
+                                        style="background: #fafafa url('./images/nkor_act_0201_06_0506_201_3.png') no-repeat top center / cover;"></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="pic-box pic-box-04">
+                            <div class="pic-box pic-box-04 page2-picbox-04">
                                 <div class="image-box">
                                     <div class="click-induced pic button-pic-04">
                                         <div class="image"
-                                        style="background: url('./images/nkor_act_0201_06_0506_201_4.png') no-repeat top center / cover;"></div>
+                                        style="background: #fafafa url('./images/nkor_act_0201_06_0506_201_4.png') no-repeat top center / cover;"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="hidden-text-wrap">
-                        <div class="button hidden-text">
+                        <div class="button hidden-text button-n1">
                             <div class="rect-num num-03 color-01"></div>
                         </div>
-                        <div class="button hidden-text">
+                        <div class="button hidden-text button-n2">
                             <div class="rect-num num-02 color-01"></div>
                         </div>
-                        <div class="button hidden-text">
+                        <div class="button hidden-text button-n3">
                             <div class="rect-num num-01 color-01"></div>
                         </div>
-                        <div class="button hidden-text">
+                        <div class="button">
                             <div class="rect-num num-04 color-01"></div>
                         </div>
 
@@ -190,7 +204,7 @@
                             <div class="sub-content sub-page-01">
                                 <div class="ex-box align-cc">
                                     <div class="icon"></div>
-                                    <div>
+                                    <div style="height: 100%;">
                                         <div class="item-box">
                                             <div class="text">어느 날 아침</div>
                                             <div class="text">잠시 뒤</div>
@@ -199,16 +213,75 @@
                                     </div>
                                 </div>
                                 <div class="pic-box sole pic-box-01">
-                                    <div class="rect-num num-02 color-01"></div>
                                     <div class="image-box">
                                         <div class="image"></div>
                                     </div>
-                                    <div class="text-box align-cc">
-                                        <span class="ta-c">짝에게 “나는 ○○을/를 좋아해.”라고 <br>자신이 좋아하는 것을 소개한다.</span>
+                                    <div class="text-box">
+                                        <span><span class="hidden-text">어느 날 아침</span>, 꿀꿀이가 그림을 그리고 있었습니다.</span>
                                     </div>
                                 </div>
-
                             </div>
+                            <div class="sub-content sub-page-02">
+                                <div class="ex-box align-cc">
+                                    <div class="icon"></div>
+                                    <div style="height: 100%;">
+                                        <div class="item-box">
+                                            <div class="text">어느 날 아침</div>
+                                            <div class="text">잠시 뒤</div>
+                                            <div class="text">점심때</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pic-box sole pic-box-02">
+                                    <div class="image-box">
+                                        <div class="image"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span><span class="hidden-text">점심때</span>가 되자 엄마께서 방에 들어오셔서 꾸중하셨습니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-content sub-page-03">
+                                <div class="ex-box align-cc">
+                                    <div class="icon"></div>
+                                    <div style="height: 100%;">
+                                        <div class="item-box">
+                                            <div class="text">어느 날 아침</div>
+                                            <div class="text">잠시 뒤</div>
+                                            <div class="text">점심때</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pic-box sole pic-box-03">
+                                    <div class="image-box">
+                                        <div class="image"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span>그러자 꿀꿀이는 잠깐만 기다려 달라고 했습니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="sub-content sub-page-04">
+                                <div class="ex-box align-cc">
+                                    <div class="icon"></div>
+                                    <div style="height: 100%;">
+                                        <div class="item-box">
+                                            <div class="text">어느 날 아침</div>
+                                            <div class="text">잠시 뒤</div>
+                                            <div class="text">점심때</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pic-box sole pic-box-04">
+                                    <div class="image-box">
+                                        <div class="image"></div>
+                                    </div>
+                                    <div class="text-box">
+                                        <span><span class="hidden-text">잠시 뒤</span>, 꿀꿀이는 멋진 그림을 완성해 엄마께 보여 드렸습니다.</span>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
 
@@ -250,7 +323,6 @@
                             </div>
                         </div>
 
-
                     </div>
                     <div class="button-box">
                         <div class="prev-button"></div>
@@ -274,7 +346,35 @@
         <script src="../common/js/quiz.js"></script>
         <script src="../common/js/common.js"></script>
         <script src="../common/js/content.js"></script>
-
+        <script>
+            (function(){
+                var button_n1 = document.querySelector( ".button-n1" );
+                var button_n2 = document.querySelector( ".button-n2" );
+                var button_n3 = document.querySelector( ".button-n3" );
+                var picbox_01 = document.querySelector( ".page2-picbox-01" );
+                var picbox_02 = document.querySelector( ".page2-picbox-02" );
+                var picbox_03 = document.querySelector( ".page2-picbox-03" );
+                button_n1.addEventListener("click", function(){
+                    picbox_01.classList.add( "on" );
+                });
+                button_n2.addEventListener("click", function(){
+                    picbox_02.classList.add( "on" );
+                });
+                button_n3.addEventListener("click", function(){
+                    picbox_03.classList.add( "on" );
+                });
+                document.addEventListener( "click", function(e){
+                    if (hasClass(e.target, 'main-tab-button')) {
+                        picbox_01.classList.remove( "on" );
+                        picbox_02.classList.remove( "on" );
+                        picbox_03.classList.remove( "on" );
+                    }
+                }, false);
+                function hasClass(elem, className){
+                    return elem.className.split(' ').indexOf(className) > -1;
+                }
+            })();
+        </script>
 
     </body>
 </html>
