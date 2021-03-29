@@ -26,6 +26,63 @@
 
 
 
+===============================================
+
+/**
+* KA_21_03/nkor_0201_02_0304_202.html
+*/
+
+document.querySelector( ".button-answer" ).addEventListener( "click", function(){
+    if( document.querySelector( ".button-answer" ).classList.contains( "on" ){
+        setTimeout(function(){
+            document.querySelector( ".main-tab-button.on" ).click();
+        }, 0);
+    }
+});
+
+
+
+
+
+===============================================
+
+/**
+* KA_11_03/nkor_0101_05_0910_301.html
+*/
+
+var btns = document.querySelectorAll( ".btn" );
+
+for(var i = 0; i < btns.length; i++ ){
+    btn[i].addEventListener( "click", clickAct );
+}
+
+function clickAct(e){
+    var tg = this.dataset.answer;
+    if( this.classList.contains( "on" ) || this.classList.contains( "empty" ) ){
+        return false;
+    }
+    if( tg === "true" ){
+        this.classList.add( "on" );
+        audioManager.play( "correct" );
+    } else {
+        audioManager.play( "incorrect" );
+    }
+}
+
+var tabs = document.querySelectorAll( ".main-tab-button" );
+for( var j = 0; j < tabs.length; j++ ){
+    tabsBtn[j].addEventListener( "click", clickReset );
+}
+
+function clickReset(e){
+    console.log( "test now" );
+}
+
+
+
+
+
+
 
 ===============================================
 
