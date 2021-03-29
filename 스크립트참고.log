@@ -12,13 +12,13 @@
         function clickAct1(e){
             if( document.querySelectorAll( ".hidden-text.on" ).length >= bt_hidden_text1.length - 1 ){
                 bt_answer.classList.add( "on" );
-                bt_answer.querySelector( ".text" ).innerHTML = "버튼 가리기"
+                bt_answer.querySelector( ".text" ).innerHTML = "정답 가리기"
             }
         }
         function clickAct2(e){
             if( document.querySelectorAll( ".hidden-text.on" ).length >= bt_hidden_text2.length - 1 ){
                 bt_answer.classList.add( "on" );
-                bt_answer.querySelector( ".text" ).innerHTML = "버튼 가리기"
+                bt_answer.querySelector( ".text" ).innerHTML = "정답 가리기"
             }
         }
     })();
