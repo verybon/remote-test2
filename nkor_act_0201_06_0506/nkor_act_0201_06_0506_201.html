@@ -33,11 +33,13 @@
             .page-02 .ico-arrow-01.n1{ left: calc(25% - 20px);}
             .page-02 .ico-arrow-01.n2{ left: calc(50% - 20px);}
             .page-02 .ico-arrow-01.n3{ left: calc(75% - 20px);}
-            .page-03 .ex-box{width: 280px;height: 420px;}
+            .page-03 .ex-box{width: 280px;}
             .page-03 .ex-box .item-box{display: flex;flex-direction: column;align-items: center;justify-content: space-around;height: 100%;padding: 40px 0;}
-            .page-03 .top-line-box{height: 420px;}
-            .page-03 .top-line-box .sub-tab-box{height: 420px;}
-            .page-03 .pic-box.sole{height: 420px;margin-left: 20px;}
+            .page-03 .ex-box,
+            .page-03 .top-line-box,
+            .page-03 .top-line-box .sub-tab-box,
+            .page-03 .pic-box.sole{height: 400px;}
+            .page-03 .pic-box.sole{margin-left: 20px;}
             .page-03 .pic-box.sole .image-box{height: calc(100% - 120px);}
             .page-03 .pic-box.sole .text-box{justify-content: flex-start;height: 120px;border-radius: 0;}
             .page-03 .pic-box .text-box span{text-align: left;}
@@ -217,7 +219,7 @@
                                         <div class="image"></div>
                                     </div>
                                     <div class="text-box">
-                                        <span><span class="hidden-text">어느 날 아침</span>, 꿀꿀이가 그림을 그리고 있었습니다.</span>
+                                        <span><span class="hidden-text" style="margin-right: 4px;">어느 날 아침</span>, 꿀꿀이가 그림을 그리고 있었습니다.</span>
                                     </div>
                                 </div>
                             </div>
@@ -237,7 +239,7 @@
                                         <div class="image"></div>
                                     </div>
                                     <div class="text-box">
-                                        <span><span class="hidden-text">점심때</span>가 되자 엄마께서 방에 들어오셔서 꾸중하셨습니다.</span>
+                                        <span><span class="hidden-text" style="margin-right: 4px;">점심때</span>가 되자 엄마께서 방에 들어오셔서 꾸중하셨습니다.</span>
                                     </div>
                                 </div>
                             </div>
@@ -277,14 +279,26 @@
                                         <div class="image"></div>
                                     </div>
                                     <div class="text-box">
-                                        <span><span class="hidden-text">잠시 뒤</span>, 꿀꿀이는 멋진 그림을 완성해 엄마께 보여 드렸습니다.</span>
+                                        <span><span class="hidden-text" style="margin-right: 4px;">잠시 뒤</span>, 꿀꿀이는 멋진 그림을 완성해 엄마께 보여 드렸습니다.</span>
                                     </div>
                                 </div>
                             </div>
 
                         </div>
                     </div>
-
+                    <button type="butotn" class="button-helper-02" aria-label="잘했나요? 부족하다면"></button>
+                    <div class="popup-mini helper type-02" data-button=".button-helper-02" style="width:542px">
+                        <div class="box-top">
+                            <div class="popup-title-box">
+                                <span class="popup-title">잘했나요? 부족하다면</span>
+                            </div>
+                            <div class="button-close"></div>
+                        </div>
+                        <div class="box-content">
+                            <div class="bullet-box empty-circle">일이 일어난 차례를 생각하면 이야기를 더 잘 이해할 수 있어요.</div>
+                            <div class="bullet-box empty-circle">차례를 나타내는 말을 살펴보면 이야기의 순서를 쉽게 알 수 있어요.</div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
