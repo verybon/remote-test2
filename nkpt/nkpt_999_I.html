@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <link rel="stylesheet" href="../common/css/audioPlayer.css">
+
+    <style>
+        .ex-aside-box{display: flex;align-items: stretch;justify-content: stretch;}
+        .ex-aside-box .ex-box{width: 30%;padding: 20px 30px;}
+        .ex-aside-box .ex-box .icon + div{height: 100%;}
+        .ex-aside-box .ex-box .item-box{display: flex;flex-direction: column;align-items: center;justify-content: space-around;height: 100%;}
+        .ex-aside-box .ex-box-base{width: 70%;margin-left: 20px;padding:15px 20px 15px 60px;}
+        .ex-aside-box .ex-box-base .rect-num{position: absolute; top:8px; left:-45px; }
+        .ex-aside-box .ex-box-base .rect-num::after{background: #fff; top:0;}
+        .ex-aside-box .ex-box-base-list{position: relative;}
+        .ex-aside-box .ex-box-base-list + .ex-box-base-list{margin-top: 10px;}
+    </style>
+
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main">
+            <div class="header">
+                <h1 class="title-03" aria-label="생각 열기"></h1>
+            </div>
+
+            <!-- 낱말 읽기 -->
+            <div class="content page-01">
+                <div class="direction bullet-box">
+                    <div class="text">
+                        그림에 어울리는 감각적 표현을 찾아보세요.
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="ex-aside-box">
+                        <div class="ex-box align-cc">
+                            <div class="icon"></div>
+                            <div>
+                                <div class="item-box">
+                                    <div class="text">의견</div>
+                                    <div class="text">주제</div>
+                                    <div class="text">결정</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ex-box-base box-base bgcolor-05 color-unit-box-01">
+                            <div class="ex-box-base-list">
+                                <span class="rect-num color-01 num-01"></span>
+                                <div class="text">
+                                    토의 <span class="hidden-text">주제</span> 정하기
+                                </div>
+                            </div>
+                            <div class="ex-box-base-list">
+                                <span class="rect-num color-01 num-02"></span>
+                                <div class="text">
+                                    <span class="hidden-text">의견</span> 마련하기
+                                </div>
+                            </div>
+                            <div class="ex-box-base-list">
+                                <span class="rect-num color-01 num-03"></span>
+                                <div class="text">
+                                    의견 모으기
+                                </div>
+                            </div>
+                            <div class="ex-box-base-list">
+                                <span class="rect-num color-01 num-04"></span>
+                                <div class="text">
+                                    의견 <span class="hidden-text">결정</span>하기
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question bullet-circle">
+            지난 시간에 배운 토의 절차를 떠올려 봅시다.
+        </div>
+
+
+    </div>
+
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/playerProgress.js"></script>
+    <script src="../common/js/audioPlayer.js"></script>
+    <script src="../common/js/content.js"></script>
+
+
+</body>
+
+</html>
