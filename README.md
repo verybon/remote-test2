@@ -1,9 +1,42 @@
 # remote-test2
 
+제주도와 연결된 서쪽을 제외한 성산 일출봉의 동·남·북쪽 외벽은 깎아 내린 듯한 절벽으로 바다와 맞닿아 있다. 일출봉의 서쪽은 고운 잔디 능선 위에 돌기둥과 수백 개의 기암이 우뚝우뚝 솟아 있는데 그 사이에 계단으로 만든 등산로가 나있다. 전설에 따르면 설문대 할망은 일출봉 분화구를 빨래 바구니로 삼고 우도를 빨랫돌로 하여 옷을 매일 세탁했다고 한다.
 
-오름: http://e.tsherpa.co.kr/media/mediaframe.aspx?fcode=A20160807_0119&dataid=11908&duration=&ctype=rest
-거문오름: http://e.tsherpa.co.kr/media/mediaframe.aspx?fcode=A20160807_0121&dataid=11910&duration=&ctype=rest
-용천동굴: 
-http://e.tsherpa.co.kr/media/mediaframe.aspx?fcode=A20160807_0129&dataid=11918&duration=&ctype=rest
-만장굴: http://e.tsherpa.co.kr/media/mediaframe.aspx?fcode=A20160807_0128&dataid=11917&duration=&ctype=rest
-![image](https://user-images.githubusercontent.com/2328191/113382899-a027d880-93bd-11eb-9087-002d6fb389ef.png)
+
+
+
+
+ 
+ 
+  
+  우리는 어리목에서 출발하여 만세 동산을 지나 1700 고지인 윗세오름까지 올라 그곳 산장 휴게소에서 준비해 간 도시락을 먹고 영실로 하산하면서 한라산의 아름다움을 만끽했다.
+
+
+  
+ 
+ 
+  
+  영실에 들어서면 이내 솔밭 사이로 시원한 계곡물이 흐른다.
+
+
+  
+ 
+ 
+  
+  •일출봉은 멀리서 볼 때나, 가까이 다가가 올려다볼 때나, 정상에 올라 분화구를 내려다볼 때나 풍광 그 자체의 아름다움과 감동이 있다.
+
+  
+ 
+ 
+  
+  •오르면 오를수록 이 수직의 기암들이 점점 더 하늘로 치솟아 올라 신비스럽고도 웅장한 모습에 절로 감탄이 나온다.
+
+  
+ 
+ 
+  
+  •언제 올라도 한라산 영실은 아름답다.
+
+  
+ 
+
