@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+
+    <style>
+        .example-box{position: relative;}
+        .example-box .info-box{left:0; right:auto; top:0;}
+         .type-inline{font-size:38px;}
+        .type-inline .text{display:inline;}
+
+        .ex-box{padding-bottom:25px}
+        .box-base {padding:10px 10px 10px 20px}
+        .box-base .grid-9 {padding:5px}
+        .box-base .box-base{padding:10px}
+
+
+        .single-choice{position:relative;
+        margin:0;
+        width:210px;
+    height: 110px;
+    padding: 0;
+    background-color: #F3EEE8;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+    .single-choice .button{
+        width: 83px;
+    height: 83px;
+    background: url(../common/images/selfcheck/button_self_02.png) no-repeat;
+    background-size: 83px 243px;
+    margin-bottom:0;
+    background-position: 0 3px;}
+    .single-choice .button.correct{background-position: 0 -160px;}
+    .single-choice .button.n2.correct{background-position: 0 -160px;}
+    .single-choice .button.n2{background: url(../common/images/selfcheck/button_self_04.png) no-repeat;background-size: 83px 243px;
+    margin-bottom:0;
+    background-position: 0 3px;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal" data-main-tabs="1,2,3,4" data-content="confirm-quiz">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        논설문에서 <span class="ex-rect-icon"></span>와 같은 <span class="click-induced word button-mini-01">표현</span>을 쓰면 무엇이 문제인지 써 보세요.
+                    </div>
+                </div>
+
+                <div class="popup-mini word mini-01" data-button=".button-mini-01" style="width:440px; top:90px; left:460px;">
+                    <div class="box-top">
+                        <div class="popup-title">어휘 쏙쏙</div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="word">표현</div>
+                        <div class="explain-word">
+                            <div>생각이나 느낌 따위를 언어나 몸짓 따위의 형상으로 드러내어 나타냄.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="content-inner" style="margin-top:20px">
+                    <div class="ex-box align-cc">
+                        <div class="icon"></div>
+                        <div>
+                            <div class="item-box">
+                                <div class="bullet-box empty-circle">
+                                    <span class="emp">나는</span> 자전거 타기보다 걷기를 더 <span class="emp">좋아한다</span>. 그래서 걷기는 좋은 운동이다.
+                                </div>
+                                <div class="bullet-box empty-circle">
+                                    <span class="emp">내 생각에</span> 급식 시간에 음식을 남기는 것은 괜찮은 <span class="emp">것 같다</span>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-base bgcolor-03 grid-wrap mgt-s">
+                        <div class="grid-1 ta-c">
+                            문제점
+                        </div>
+                        <div class="box-base grid-6">
+                            <div class="hidden-box">
+                                <div class="text ti">
+                                    ‘나는 ~을/를 좋아한다.’와 같은 주관적인 표현으로는 다른 사람을 논리적으로 설득하기 어렵습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-helper"><span>객관적인 표현
+                </span></div>
+                <div class="popup-mini helper" data-button=".button-helper" style="width: 640px;">
+                    <div class="box-top">
+                        <div class="popup-title-box">
+                            <span class="popup-title">톡톡 도움말</span>
+                            <span class="popup-sub-title">
+                                객관적인 표현
+                            </span>
+                        </div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="text ti">
+                            논설문에서는 자신만의 생각이나 감정에 치우치는 주관적인 표현보다는 사실을 있는 그대로 드러내는 <span class="emp">객관적인 표현</span>을 써야 합니다.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content page-02">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        논설문에서 <span class="ex-rect-icon"></span>와 같은 표현을 쓰면 무엇이 문제인지 써 보세요.
+                    </div>
+                </div>
+
+                <div class="content-inner" style="margin-top:20px">
+                    <div class="ex-box align-cc">
+                        <div class="icon"></div>
+                        <div>
+                            <div class="item-box">
+                                <div class="bullet-box empty-circle">
+                                    <span class="emp">적당히</span> 먹어야 건강에 좋다.
+                                </div>
+                                <div class="bullet-box empty-circle">
+                                    운동회는 우리 학교 전통이니까 <span class="emp">하면 좋겠지만, 재미는 없을 것이다</span>.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="box-base bgcolor-06 grid-wrap mgt-s">
+                        <div class="grid-1 ta-c">
+                            문제점
+                        </div>
+                        <div class="box-base grid-6">
+                            <div class="hidden-box">
+                                <div class="text ti">
+                                    모호한 표현을 사용하면 자신이 말하려는 내용을 다른 사람에게 명확하게 전달할 수 없습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-helper n2"><span>
+                    분명한 표현
+                </span></div>
+                <div class="popup-mini helper" data-button=".button-helper.n2" style="width: 730px;">
+                    <div class="box-top">
+                        <div class="popup-title-box">
+                            <span class="popup-title">톡톡 도움말</span>
+                            <span class="popup-sub-title">
+                                분명한 표현
+                            </span>
+                        </div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="text ti">
+                            모호한 표현은 낱말이나 문장이 나타내는 의미가 분명하지 않아 정확하게 해석할 수 없는 표현입니다. 논설문은 자신의 견해나 관점을 정확하게 표현하는 글이므로 <span class="emp">분명한 표현</span>을 써야 합니다.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content page-03">
+                <div class="bullet-box direction">
+                    <div class="text" style="letter-spacing:-1.5px">
+                        논설문에서 다음과 같은 표현을 쓰면 무엇이 문제인지 생각해 보고, 논설문에 알맞은 표현으로 바꾸어 보세요.
+                    </div>
+                </div>
+
+                <div class="content-inner">
+                    <div class="box-base bgcolor-05">
+                        <div>
+                            <div class="bullet-box empty-circle color-01">
+                                건강하려면 <span class="emp">반드시</span> 밖으로 나가 걸어야 한다.
+                            </div>
+                            <div class="grid-wrap">
+                                <div class="arrow-b grid-1"></div>
+                                <div class="box-base grid-9">
+                                    <div class="hidden-box no-bg">
+                                        <div class="text ti">
+                                            건강하려면 밖으로 나가 걸읍시다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bullet-box empty-circle color-01" style="margin-top:10px">
+                                국립 공원에 <span class="emp">절대로</span> 케이블카를 설치해서는 안 된다.
+                            </div>
+                            <div class="grid-wrap">
+                                <div class="arrow-b grid-1"></div>
+                                <div class="box-base grid-9">
+                                    <div class="hidden-box no-bg">
+                                        <div class="text ti">
+                                            국립 공원에 케이블카를 설치해서는 안 된다.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="button-helper n3"><span>
+                    단정하는 표현
+                </span></div>
+                <div class="popup-mini helper" data-button=".button-helper.n3" style="width: 696px;">
+                    <div class="box-top">
+                        <div class="popup-title-box">
+                            <span class="popup-title">톡톡 도움말</span>
+                            <span class="popup-sub-title">
+                                단정하는 표현
+                            </span>
+                        </div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="text ti">
+                            ‘반드시’, ‘절대로’, ‘결코’와 같이 어떤 사실을 딱 잘라 판단하거나 결정해 <span class="emp">단정하는 표현은 조심해서</span> 써야 해요.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="content page-04" data-content="confirm-quiz">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        이 글에서 다음과 같은 표현을 썼는지 판단해 보세요.
+                    </div>
+                </div>
+                <div class="section-selfcheck mgt-s" >
+                    <div class="selfcheck">
+                        <div class="text-box ti">
+                            주관적인 표현을 썼나요?
+                        </div>
+                        <div class="check-box single-choice" data-quiz="singleChoice" data-answer="1" data-mark="0">
+                            <div class="button n1"></div>
+                            <div class="button n2"></div>
+                        </div>
+                    </div>
+                    <div class="selfcheck">
+                        <div class="text-box ti">
+                            모호한 표현을 썼나요?
+                        </div>
+                        <div class="check-box single-choice" data-quiz="singleChoice" data-answer="1" data-mark="0">
+                            <div class="button n1"></div>
+                            <div class="button n2"></div>
+                        </div>
+                    </div>
+                    <div class="selfcheck">
+                        <div class="text-box ti">
+                            단정하는 표현을 썼나요?
+                        </div>
+                        <div class="check-box single-choice" data-quiz="singleChoice" data-answer="1" data-mark="0">
+                            <div class="button n1"></div>
+                            <div class="button n2"></div>
+                        </div>
+                    </div>
+
+                    <div class="example-box">
+                        <div class="info-box"><span class="emp">기호</span>를 클릭하세요.</div>
+                        <div class="example ico-05">
+                            그렇다
+                        </div>
+                        <div class="example ico-04">
+                            아니다
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+        <div class="teacher-question num-07">
+            <span class="quot-open">「</span>자연 보호는 우리가 꼭 해야 할 일<span class="quot-close">」</span>의 표현이 적절한지 판단해 봅시다.
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+    <script src="../common/js/content.js"></script>
+    <script src="../common/js/quiz.js"></script>
+</body>
+
+</html>
