@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+
+    <!-- gate ani -->
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/resetAll.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/commonAll.css" />
+
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .confirm-quiz .sub-page-01 .round-text-box{height: 120px;}
+        .confirm-quiz .sub-page-01 .right-box .round-text-box{width: 350px;}
+        .confirm-quiz .round-text-box:not(:last-child){margin-bottom: 10px;}
+        .start-point.s-point-01{top: 155px;left: 285px;}
+        .start-point.s-point-02{top: 280px;left: 285px;}
+        .start-point.s-point-03{top: 405px;left: 285px;}
+        .end-point.e-point-01{top: 155px;left: 635px;}
+        .end-point.e-point-02{top: 280px;left: 635px;}
+        .end-point.e-point-03{top: 405px;left: 635px;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main confirm-quiz" data-content="confirm-quiz">
+
+            <div class="quiz-box">
+                <div class="header hide">
+                    <div class="title image-box">
+                        <img src="../common/images/title_confirm_quiz.png" alt="">
+                    </div>
+                    <div class="character">
+                        <div class="image-box">
+                            <img src="../common/images/confirm_quiz_char.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-tab-box" data-sub-tabs="문제 1,문제 2">
+
+                    <div class="sub-content sub-page-01">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text" style="letter-spacing: -1px;">
+                                    기행문에 들어가는 요소에 대한 설명을 찾아 선으로 이으시오.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-content-box">
+                            <div class="left-box">
+                                <div class="round-text-box">감상</div>
+                                <div class="round-text-box">견문</div>
+                                <div class="round-text-box">여정</div>
+                            </div>
+                            <div class="right-box">
+                                <div class="round-text-box">여행하면서 다닌 곳</div>
+                                <div class="round-text-box">여행하면서 <br>보고 들은 것</div>
+                                <div class="round-text-box">여행하면서 <br>생각하거나 느낀 것</div>
+                            </div>
+                        </div>
+
+                        <div class="line-drawing" data-quiz="lineDrawing" data-answer="2;1;0">
+                            <div class="start-point s-point-01">
+                                <div></div>
+                            </div>
+                            <div class="start-point s-point-02">
+                                <div></div>
+                            </div>
+                            <div class="start-point s-point-03">
+                                <div></div>
+                            </div>
+                            <div class="end-point e-point-01">
+                                <div></div>
+                            </div>
+                            <div class="end-point e-point-02">
+                                <div></div>
+                            </div>
+                            <div class="end-point e-point-03">
+                                <div></div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+
+                        <div class="info-box one-line-bottom">각 상자의 <span class="emp">점을 끌어</span> 옳은 답과 연결하세요.</div>
+                    </div>
+
+
+                    <div class="sub-content sub-page-02">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text">견문이 드러난 문장이 <span class="underline">아닌</span> 것을 고르시오.</div>
+                            </div>
+                        </div>
+
+                        <!--
+                            싱글 : data-quiz="singleChoice" data-answer="0"
+                            멀티 : data-quiz="multipleChoice" data-answer="0;3"
+                        -->
+                        <div class="single-choice" data-quiz="singleChoice" data-answer="2">
+                            <div class="button">
+                                <div class="bullet-box circle-num num-01 color-01">
+                                    불국사에는 청운교와 백운교가 있다.
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-02 color-01">
+                                    순천만 습지에서 농게와 짱뚱어를 보았다.
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-03 color-01">
+                                    다음 날 저녁에 들른 곳은 고창 고인돌박물관이다.
+                                </div>
+                            </div>
+                            <br/>
+                            <div class="button">
+                                <div class="bullet-box circle-num num-04 color-01">
+                                    창덕궁이 유네스코 세계 문화유산이 되었다고 한다.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                        <div class="bottom-button button-explain">
+                            <div class="text">해설 확인</div>
+                        </div>
+
+                        <div class="popup-mini explain" data-button=".button-explain">
+                            <div class="box">
+                                <div class="align-cl" style="height: 100%;">
+                                    <span class="bullet-box circle-num num-03 color-01" style="height: 54px;padding-left: 42px;"></span>은 여행하면서 다닌 곳을 설명하고 있으므로 ‘여정’이 드러난 문장입니다.
+                                </div>
+                                <div class="button-close"></div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="gate_container checkquiz">
+            <div class="gate_topbox">
+                <div class="gate_title">확인 문제</div>
+                <div class="gate_btn"><span class="start-button">시작</span></div>
+            </div>
+            <div class="gate_ani">
+                <div id="animation_container">
+                    <canvas id="canvas"></canvas>
+                    <div id="dom_overlay_container" class="gate_ani_cover"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gate ani -->
+    <script src="../common/js/gateAni/createjs-2015.11.26.min.js"></script>
+    <script src="../common/js/gateAni/commonConfirm_Main.js"></script>
+    <script src="../common/js/gateAni/canvasMain.js"></script>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
