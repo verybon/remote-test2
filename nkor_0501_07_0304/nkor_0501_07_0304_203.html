@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .ex-box{padding: 20px 30px;}
+        .item-box .text{margin: 0 30px;}
+        .top-line-box{height: 380px;margin-top: 50px;}
+        .top-line-box .sub-tab-box{height: 360px;}
+        .top-line-box .grid-wrap{align-items: stretch;height: 300px;}
+        .top-line-box .box-base.n1{flex: 9;display: flex;align-items: center;position: relative;height: 300px;border-radius: 40px;}
+        .top-line-box .box-base.n1:before,
+        .top-line-box .box-base.n1:after{content: "";display: block;position: absolute;top: 80px;left: 100%;width: 20px;height: 4px;background: #ff6600;}
+        .top-line-box .box-base.n1:after{top: auto;bottom: 80px;}
+        .top-line-box .sub-page-02 .box-base.n1:before,
+        .top-line-box .sub-page-02 .box-base.n1:after{background: #006ee6;}
+        .top-line-box .sub-page-03 .box-base.n1:before,
+        .top-line-box .sub-page-03 .box-base.n1:after{background: #8532B8;}
+        .top-line-box .box-base.n2{flex: 5;display: flex;flex-direction: column;align-items: center;justify-content: space-between;height: 300px;padding: 15px;border-radius: 60px;}
+        .top-line-box .box-base.n2 > .box-base{width: 100%;padding: 30px 0;border-radius: 60px;text-align: center;}
+        .top-line-box .box-base.n2 > .emp{margin-bottom: 25px;}
+
+        /* .top-line-box .box-base > div{display: flex;align-items: center;justify-content: center;width: 100%;height: 100%;} */
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+
+            <!-- 사실 확인하기 -->
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        기행문에 들어가야 할 내용을 생각해 보세요.
+                    </div>
+                </div>
+                <div class="ex-box align-cc">
+                    <div class="icon"></div>
+                    <div>
+                        <div class="item-box align-cc">
+                            <div class="text">보고 들은 것</div>
+                            <div class="text">다닌 곳</div>
+                            <div class="text">생각하거나 느낀 것</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="top-line-box">
+                    <div class="sub-tab-box" data-sub-tabs="1,2,3">
+                        <div class="sub-content sub-page-01">
+
+                            <div class="grid-wrap">
+                                <div class="box-base bgcolor-05 n1">
+                                    <div class="text ti ls-1p5">우리는  어리목에서 출발하여 만세 동산을 지나 1700 고지인 윗세오름까지 올라 그곳 산장 휴게소에서 준비해 간 도시락을 먹고 영실로 <span class="click-induced word button-mini-01">하산하면서</span> 한라산의 아름다움을 만끽했다.</div>
+                                </div>
+                                <div class="popup-mini word mini-01" data-button=".button-mini-01" style="top: 200px;left: 180px;width: auto;">
+                                    <div class="box-top">
+                                        <div class="popup-title">어휘 쏙쏙</div>
+                                        <div class="button-close"></div>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="word">하산하면서</div>
+                                        <div class="explain-word">
+                                            <div class="text">
+                                                산에서 내려오거나 내려간면서.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="box-base bgcolor-05 n2">
+                                    <div class="box-base">
+                                        여행하면서<br>
+                                        <span class="hidden-text">다닌 곳</span>
+                                    </div>
+                                    <div class="emp">여정</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-content sub-page-02">
+                            <div class="grid-wrap">
+                                <div class="box-base bgcolor-03 n1">
+                                    <div class="text ti" style="letter-spacing: -2px;">영실에 들어서면 <span class="click-induced word button-mini-02">이내</span> 솔밭 사이로 시원한 계곡물이 흐른다.</div>
+                                </div>
+                                <div class="popup-mini word mini-02" data-button=".button-mini-02" style="top: 160px;left: 250px;width: auto;">
+                                    <div class="box-top">
+                                        <div class="popup-title">어휘 쏙쏙</div>
+                                        <div class="button-close"></div>
+                                    </div>
+                                    <div class="box-content">
+                                        <div class="word">이내</div>
+                                        <div class="explain-word">
+                                            <div class="text">
+                                                그때에 곧. 또는 지체함이 없이 바로.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-base bgcolor-03 n2">
+                                    <div class="box-base">
+                                        여행하면서<br>
+                                        <span class="hidden-text">보고 들은  것</span>
+                                    </div>
+                                    <div class="emp">견문</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="sub-content sub-page-03">
+                            <div class="grid-wrap">
+                                <div class="box-base bgcolor-04 n1">
+                                    <div class="text ti">오르면 오를수록 이 수직의 기암들이 점점 더 하늘로 치솟아 올라 신비스럽고도 웅장한 모습에 절로 감탄이 나온다.</div>
+                                </div>
+                                <div class="box-base bgcolor-04 n2">
+                                    <div class="box-base">
+                                        여행하면서<br>
+                                        <span class="hidden-text ls-2">생각하거나 느낀 것</span>
+                                    </div>
+                                    <div class="emp">감상</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-03" style="letter-spacing: -0.7px;">
+            기행문에 들어가야 할 내용을 생각하며 <span class="ex-rect-icon"></span>에서 알맞은 말을 골라 빈칸에 써 봅시다.
+        </div>
+
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/content.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+</body>
+
+</html>
