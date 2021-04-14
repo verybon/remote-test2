@@ -18,8 +18,91 @@
         .page-01 .table .text{font-family: NotoB;color: #00A0FF;font-size: 38px;line-height: 1.4;text-indent: 0;opacity: 1;transition: opacity .3s ease;}
         .page-01 .table .text.hide{opacity: 0;}
 
+
+        .arrow-plus,
+        .arrow-plus:before,
+        .arrow-plus:after{background: #f5f7e5;}
+        .arrow-plus,
+        .arrow-plus:before{box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus.color-01,
+        .arrow-plus.color-01:before,
+        .arrow-plus.color-01:after,
+        .arrow-equal.color-01:before,
+        .arrow-equal.color-01:after{background: #f5f7e5;}
+        .arrow-plus.color-01,
+        .arrow-plus.color-01:before,
+        .arrow-equal.color-01:before,
+        .arrow-equal.color-01:after{box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus.color-02,
+        .arrow-plus.color-02:before,
+        .arrow-plus.color-02:after,
+        .arrow-equal.color-02:before,
+        .arrow-equal.color-02:after{background: #fff9e5;}
+        .arrow-plus.color-02,
+        .arrow-plus.color-02:before,
+        .arrow-equal.color-02:before,
+        .arrow-equal.color-02:after{box-shadow: 0 0 0 4px #ffe899;}
+        .arrow-plus.color-03,
+        .arrow-plus.color-03:before,
+        .arrow-plus.color-03:after,
+        .arrow-equal.color-03:before,
+        .arrow-equal.color-03:after{background: #f1f9fc;}
+        .arrow-plus.color-03,
+        .arrow-plus.color-03:before,
+        .arrow-equal.color-03:before,
+        .arrow-equal.color-03:after{box-shadow: 0 0 0 4px #a8d6f6;}
+        .arrow-plus.color-04,
+        .arrow-plus.color-04:before,
+        .arrow-plus.color-04:after,
+        .arrow-equal.color-04:before,
+        .arrow-equal.color-04:after{background: #f6effb;}
+        .arrow-plus.color-04,
+        .arrow-plus.color-04:before,
+        .arrow-equal.color-04:before,
+        .arrow-equal.color-04:after{box-shadow: 0 0 0 4px #cabee0;}
+        .arrow-plus.color-05,
+        .arrow-plus.color-05:before,
+        .arrow-plus.color-05:after,
+        .arrow-equal.color-05:before,
+        .arrow-equal.color-05:after{background: #fdf3e7;}
+        .arrow-plus.color-05,
+        .arrow-plus.color-05:before,
+        .arrow-equal.color-05:before,
+        .arrow-equal.color-05:after{box-shadow: 0 0 0 4px #ffd89e;}
+        .arrow-plus.color-06,
+        .arrow-plus.color-06:before,
+        .arrow-plus.color-06:after,
+        .arrow-equal.color-06:before,
+        .arrow-equal.color-06:after{background: #ffeef3;}
+        .arrow-plus.color-06,
+        .arrow-plus.color-06:before,
+        .arrow-equal.color-06:before,
+        .arrow-equal.color-06:after{box-shadow: 0 0 0 4px #ffc4c9;}
+        .arrow-plus{position: relative;width: 20px;height: 70px;border-radius: 5px;}
+        .arrow-plus:before,
+        .arrow-plus:after{content: "";display: block;position: absolute;}
+        .arrow-plus:before{top: 25px;left: -25px;width: 70px;height: 20px;border-radius: 5px;}
+        .arrow-plus:after{top: 16px;left: 0;width: 20px;height: 40px;}
+        .arrow-equal{display: flex;flex-direction: column;justify-content: space-between;position: relative;width: 64px;height: 54px;}
+        .arrow-equal:before,
+        .arrow-equal:after{content: "";width: 64px;height: 19px;border-radius: 5px;background: #f5f7e5;box-shadow: 0 0 0 4px #d7dea3;}
         .page-02 .box-base.grid-wrap{width: 100%;padding: 10px;}
-        .page-02 .box-base.grid-wrap .emp{display: block;width: 12%;text-align: center;}
+        .page-02 .box-base.grid-wrap .emp{display: block;width: 110px;padding-right: 10px;text-align: center;}
+        .page-02 .ex-box{margin-bottom: 40px;}
+        .page-02 .ex-box .grid-wrap.n1{margin: 0 0 20px;}
+        .page-02 .ex-box .grid-wrap.n1 .box-base{min-width: 190px;}
+        .page-02 .ex-box .grid-wrap.n2 .emp + .box-base{width: 100%;margin: 0;}
+
+        .page-02 .grid-wrap.n3 .hidden-box{flex-direction: column;}
+        .page-02 .grid-wrap.n3 .grid-1 + .grid-1{margin-left: 20px;}
+        .page-02 .grid-wrap.n3 .arrow-plus,
+        .page-02 .grid-wrap.n3 .arrow-equal{transform: scale(.9);}
+        .page-02 .grid-wrap.n3 .arrow-plus{margin: 0 20px;}
+        .page-02 .grid-wrap.n3 .box-base{min-width: 90px;padding-left: 10px;padding-right: 10px;}
+        .page-02 .grid-wrap.n4{margin-bottom: 20px;}
+        .page-02 .grid-wrap.n4 > * + *{margin-left: 0;}
+        .page-02 .grid-wrap.n5 .emp{width: 110px;padding-right: 10px;}
+        .page-02 .grid-wrap.n5 .emp + .box-base{width: 100%;margin: 0;}
     </style>
 </head>
 
@@ -125,21 +208,71 @@
                     </div>
                 </div>
 
-                <div class="ex-box align-cc">
+                <div class="ex-box align-cc" style="padding: 20px 30px;">
                     <div class="icon"></div>
-                    <div>
-                        <div class="item-box align-cc">
-                            <div class="text">맞히고</div>
-                            <div class="text">마치고</div>
-                            <div class="text">걸음</div>
-                            <div class="text">거름</div>
-                            <div class="text">이따가</div>
-                            <div class="text">있다가</div>
+                    <div style="width: 100%;padding: 0 20px;">
+                        <div class="grid-wrap n1">
+                            <div class="box-base color-05 bgcolor-05">
+                                <div class="text ta-c">방울토마토</div>
+                            </div>
+                            <div class="arrow-equal color-05"></div>
+                            <div class="box-base color-05">
+                                <div class="text ta-c">방울</div>
+                            </div>
+                            <div class="arrow-plus color-05"></div>
+                            <div class="box-base color-05">
+                                <div class="text ta-c">토마토</div>
+                            </div>
                         </div>
-                        <div class="box-base bgcolor-05 grid-wrap">
+                        <div class="box-base bgcolor-05 grid-wrap n2">
                             <span class="emp">뜻</span>
                             <div class="box-base">
                                 <div class="text ti">일반 토마토보다 훨씬 작으며 방울 모양의 토마토</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid-wrap n3">
+                    <div class="grid-1 hidden-box">
+                        <div class="grid-wrap n4">
+                            <div class="box-base color-01 bgcolor-01">
+                                <div class="text ta-c">애호박</div>
+                            </div>
+                            <div class="arrow-equal color-01"></div>
+                            <div class="box-base color-01">
+                                <div class="text ta-c">애-</div>
+                            </div>
+                            <div class="arrow-plus color-01"></div>
+                            <div class="box-base color-01">
+                                <div class="text ta-c">호박</div>
+                            </div>
+                        </div>
+                        <div class="box-base bgcolor-01 grid-wrap n5">
+                            <span class="emp">뜻</span>
+                            <div class="box-base">
+                                <div class="text ti">덜 여문 어린 호박.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-1  hidden-box">
+                        <div class="grid-wrap n4">
+                            <div class="box-base color-06 bgcolor-06">
+                                <div class="text ta-c">산딸기</div>
+                            </div>
+                            <div class="arrow-equal color-06"></div>
+                            <div class="box-base color-06">
+                                <div class="text ta-c">산-</div>
+                            </div>
+                            <div class="arrow-plus color-06"></div>
+                            <div class="box-base color-06">
+                                <div class="text ta-c">딸기</div>
+                            </div>
+                        </div>
+                        <div class="box-base bgcolor-06 grid-wrap n5">
+                            <span class="emp">뜻</span>
+                            <div class="box-base">
+                                <div class="text ti">산에서 나는 딸기.</div>
                             </div>
                         </div>
                     </div>
