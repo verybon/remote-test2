@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .top-line-box .sub-content{flex-direction: column;justify-content: flex-start;}
+        .pic-wrap{align-items: center;width: 100%;margin: 0 0 20px;}
+        .pic-box{width: 30%;height: 360px;background-color: #fdf3e7;}
+        .page-02 .pic-box{border: 5px solid #f5f7e5;background-color: #f5f7e5;}
+        .pic-box + .pic-box{margin-left: 20px;}
+        .pic-box .image-box{height: calc(100% - 80px);}
+        .pic-box .click-induced.pic{height: 100%;}
+        .pic-box .text-box{height: 80px;background-color: transparent;}
+        .pic-box .hidden-text{background: transparent;}
+        .hidden-box .click-induced.pic::after{display: none;}
+        .hidden-box.on .click-induced.pic::after{display: block;}
+        .grid-wrap.n1{padding: 10px;}
+        .grid-wrap.n1 .emp{width: 100px;padding-left: 10px;text-align: center;}
+        .grid-wrap.n1 .box-base{width: 100%;}
+
+        .arrow-plus,
+        .arrow-plus:before,
+        .arrow-plus:after{background: #f5f7e5;}
+        .arrow-plus,
+        .arrow-plus:before{box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus.color-01,
+        .arrow-plus.color-01:before,
+        .arrow-plus.color-01:after,
+        .arrow-equal.color-01:before,
+        .arrow-equal.color-01:after{background: #f5f7e5;}
+        .arrow-plus.color-01,
+        .arrow-plus.color-01:before,
+        .arrow-equal.color-01:before,
+        .arrow-equal.color-01:after{box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus.color-02,
+        .arrow-plus.color-02:before,
+        .arrow-plus.color-02:after,
+        .arrow-equal.color-02:before,
+        .arrow-equal.color-02:after{background: #fff9e5;}
+        .arrow-plus.color-02,
+        .arrow-plus.color-02:before,
+        .arrow-equal.color-02:before,
+        .arrow-equal.color-02:after{box-shadow: 0 0 0 4px #ffe899;}
+        .arrow-plus.color-03,
+        .arrow-plus.color-03:before,
+        .arrow-plus.color-03:after,
+        .arrow-equal.color-03:before,
+        .arrow-equal.color-03:after{background: #f1f9fc;}
+        .arrow-plus.color-03,
+        .arrow-plus.color-03:before,
+        .arrow-equal.color-03:before,
+        .arrow-equal.color-03:after{box-shadow: 0 0 0 4px #a8d6f6;}
+        .arrow-plus.color-04,
+        .arrow-plus.color-04:before,
+        .arrow-plus.color-04:after,
+        .arrow-equal.color-04:before,
+        .arrow-equal.color-04:after{background: #f6effb;}
+        .arrow-plus.color-04,
+        .arrow-plus.color-04:before,
+        .arrow-equal.color-04:before,
+        .arrow-equal.color-04:after{box-shadow: 0 0 0 4px #cabee0;}
+        .arrow-plus.color-05,
+        .arrow-plus.color-05:before,
+        .arrow-plus.color-05:after,
+        .arrow-equal.color-05:before,
+        .arrow-equal.color-05:after{background: #fdf3e7;}
+        .arrow-plus.color-05,
+        .arrow-plus.color-05:before,
+        .arrow-equal.color-05:before,
+        .arrow-equal.color-05:after{box-shadow: 0 0 0 4px #ffd89e;}
+        .arrow-plus.color-06,
+        .arrow-plus.color-06:before,
+        .arrow-plus.color-06:after,
+        .arrow-equal.color-06:before,
+        .arrow-equal.color-06:after{background: #ffeef3;}
+        .arrow-plus.color-06,
+        .arrow-plus.color-06:before,
+        .arrow-equal.color-06:before,
+        .arrow-equal.color-06:after{box-shadow: 0 0 0 4px #ffc4c9;}
+        .arrow-plus{position: relative;width: 69px;height: 20px;margin-top: 17px;margin-bottom: 17px;border-radius: 5px;}
+        .arrow-plus:before,
+        .arrow-plus:after{content: "";display: block;position: absolute;}
+        .arrow-plus:before{top: -24px;left: 24px;width: 20px;height: 69px;border-radius: 5px;}
+        .arrow-plus:after{top: 0;left: 15px;width: 40px;height: 20px;}
+        .arrow-equal{display: flex;flex-direction: column;justify-content: space-between;position: relative;width: 64px;height: 52px;}
+        .arrow-equal:before,
+        .arrow-equal:after{content: "";width: 60px;height: 18px;border-radius: 5px;background: #f5f7e5;box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus,
+        .arrow-equal{transform: scale(.8);}
+
+        .grid-wrap.n1 .hidden-text{justify-content: flex-start;width: 100%;padding: 0;background: transparent;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal" data-main-tabs="1,2,3">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        그림을 보고 ‘풋 -’의 뜻을 말해 보세요.
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="pic-wrap">
+                        <div class="pic-box">
+                            <!-- <div class="rect-num num-01 color-01"></div> -->
+                            <div class="image-box">
+                                <div class="click-induced pic button-pic-01">
+                                    <div class="image"
+                                    style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_203_1.png') no-repeat 50% 50% / cover;"></div>
+                                </div>
+                            </div>
+                            <div class="text-box align-cc">
+                                <div class="text">
+                                    <span style="color: #006ee6;">풋</span>고추
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pic-box">
+                            <!-- <div class="rect-num num-02 color-01"></div> -->
+                            <div class="image-box">
+                                <div class="click-induced pic button-pic-02">
+                                    <div class="image"
+                                    style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_203_2.png') no-repeat 50% 50% / cover;"></div>
+                                </div>
+                            </div>
+                            <div class="text-box align-cc">
+                                <span style="color: #006ee6;">풋</span>밤
+                            </div>
+                        </div>
+                        <div class="pic-box">
+                            <!-- <div class="rect-num num-03 color-01"></div> -->
+                            <div class="image-box">
+                                <div class="click-induced pic button-pic-03">
+                                    <div class="image text"
+                                    style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_203_3.png') no-repeat 50% 50% / cover;"></div>
+                                </div>
+                            </div>
+                            <div class="text-box align-cc">
+                                <span style="color: #006ee6;">풋</span>사과
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-base bgcolor-05 grid-wrap n1">
+                        <span class="emp">뜻</span>
+                        <div class="box-base">
+                            <div class="hidden-text">
+                                <div class="text ti">‘처음 나온.’ 또는 ‘덜 익은.’이라는 뜻입니다.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content page-02">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        그림을 보고 ‘- 꾼’의 뜻을 말해 보세요.
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="pic-wrap">
+                        <div class="pic-box">
+                            <!-- <div class="rect-num num-01 color-01"></div> -->
+                            <div class="image-box">
+                                <div class="click-induced pic button-pic-04">
+                                    <div class="image"
+                                    style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_203_4.png') no-repeat 50% 50% / cover;"></div>
+                                </div>
+                            </div>
+                            <div class="text-box align-cc">
+                                <div class="text">
+                                    나무<span style="color: #006ee6;">꾼</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pic-box">
+                            <!-- <div class="rect-num num-02 color-01"></div> -->
+                            <div class="image-box">
+                                <div class="click-induced pic button-pic-05">
+                                    <div class="image"
+                                    style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_203_5.png') no-repeat 50% 50% / cover;"></div>
+                                </div>
+                            </div>
+                            <div class="text-box align-cc">
+                                소리<span style="color: #006ee6;">꾼</span>
+                            </div>
+                        </div>
+                        <div class="pic-box">
+                            <!-- <div class="rect-num num-03 color-01"></div> -->
+                            <div class="image-box">
+                                <div class="click-induced pic button-pic-06">
+                                    <div class="image text"
+                                    style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_203_6.png') no-repeat 50% 50% / cover;"></div>
+                                </div>
+                            </div>
+                            <div class="text-box align-cc">
+                                낚시<span style="color: #006ee6;">꾼</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-base bgcolor-01 grid-wrap n1">
+                        <span class="emp">뜻</span>
+                        <div class="box-base">
+                            <div class="text ti">‘어떤 일을 전문적으로 하는 사람.’ 또는 ‘어떤 일을 잘하는 사람.’ 또는 ‘어떤 일을 즐겨 하는 사람.’이라는 뜻입니다.</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="content page-03">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        ‘풋 -’과 ‘- 꾼’의 뜻을 생각하며 여러 가지 낱말을 만들어 보세요.
+                    </div>
+                </div>
+                <div class="info-box one-line-bottom"><span class="emp">인물</span>을 클릭하세요.</div>
+                <div class="content-inner char-content">
+                    <div class="ani-box">
+                        <div class="char-bg-ani-box" data-name="char02" data-color="color-08" data-tail="tail-01" data-audio="./media/audios/nkor_0601_01_0304_204.mp3"></div>
+                    </div>
+
+                    <div class="table-box color-03" style="height: 420px;">
+                        <table class="table">
+                            <!-- <caption>Table Caption</caption> -->
+                            <colgroup>
+                                <col style="width:30%" />
+                                <col style="width:auto">
+                                <!-- <col style="width:90%" /> -->
+                            </colgroup>
+                            <tbody>
+                                <tr style="height:150px">
+                                    <th>풋-</th>
+                                    <td class="pd-none">
+                                        <div class="input-box">
+                                            <textarea name="" id="" placeholder="직접 쓰기"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr style="height:150px">
+                                    <th>-꾼</th>
+                                    <td class="pd-none">
+                                        <div class="input-box">
+                                            <textarea name="" id="" placeholder="직접 쓰기"></textarea>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- 여아 1 -->
+                <div class="praise-box" data-type="1">
+                    <div class="praise-button"></div>
+                    <canvas class="praise-animation"></canvas>
+                </div>
+
+                <div class="button-helper">
+                    <span>‘풋-’, ‘-꾼’</span>
+                </div>
+                <div class="popup-mini helper" data-button=".button-helper" style="width: 620px;">
+                    <div class="box-top">
+                        <div class="popup-title-box">
+                            <span class="popup-title">톡톡 도움말</span>
+                            <span class="popup-sub-title"></span>
+                        </div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="ti">
+                            ‘풋 -’, ‘- 꾼’ 따위는 다른 낱말에 붙어 새로운 낱말을 만들고 뜻을 더해 줘요
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-03" style="letter-spacing: -1px;">
+            파란색으로 쓰인 말의 뜻을 생각하며 복합어를 더 만들어 봅시다.
+        </div>
+
+        <div class="popup-full-pic">
+            <div class="popup-pic" data-button=".button-pic-01;.button-pic-02;.button-pic-03" style="width: 1080px;">
+                <div class="tab-content-box">
+                    <div class="tab-content content-01">
+                        <!-- 세로형 이미지 -->
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_203_1.png') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-02">
+                         <!-- 가로형 이미지 -->
+                        <div class="image-box full-w">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_203_2.png') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-03">
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_203_3.png') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-box">
+                    <div class="prev-button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="next-button"></div>
+                </div>
+                <div class="button-close"></div>
+            </div>
+
+        </div>
+
+        <div class="popup-full-pic">
+            <div class="popup-pic" data-button=".button-pic-04;.button-pic-05;.button-pic-06" style="width: 1080px;">
+                <div class="tab-content-box">
+                    <div class="tab-content content-01">
+                        <!-- 세로형 이미지 -->
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_203_4.png') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-02">
+                         <!-- 가로형 이미지 -->
+                        <div class="image-box full-w">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_203_5.png') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-03">
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_203_6.png') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-box">
+                    <div class="prev-button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="next-button"></div>
+                </div>
+                <div class="button-close"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
