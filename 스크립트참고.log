@@ -1,4 +1,21 @@
 <script>
+    /* nkor_0501_08_0100_204 */
+    (function(){
+        var btn_find_word = document.querySelectorAll( ".btn-find-word" );
+        for (var i = 0; i < btn_find_word.length; i++){
+            btn_find_word[i].addEventListener( "click", clickAct1 );
+
+        }
+        function clickAct1(e){
+            var word_find_tg = this.getAttribute( "data-targetname" );
+            console.log( document.querySelector( "." + word_find_tg )  )
+            document.querySelector( "." + word_find_tg ).classList.remove( "hide" );
+        }
+    })();
+
+
+
+
     (function(){
         var bt_hidden_text1 = document.querySelectorAll( ".content-01 .hidden-text" );
         var bt_hidden_text2 = document.querySelectorAll( ".content-02 .hidden-text" );
