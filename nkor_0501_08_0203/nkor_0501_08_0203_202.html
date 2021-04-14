@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .top-line-box .sub-content{flex-direction: column;justify-content: flex-start;}
+        .pic-wrap{align-items: center;width: 100%;margin: 0 0 20px;}
+        .pic-box{width: 30%;height: 360px;background-color: #fdf3e7;}
+        .pic-box + .pic-box{margin-left: 20px;}
+        .pic-box .image-box{height: calc(100% - 80px);}
+        .pic-box .click-induced.pic{height: 100%;}
+        .pic-box .text-box{height: 80px;background-color: transparent;}
+        .pic-box .hidden-text{background: transparent;}
+        .hidden-box .click-induced.pic::after{display: none;}
+        .hidden-box.on .click-induced.pic::after{display: block;}
+        .grid-wrap.n1{padding: 10px;}
+        .grid-wrap.n1 .emp{width: 100px;padding-left: 10px;text-align: center;}
+        .grid-wrap.n1 .box-base{width: 100%;}
+
+        .arrow-plus,
+        .arrow-plus:before,
+        .arrow-plus:after{background: #f5f7e5;}
+        .arrow-plus,
+        .arrow-plus:before{box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus.color-01,
+        .arrow-plus.color-01:before,
+        .arrow-plus.color-01:after,
+        .arrow-equal.color-01:before,
+        .arrow-equal.color-01:after{background: #f5f7e5;}
+        .arrow-plus.color-01,
+        .arrow-plus.color-01:before,
+        .arrow-equal.color-01:before,
+        .arrow-equal.color-01:after{box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus.color-02,
+        .arrow-plus.color-02:before,
+        .arrow-plus.color-02:after,
+        .arrow-equal.color-02:before,
+        .arrow-equal.color-02:after{background: #fff9e5;}
+        .arrow-plus.color-02,
+        .arrow-plus.color-02:before,
+        .arrow-equal.color-02:before,
+        .arrow-equal.color-02:after{box-shadow: 0 0 0 4px #ffe899;}
+        .arrow-plus.color-03,
+        .arrow-plus.color-03:before,
+        .arrow-plus.color-03:after,
+        .arrow-equal.color-03:before,
+        .arrow-equal.color-03:after{background: #f1f9fc;}
+        .arrow-plus.color-03,
+        .arrow-plus.color-03:before,
+        .arrow-equal.color-03:before,
+        .arrow-equal.color-03:after{box-shadow: 0 0 0 4px #a8d6f6;}
+        .arrow-plus.color-04,
+        .arrow-plus.color-04:before,
+        .arrow-plus.color-04:after,
+        .arrow-equal.color-04:before,
+        .arrow-equal.color-04:after{background: #f6effb;}
+        .arrow-plus.color-04,
+        .arrow-plus.color-04:before,
+        .arrow-equal.color-04:before,
+        .arrow-equal.color-04:after{box-shadow: 0 0 0 4px #cabee0;}
+        .arrow-plus.color-05,
+        .arrow-plus.color-05:before,
+        .arrow-plus.color-05:after,
+        .arrow-equal.color-05:before,
+        .arrow-equal.color-05:after{background: #fdf3e7;}
+        .arrow-plus.color-05,
+        .arrow-plus.color-05:before,
+        .arrow-equal.color-05:before,
+        .arrow-equal.color-05:after{box-shadow: 0 0 0 4px #ffd89e;}
+        .arrow-plus.color-06,
+        .arrow-plus.color-06:before,
+        .arrow-plus.color-06:after,
+        .arrow-equal.color-06:before,
+        .arrow-equal.color-06:after{background: #ffeef3;}
+        .arrow-plus.color-06,
+        .arrow-plus.color-06:before,
+        .arrow-equal.color-06:before,
+        .arrow-equal.color-06:after{box-shadow: 0 0 0 4px #ffc4c9;}
+        .arrow-plus{position: relative;width: 69px;height: 20px;margin-top: 17px;margin-bottom: 17px;border-radius: 5px;}
+        .arrow-plus:before,
+        .arrow-plus:after{content: "";display: block;position: absolute;}
+        .arrow-plus:before{top: -24px;left: 24px;width: 20px;height: 69px;border-radius: 5px;}
+        .arrow-plus:after{top: 0;left: 15px;width: 40px;height: 20px;}
+        .arrow-equal{display: flex;flex-direction: column;justify-content: space-between;position: relative;width: 64px;height: 52px;}
+        .arrow-equal:before,
+        .arrow-equal:after{content: "";width: 60px;height: 18px;border-radius: 5px;background: #f5f7e5;box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus,
+        .arrow-equal{transform: scale(.8);}
+
+        .grid-wrap.n1 .hidden-text{justify-content: flex-start;width: 100%;padding: 0;background: transparent;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+
+            <div class="content page-02">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        어떤 낱말을 합해 다른 한 낱말을 만들었는지 알아보세요.
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="top-line-box">
+                        <div class="sub-tab-box" data-sub-tabs="보기,1,2">
+                            <div class="sub-content sub-page-01">
+                                <div class="pic-wrap">
+                                    <div class="pic-box pic-box-01">
+                                        <!-- <div class="rect-num num-01 color-01"></div> -->
+                                        <div class="image-box">
+                                            <div class="click-induced pic button-pic-01">
+                                                <div class="image"
+                                                style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_202_1.jpg') no-repeat 50% 50% / cover;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-box align-cc">
+                                            <div class="text">
+                                                구름다리
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="arrow-equal color-05"></div>
+                                    <div class="pic-box pic-box-02">
+                                        <!-- <div class="rect-num num-02 color-01"></div> -->
+                                        <div class="image-box">
+                                            <div class="click-induced pic button-pic-02">
+                                                <div class="image"
+                                                style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_202_2.jpg') no-repeat 50% 50% / cover;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-box align-cc">
+                                            구름
+                                        </div>
+                                    </div>
+                                    <div class="arrow-plus color-05"></div>
+                                    <div class="pic-box pic-box-03">
+                                        <!-- <div class="rect-num num-03 color-01"></div> -->
+                                        <div class="image-box">
+                                            <div class="click-induced pic button-pic-03">
+                                                <div class="image text"
+                                                style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_202_3.jpg') no-repeat 50% 50% / cover;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-box align-cc">
+                                            다리
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-base bgcolor-05 grid-wrap n1">
+                                    <span class="emp">뜻</span>
+                                    <div class="box-base">
+                                        <div class="text ti">도로나 계곡 따위를 건너 질러 공중에 걸쳐 놓은 다리.</div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="sub-content sub-page-02">
+                                <div class="pic-wrap">
+                                    <div class="pic-box pic-box-01">
+                                        <!-- <div class="rect-num num-01 color-01"></div> -->
+                                        <div class="image-box">
+                                            <div class="click-induced pic button-pic-04">
+                                                <div class="image"
+                                                style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_202_4.jpg') no-repeat 50% 50% / cover;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-box align-cc">
+                                            <div class="text">
+                                                김밥
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="arrow-equal color-05"></div>
+                                    <div class="pic-box pic-box-02">
+                                        <!-- <div class="rect-num num-02 color-01"></div> -->
+                                        <div class="image-box">
+                                            <div class="click-induced pic button-pic-05">
+                                                <div class="image"
+                                                style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_202_5.jpg') no-repeat 50% 50% / cover;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-box align-cc">
+                                            <span class="hidden-text">김</span>
+                                        </div>
+                                    </div>
+                                    <div class="arrow-plus color-05"></div>
+                                    <div class="pic-box pic-box-03">
+                                        <!-- <div class="rect-num num-03 color-01"></div> -->
+                                        <div class="image-box">
+                                            <div class="click-induced pic button-pic-06">
+                                                <div class="image text"
+                                                style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_202_6.jpg') no-repeat 50% 50% / cover;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-box align-cc">
+                                            <span class="hidden-text">밥</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-base bgcolor-05 grid-wrap n1">
+                                    <span class="emp">뜻</span>
+                                    <div class="box-base">
+                                        <div class="hidden-text">
+                                            <div class="ti">여러 가지 재료를 김 속에 넣어 만든 음식.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="sub-content sub-page-03">
+                                <div class="pic-wrap">
+                                    <div class="pic-box pic-box-01">
+                                        <!-- <div class="rect-num num-01 color-01"></div> -->
+                                        <div class="image-box">
+                                            <div class="click-induced pic button-pic-07">
+                                                <div class="image"
+                                                style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_202_7.jpg') no-repeat 50% 50% / cover;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-box align-cc">
+                                            <span class="hidden-text">김</span>
+                                        </div>
+
+                                    </div>
+                                    <div class="arrow-equal color-05"></div>
+                                    <div class="pic-box pic-box-02">
+                                        <!-- <div class="rect-num num-02 color-01"></div> -->
+                                        <div class="image-box">
+                                            <div class="click-induced pic button-pic-08">
+                                                <div class="image"
+                                                style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_202_8.jpg') no-repeat 50% 50% / cover;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-box align-cc">
+                                            <div class="text">
+                                                새우
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="arrow-plus color-05"></div>
+                                    <div class="pic-box pic-box-03">
+                                        <!-- <div class="rect-num num-03 color-01"></div> -->
+                                        <div class="image-box">
+                                            <div class="click-induced pic button-pic-09">
+                                                <div class="image text"
+                                                style="width: 100%;height: 100%;background: #fff url('./images/nkor_0501_08_0203_202_9.jpg') no-repeat 50% 50% / cover;"></div>
+                                            </div>
+                                        </div>
+                                        <div class="text-box align-cc">
+                                            <div class="text">
+                                                잠
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-base bgcolor-05 grid-wrap n1">
+                                    <span class="emp">뜻</span>
+                                    <div class="box-base">
+                                        <div class="hidden-text">
+                                            <div class="ti">새우처럼 등을 구부리고 자는 잠.</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-05" style="letter-spacing: -1px;">
+            <span class="ex-rect-icon"></span>를 보고 어떤 낱말을 합해 다른 한 낱말을 만들었는지 알아봅시다.
+        </div>
+
+        <div class="popup-full-pic">
+            <div class="popup-pic" data-button=".button-pic-01;.button-pic-02;.button-pic-03" style="width: 1080px;">
+                <div class="tab-content-box">
+                    <div class="tab-content content-01">
+                        <!-- 세로형 이미지 -->
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_202_1.jpg') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-02">
+                         <!-- 가로형 이미지 -->
+                        <div class="image-box full-w">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_202_2.jpg') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-03">
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_202_3.jpg') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-box">
+                    <div class="prev-button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="next-button"></div>
+                </div>
+                <div class="button-close"></div>
+            </div>
+
+        </div>
+
+        <div class="popup-full-pic">
+            <div class="popup-pic" data-button=".button-pic-04;.button-pic-05;.button-pic-06" style="width: 1080px;">
+                <div class="tab-content-box">
+                    <div class="tab-content content-01">
+                        <!-- 세로형 이미지 -->
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_202_4.jpg') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-02">
+                         <!-- 가로형 이미지 -->
+                        <div class="image-box full-w">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_202_5.jpg') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-03">
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_202_6.jpg') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-box">
+                    <div class="prev-button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="next-button"></div>
+                </div>
+                <div class="button-close"></div>
+            </div>
+
+        </div>
+
+        <div class="popup-full-pic">
+            <div class="popup-pic" data-button=".button-pic-07;.button-pic-08;.button-pic-09" style="width: 1080px;">
+                <div class="tab-content-box">
+                    <div class="tab-content content-01">
+                        <!-- 세로형 이미지 -->
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_202_7.jpg') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-02">
+                         <!-- 가로형 이미지 -->
+                        <div class="image-box full-w">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_202_8.jpg') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content content-03">
+                        <div class="image-box full-h">
+                            <div class="image" style="background: url('./images/nkor_0501_08_0203_202_9.jpg') no-repeat 50% 50% / cover; width:100%; height:100%;"></div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="button-box">
+                    <div class="prev-button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="button"></div>
+                    <div class="next-button"></div>
+                </div>
+                <div class="button-close"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
