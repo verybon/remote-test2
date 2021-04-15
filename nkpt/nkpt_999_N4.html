@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+
+    <style>
+        .pic-box{width: 640px;}
+        .pic-box .image-box,
+        .pic-box .click-induced.pic{height: calc(100% - 80px);}
+        .pic-box .text-box{justify-content: center;width: 100%;height: 80px;border-radius: 0;text-align: center;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        사진을 보고 낱말을 어떻게 만들었는지 생각해 보세요.
+                    </div>
+                </div>
+                <div class="info-box"><span class="emp">인물</span>을 클릭하세요.</div>
+
+                <div class="content-inner char-content type-right">
+                    <div class="ani-box" style="bottom:110px">
+                        <div class="char-bg-ani-box" data-name="char05" data-color="color-08" data-tail="tail-01" data-audio="./media/audios/nkor_0501_08_0203_201.mp3"></div>
+                    </div>
+
+                    <div class="pic-box pic-box-01">
+                        <!-- <div class="rect-num num-01 color-01"></div> -->
+                        <div class="click-induced pic button-pic-01">
+                            <div class="image-box" style="width: 100%;height: 100%;background:url(./images/nkor_0501_08_0203_201.jpg) no-repeat 50% 50% / cover;">
+                            </div>
+                        </div>
+                        <div class="text-box">
+                           구름다리
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="teacher-question num-01" style="letter-spacing: -2.8px;">
+            사진을 보고 낱말을 어떻게 만들었는지 생각해 봅시다.
+        </div>
+
+        <div class="popup-full-pic">
+            <div class="popup-pic" data-button=".button-pic-01">
+                <div class="tab-content-box">
+                    <div class="tab-content content-01">
+                        <div class="image-box"
+                         style="background:url(./images/nkor_0501_08_0203_201.jpg) no-repeat 50% 50% / cover; width:100%; height:100%;">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-box hide">
+                    <div class="prev-button"></div>
+                    <div class="button"></div>
+                    <div class="next-button"></div>
+                </div>
+                <div class="button-close"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/content.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+</body>
+
+</html>

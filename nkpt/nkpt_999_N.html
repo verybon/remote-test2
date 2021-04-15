@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+
+    <style>
+        .page-01 .box-base-wrap{display: flex;align-items: center;flex-wrap: wrap;justify-content: space-between;}
+        .page-01 .box-base-wrap > button{width: calc(25% - 10px);margin: 0 0 20px;}
+        .page-01 .table + .table{border-top: 2px solid #d5c5e0;}
+        .page-01 .table td{text-align: center;}
+        .page-01 .table .text{font-family: NotoB;color: #00A0FF;font-size: 38px;line-height: 1.4;text-indent: 0;opacity: 1;transition: opacity .3s ease;}
+        .page-01 .table .text.hide{opacity: 0;}
+
+
+        .arrow-plus,
+        .arrow-plus:before,
+        .arrow-plus:after{background: #f5f7e5;}
+        .arrow-plus,
+        .arrow-plus:before{box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus.color-01,
+        .arrow-plus.color-01:before,
+        .arrow-plus.color-01:after,
+        .arrow-equal.color-01:before,
+        .arrow-equal.color-01:after{background: #f5f7e5;}
+        .arrow-plus.color-01,
+        .arrow-plus.color-01:before,
+        .arrow-equal.color-01:before,
+        .arrow-equal.color-01:after{box-shadow: 0 0 0 4px #d7dea3;}
+        .arrow-plus.color-02,
+        .arrow-plus.color-02:before,
+        .arrow-plus.color-02:after,
+        .arrow-equal.color-02:before,
+        .arrow-equal.color-02:after{background: #fff9e5;}
+        .arrow-plus.color-02,
+        .arrow-plus.color-02:before,
+        .arrow-equal.color-02:before,
+        .arrow-equal.color-02:after{box-shadow: 0 0 0 4px #ffe899;}
+        .arrow-plus.color-03,
+        .arrow-plus.color-03:before,
+        .arrow-plus.color-03:after,
+        .arrow-equal.color-03:before,
+        .arrow-equal.color-03:after{background: #f1f9fc;}
+        .arrow-plus.color-03,
+        .arrow-plus.color-03:before,
+        .arrow-equal.color-03:before,
+        .arrow-equal.color-03:after{box-shadow: 0 0 0 4px #a8d6f6;}
+        .arrow-plus.color-04,
+        .arrow-plus.color-04:before,
+        .arrow-plus.color-04:after,
+        .arrow-equal.color-04:before,
+        .arrow-equal.color-04:after{background: #f6effb;}
+        .arrow-plus.color-04,
+        .arrow-plus.color-04:before,
+        .arrow-equal.color-04:before,
+        .arrow-equal.color-04:after{box-shadow: 0 0 0 4px #cabee0;}
+        .arrow-plus.color-05,
+        .arrow-plus.color-05:before,
+        .arrow-plus.color-05:after,
+        .arrow-equal.color-05:before,
+        .arrow-equal.color-05:after{background: #fdf3e7;}
+        .arrow-plus.color-05,
+        .arrow-plus.color-05:before,
+        .arrow-equal.color-05:before,
+        .arrow-equal.color-05:after{box-shadow: 0 0 0 4px #ffd89e;}
+        .arrow-plus.color-06,
+        .arrow-plus.color-06:before,
+        .arrow-plus.color-06:after,
+        .arrow-equal.color-06:before,
+        .arrow-equal.color-06:after{background: #ffeef3;}
+        .arrow-plus.color-06,
+        .arrow-plus.color-06:before,
+        .arrow-equal.color-06:before,
+        .arrow-equal.color-06:after{box-shadow: 0 0 0 4px #ffc4c9;}
+        .arrow-plus{position: relative;width: 69px;height: 20px;margin-top: 17px;margin-bottom: 17px;border-radius: 5px;}
+        .arrow-plus:before,
+        .arrow-plus:after{content: "";display: block;position: absolute;}
+        .arrow-plus:before{top: -24px;left: 24px;width: 20px;height: 69px;border-radius: 5px;}
+        .arrow-plus:after{top: 0;left: 15px;width: 40px;height: 20px;}
+        .arrow-equal{display: flex;flex-direction: column;justify-content: space-between;position: relative;width: 64px;height: 52px;}
+        .arrow-equal:before,
+        .arrow-equal:after{content: "";width: 60px;height: 18px;border-radius: 5px;background: #f5f7e5;box-shadow: 0 0 0 4px #d7dea3;}
+        .page-01 .box-base.grid-wrap{width: 100%;padding: 10px;}
+        .page-01 .box-base.grid-wrap .emp{display: block;width: 110px;padding-right: 10px;text-align: center;}
+        .page-01 .ex-box{margin-bottom: 40px;}
+        .page-01 .ex-box .grid-wrap.n1{margin: 0 0 20px;}
+        .page-01 .ex-box .grid-wrap.n1 .box-base{min-width: 190px;}
+        .page-01 .ex-box .grid-wrap.n2 .emp + .box-base{width: 100%;margin: 0;}
+
+        .page-01 .grid-wrap.n3 + .grid-wrap.n3{margin-top: 20px;}
+        .page-01 .grid-wrap.n3 .hidden-box{flex-direction: column;}
+        .page-01 .grid-wrap.n3 .grid-1 + .grid-1{margin-left: 20px;}
+        .page-01 .grid-wrap.n3 .arrow-plus,
+        .page-01 .grid-wrap.n3 .arrow-equal{transform: scale(.9);}
+        .page-01 .grid-wrap.n3 .box-base{min-width: 90px;padding-left: 10px;padding-right: 10px;}
+        .page-01 .grid-wrap.n4{margin-bottom: 10px;}
+        .page-01 .grid-wrap.n4 > * + *{margin-left: 0;}
+        .page-01 .grid-wrap.n5 .emp{width: 80px;padding-right: 10px;}
+        .page-01 .grid-wrap.n5 .emp + .box-base{display: flex;align-items: center;justify-content: center;width: 100%;min-height: 130px;margin: 0;padding: 10px;}
+        .hidden-text{width: 100%;padding: 0;background: transparent;text-align: center;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <div class="title-02" aria-label="교과서 활동"></div>
+            </div>
+
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        낱말의 짜임을 생각하며 낱말의 뜻을 짐작해 써 보세요.
+                    </div>
+                </div>
+
+                <div class="grid-wrap n3">
+                    <div class="grid-1">
+                        <div class="grid-wrap n4">
+                            <div class="box-base color-06 bgcolor-06">
+                                <div class="text ta-c">책가방</div>
+                            </div>
+                            <div class="arrow-equal color-06"></div>
+                            <div class="box-base color-06">
+                                <div class="text ta-c">책</div>
+                            </div>
+                            <div class="arrow-plus color-06"></div>
+                            <div class="box-base color-06">
+                                <div class="text ta-c">가방</div>
+                            </div>
+                        </div>
+                        <div class="box-base bgcolor-06 grid-wrap n5">
+                            <span class="emp">뜻</span>
+                            <div class="box-base ta-c" style="letter-spacing: -2px;">
+                                <div class="text">책이나 학용품 따위를 넣어서 들고 다니는 가방.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-1">
+                        <div class="grid-wrap n4">
+                            <div class="box-base color-01 bgcolor-01">
+                                <div class="text ta-c">돌다리</div>
+                            </div>
+                            <div class="arrow-equal color-01"></div>
+                            <div class="box-base color-01">
+                                <div class="hidden-text ta-c" data-group="1">돌</div>
+                            </div>
+                            <div class="arrow-plus color-01"></div>
+                            <div class="box-base color-01">
+                                <div class="hidden-text ta-c" data-group="1">다리</div>
+                            </div>
+                        </div>
+                        <div class="box-base bgcolor-01 grid-wrap n5">
+                            <span class="emp">뜻</span>
+                            <div class="box-base">
+                                <div class="hidden-text show-icon" data-group="1">돌로 만든 다리.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="grid-wrap n3">
+                    <div class="grid-1">
+                        <div class="grid-wrap n4">
+                            <div class="box-base color-01 bgcolor-01">
+                                <div class="text ta-c">햇과일</div>
+                            </div>
+                            <div class="arrow-equal color-01"></div>
+                            <div class="box-base color-01">
+                                <div class="hidden-text" data-group="2">햇-</div>
+                            </div>
+                            <div class="arrow-plus color-01"></div>
+                            <div class="box-base color-01">
+                                <div class="hidden-text" data-group="2">과일</div>
+                            </div>
+                        </div>
+                        <div class="box-base bgcolor-01 grid-wrap n5">
+                            <span class="emp">뜻</span>
+                            <div class="box-base">
+                                <div class="hidden-text show-icon" data-group="2">그해에 새로 난 과일.</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid-1">
+                        <div class="grid-wrap n4">
+                            <div class="box-base color-01 bgcolor-01">
+                                <div class="text ta-c">뛰놀다</div>
+                            </div>
+                            <div class="arrow-equal color-01"></div>
+                            <div class="box-base color-01">
+                                <div class="hidden-text" data-group="3">뛰다</div>
+                            </div>
+                            <div class="arrow-plus color-01"></div>
+                            <div class="box-base color-01">
+                                <div class="hidden-text" data-group="3">놀다</div>
+                            </div>
+                        </div>
+                        <div class="box-base bgcolor-01 grid-wrap n5">
+                            <span class="emp">뜻</span>
+                            <div class="box-base">
+                                <div class="hidden-text show-icon" data-group="3" style="letter-spacing: -2.5px;">이리저리 뛰어다니며 놀다.</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="button-helper">
+                    <span>뛰놀다</span>
+                </div>
+                <div class="popup-mini helper" data-button=".button-helper" style="width: 700px;">
+                    <div class="box-top">
+                        <div class="popup-title-box">
+                            <span class="popup-title">톡톡 도움말</span>
+                            <span class="popup-sub-title"></span>
+                        </div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="ti">
+                            ‘뛰다’와 ‘놀다’를 합해 ‘뛰놀다’라는 낱말을 만들었어요.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-04">
+            <span class="ex-rect-icon"></span>와 같이 낱말의 짜임을 생각하며 낱말의 뜻을 짐작해 써 봅시다.
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+    <script src="../common/js/content.js"></script>
+    <script>
+        (function(){
+            var btn_find_word = document.querySelectorAll( ".btn-find-word" );
+            for (var i = 0; i < btn_find_word.length; i++){
+                btn_find_word[i].addEventListener( "click", clickAct1 );
+
+            }
+            function clickAct1(e){
+                var word_find_tg = this.getAttribute( "data-targetname" );
+                console.log( document.querySelector( "." + word_find_tg )  )
+                document.querySelector( "." + word_find_tg ).classList.remove( "hide" );
+            }
+        })();
+    </script>
+</body>
+
+</html>
