@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+
+    <!-- gate ani -->
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/resetAll.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/commonAll.css" />
+
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+</head>
+<body>
+    <div id="wrap">
+        <div class="main confirm-quiz" data-content="confirm-quiz">
+
+            <div class="quiz-box">
+                <div class="header hide">
+                    <div class="title image-box">
+                        <img src="../common/images/title_confirm_quiz.png" alt="">
+                    </div>
+                    <div class="character">
+                        <div class="image-box">
+                            <img src="../common/images/confirm_quiz_char.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-tab-box" data-sub-tabs="문제 1,문제 2">
+
+                    <div class="sub-content sub-page-04">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text" style="letter-spacing: -2.8px;">겪은 일을 떠올리며 글을 읽었을 때, 들은 일을 떠올리며 읽은 사람을 고르시오.</div>
+                            </div>
+                        </div>
+
+                        <div class="single-choice speech" data-quiz="singleChoice" data-answer="2" data-mark="0" data-mark-gap="580;20">
+                            <div class="button color-03">
+                                <div class="face type-08"></div>
+                                <div class="speech-box">
+                                    <div class="arrow"></div>
+                                    <div class="round-box">예술제에서 가야금 공연을 본 적이 있어.</div>
+                                </div>
+                            </div>
+
+                            <div class="button color-01">
+                                <div class="face type-01"></div>
+                                <div class="speech-box">
+                                    <div class="arrow"></div>
+                                    <div class="round-box">전통 악기 박물관에서 생황이라는 악기를 본 적이 있어.</div>
+                                </div>
+                            </div>
+
+                            <div class="button color-04">
+                                <div class="face type-07"></div>
+                                <div class="speech-box">
+                                    <div class="arrow"></div>
+                                    <div class="round-box ta-c">옛날에는 농사일을 할 때 <br>풍물을 연주했다는 이야기를 들은 적이 있어.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                    </div>
+
+                    <div class="sub-content sub-page-05">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text ls-0p5">
+                                    겪은 일을 떠올리며 글을 읽으면 좋은 점으로 알맞은 것에 <span class="dir-o"></span>표, 알맞지 않은 것에 <span class="dir-x"></span>표를 고르시오.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ox-box">
+                            <div class="que-box">
+                                <div class="bullet-box rect-num bg-w num-01 color-01">
+                                    <div class="text ti">자신이 아는 내용과 비교하기 힘듭니다.</div>
+                                </div>
+                            </div>
+                            <div class="single-choice" data-quiz="singleChoice" data-answer="1" data-mark="0">
+                                <div class="button">
+                                </div>
+                                <div class="button">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ox-box">
+                            <div class="que-box">
+                                <div class="bullet-box rect-num bg-w num-02 color-01">
+                                    <div class="text ti">글 내용을 한번에 이해하기 어렵습니다.</div>
+                                </div>
+                            </div>
+                            <div class="single-choice" data-quiz="singleChoice" data-answer="1" data-mark="0">
+                                <div class="button">
+                                </div>
+                                <div class="button">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="ox-box">
+                            <div class="que-box">
+                                <div class="bullet-box rect-num bg-w num-03 color-01">
+                                    <div class="text ti">글 내용을 더 깊이 있게 이해할 수 있습니다.</div>
+                                </div>
+                            </div>
+                            <div class="single-choice" data-quiz="singleChoice" data-answer="0" data-mark="0">
+                                <div class="button">
+                                </div>
+                                <div class="button">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="gate_container checkquiz">
+            <div class="gate_topbox">
+                <div class="gate_title">확인 문제</div>
+                <div class="gate_btn"><span class="start-button">시작</span></div>
+            </div>
+            <div class="gate_ani">
+                <div id="animation_container">
+                    <canvas id="canvas"></canvas>
+                    <div id="dom_overlay_container" class="gate_ani_cover"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gate ani -->
+    <script src="../common/js/gateAni/createjs-2015.11.26.min.js"></script>
+    <script src="../common/js/gateAni/commonConfirm_Main.js"></script>
+    <script src="../common/js/gateAni/canvasMain.js"></script>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
