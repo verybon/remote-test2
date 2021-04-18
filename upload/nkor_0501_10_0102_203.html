@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title>생각 열기</title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .how-to-box{height: 250px;}
+        .grid-wrap{align-items: flex-start;padding-left: 50px;}
+        .grid-wrap .box-base{display: flex;align-items: center;justify-content: center;height: 250px;}
+        .grid-wrap .box-base.n1{flex-direction: column;}
+        .grid-wrap .box-base.n1 > span:nth-child(1){text-align: center;margin-top: 20px;}
+        .grid-wrap .box-base.n1 > span:nth-child(2){display: inline-flex;align-self: flex-end;margin-top: 20px;}
+        .grid-wrap .box-base.n2{justify-content: space-around;}
+        .grid-wrap .box-base.n2 img{width: 50%;}
+    </style>
+
+</head>
+<body>
+    <div id="wrap">
+        <div class="main how">
+            <div class="header">
+                <h1 class="title-03" aria-label="생각 열기"></h1>
+            </div>
+
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">기억에 남는 일을 골라 기억 카드를 만들어 보세요.</div>
+                </div>
+                <div class="how-to-box type-02">
+                    <div class="title-box">
+                        <div class="title">활동 방법</div>
+                    </div>
+                    <ol>
+                        <li class="bullet-box rect-num num-01 color-01">
+                            <div class="text">기억에 남는 일 가운데에서 여섯 가지를 떠올린다.</div>
+                        </li>
+                        <li class="bullet-box rect-num num-02 color-01">
+                            <div class="text">앞면에는 카드 번호, 기억에 남는 일, 이름을 쓴다.</div>
+                        </li>
+                        <li class="bullet-box rect-num num-03 color-01">
+                            <div class="text">뒷면에는 기억과 관련한 자신의 느낌을 다양하게 나타낸다.</div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="grid-wrap">
+                    <div class="grid-1 box-base color-03 n1">
+                        <span class="emp">
+                            지난 봄 운동회에서 친구들과 <br>재미있게 경기한 일
+                        </span>
+                        <span class="emp">
+                            윤주찬
+                        </span>
+                    </div>
+                    <div class="grid-1 box-base color-06 n2">
+                        <img src="./images/nkor_0501_10_0102_203.png" alt="">
+                        <span class="emp">
+                            행복함
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-03" style="letter-spacing: -1.5px;">
+            친구들과 나눈 이야기 가운데에서 여섯 가지를 골라 기억 카드를 만들어 봅시다.
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>

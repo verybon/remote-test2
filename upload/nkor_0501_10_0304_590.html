@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+        <title></title>
+        <link rel="stylesheet" href="../common/css/sanitize.css" />
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/audioPlayer.css" />
+        <link rel="stylesheet" href="../common/css/content.css" />
+        <style>
+            .single-choice .mark{display:none;}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="main jejae quiz" data-content="jejae-quiz">
+                <div class="quiz-box">
+                    <div class="image-box">
+                        <img src="../common/images/jejae_quiz_bg.png" alt="" />
+                    </div>
+                    <div class="header">
+                        <div class="title image-box">
+                            <img src="../common/images/title_jejae_quiz.png" alt="" />
+                        </div>
+                        <div class="character">
+                            <div class="image-box">
+                                <img src="../common/images/jejae_quiz_subtitle.png" alt="" />
+                            </div>
+                            <div class="sub-title">잘못 뽑은 반장</div>
+                        </div>
+                    </div>
+
+                    <div class="quiz-tab-box" data-sub-tabs="1,2,3,4,5,6">
+
+                        <!-- OX -->
+                        <div class="sub-content sub-page-01">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">제하는 거짓 행동이 밝혀지자 전학을 가기로 했습니다.</div>
+                                </div>
+                            </div>
+                            <div class="single-choice" data-quiz="singleChoice" data-answer="1" data-visible=".explanatory-02" data-mark="1">
+                                <div class="button button-01"></div><!--o : 0-->
+                                <div class="button button-02"></div><!--x : 1-->
+                            </div>
+                            <div class="explanatory line-one explanatory-02 hide">
+                                <div class="bullet-box" style="letter-spacing: -1.5px;">제하는 비겁해 지지 않기 위해 <span class="emp">전학을 가지 않기로</span> 했습니다.
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 초성 -->
+                        <div class="sub-content sub-page-02">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">
+                                        제하는 엄마랑
+                                        <span class="dir-rect ml"><span>ㅇ</span></span>
+                                        <span class="dir-rect"><span>ㅎ</span></span>
+                                        <span class="dir-rect"><span>ㅁ</span></span>
+                                        <span class="dir-rect"><span>ㄴ</span></span>와 같이 살고 있습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-box">
+                                <div class="hidden-box que icon-size-02" data-visible=".explanatory-02">
+                                    <div class="text">외할머니</div>
+                                </div>
+                            </div>
+                            <!-- <div class="explanatory explanatory-01 hide">
+                                <div class="bullet-box">
+                                    해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다.
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <!-- OX -->
+                        <div class="sub-content sub-page-03">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">로운이는 제하의 집에 찾아가기를 잘했다고 생각했습니다.</div>
+                                </div>
+                            </div>
+                            <div class="single-choice" data-quiz="singleChoice" data-answer="0" data-visible=".explanatory-03" data-mark="1">
+                                <div class="button button-01"></div><!--o : 0-->
+                                <div class="button button-02"></div><!--x : 1-->
+                            </div>
+                            <!-- <div class="explanatory line-one explanatory-03 hide">
+                                <div class="bullet-box">장승 친구들은 <span class="emp">밤에만</span> 움직일 수 있습니다.
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <!-- 단답 -->
+                        <div class="sub-content sub-page-04">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">
+                                        제하는 반 아이들에게 무엇을 연습 시켰나요?
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-box">
+                                <div class="hidden-box que icon-size-02">
+                                    <div class="text">합창</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 초성 -->
+                        <div class="sub-content sub-page-05">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">
+                                        제하는 로운이의 반장
+                                        <span class="dir-rect ml"><span>ㄷ</span></span>
+                                        <span class="dir-rect"><span>ㅇ</span></span>
+                                        <span class="dir-rect"><span>ㅁ</span></span>
+                                        역할을 했습니다.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="answer-box">
+                                <div class="hidden-box que icon-size-02" data-visible=".explanatory-05">
+                                    <div class="text">반장 도우미</div>
+                                </div>
+                            </div>
+                            <!-- <div class="explanatory explanatory-01 hide">
+                                <div class="bullet-box">
+                                    해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다. 해설 텍스트가 두 줄일 때 정렬입니다.
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <!-- OX -->
+                        <div class="sub-content sub-page-06">
+                            <div class="direction">
+                                <div class="bullet-box empty-circle color-01">
+                                    <div class="text">다음에 반장 선거에 나가겠다는 아이들이 부쩍 늘어났습니다.</div>
+                                </div>
+                            </div>
+                            <div class="single-choice" data-quiz="singleChoice" data-answer="0" data-visible=".explanatory-06" data-mark="1">
+                                <div class="button button-01"></div><!--o : 0-->
+                                <div class="button button-02"></div><!--x : 1-->
+                            </div>
+                            <!-- <div class="explanatory line-one explanatory-06 hide">
+                                <div class="bullet-box">장승 친구들은 <span class="emp">밤에만</span> 움직일 수 있습니다.
+                                </div>
+                            </div> -->
+                        </div>
+
+
+
+
+                        <div class="prev-button"></div>
+                        <div class="next-button"></div>
+                    </div>
+                </div>
+
+                <div class="home-box">
+                    <div class="image-box">
+                        <img src="../common/images/jejae_quiz_home_bg.png" alt="" />
+                    </div>
+                    <div class="title-box">
+                        <div class="title">잘못 뽑은 반장</div>
+                        <!-- <div class="writer">작가 이름</div> -->
+                    </div>
+                    <div class="start-button"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../common/js/libs/underscore-min.js"></script>
+        <script src="../common/js/libs/anime.min.js"></script>
+        <script src="../amt/js/amt.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="../common/js/quiz.js"></script>
+        <script src="../common/js/content.js"></script>
+    </body>
+</html>
