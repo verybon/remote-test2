@@ -1,319 +1,84 @@
 <!DOCTYPE html>
 <html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+        <title></title>
+        <link rel="stylesheet" href="../common/css/sanitize.css" />
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/content.css" />
+        <!-- <link rel="stylesheet" href="./css/nkor_0301_00_0100_201.css" /> -->
+        <style>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
-    <title></title>
-    <link rel="stylesheet" href="../common/css/sanitize.css" />
-    <link rel="stylesheet" href="../common/css/common.css" />
-    <link rel="stylesheet" href="../common/css/content.css" />
+            .chat-box .speech-box {width:855px;}
+            .chat-box .speech-box .round-box{text-align: center;}
 
-    <style>
-        .page-01 .box-base-wrap{display: flex;align-items: center;flex-wrap: wrap;justify-content: space-between;}
-        .page-01 .box-base-wrap > button{width: calc(25% - 10px);margin: 0 0 20px;}
-        .page-01 .table + .table{border-top: 2px solid #d5c5e0;}
-        .page-01 .table td{text-align: center;}
-        .page-01 .table .text{font-family: NotoB;color: #00A0FF;font-size: 38px;line-height: 1.4;text-indent: 0;opacity: 1;transition: opacity .3s ease;}
-        .page-01 .table .text.hide{opacity: 0;}
+            .dir-rect.color-01,
+            .rect-ex.color-01::after,
+            .circle-kor.color-01::after,
+            .rect-kor.color-01::after,
+            .circle-num.color-01::after,
+            .rect-num.color-01::after {
+                background: #fff;;
+            }
 
+            .pic-box{background-color:#fdf3e7;}
+            .pic-box .image-box, .pic-box .click-induced.pic{height: calc(100% - 100px); border-radius:10px;}
+            .pic-box .text-box{height: 100px; justify-content: center; border-radius:0;}
 
-        .arrow-plus,
-        .arrow-plus:before,
-        .arrow-plus:after{background: #f5f7e5;}
-        .arrow-plus,
-        .arrow-plus:before{box-shadow: 0 0 0 4px #d7dea3;}
-        .arrow-plus.color-01,
-        .arrow-plus.color-01:before,
-        .arrow-plus.color-01:after,
-        .arrow-equal.color-01:before,
-        .arrow-equal.color-01:after{background: #f5f7e5;}
-        .arrow-plus.color-01,
-        .arrow-plus.color-01:before,
-        .arrow-equal.color-01:before,
-        .arrow-equal.color-01:after{box-shadow: 0 0 0 4px #d7dea3;}
-        .arrow-plus.color-02,
-        .arrow-plus.color-02:before,
-        .arrow-plus.color-02:after,
-        .arrow-equal.color-02:before,
-        .arrow-equal.color-02:after{background: #fff9e5;}
-        .arrow-plus.color-02,
-        .arrow-plus.color-02:before,
-        .arrow-equal.color-02:before,
-        .arrow-equal.color-02:after{box-shadow: 0 0 0 4px #ffe899;}
-        .arrow-plus.color-03,
-        .arrow-plus.color-03:before,
-        .arrow-plus.color-03:after,
-        .arrow-equal.color-03:before,
-        .arrow-equal.color-03:after{background: #f1f9fc;}
-        .arrow-plus.color-03,
-        .arrow-plus.color-03:before,
-        .arrow-equal.color-03:before,
-        .arrow-equal.color-03:after{box-shadow: 0 0 0 4px #a8d6f6;}
-        .arrow-plus.color-04,
-        .arrow-plus.color-04:before,
-        .arrow-plus.color-04:after,
-        .arrow-equal.color-04:before,
-        .arrow-equal.color-04:after{background: #f6effb;}
-        .arrow-plus.color-04,
-        .arrow-plus.color-04:before,
-        .arrow-equal.color-04:before,
-        .arrow-equal.color-04:after{box-shadow: 0 0 0 4px #cabee0;}
-        .arrow-plus.color-05,
-        .arrow-plus.color-05:before,
-        .arrow-plus.color-05:after,
-        .arrow-equal.color-05:before,
-        .arrow-equal.color-05:after{background: #fdf3e7;}
-        .arrow-plus.color-05,
-        .arrow-plus.color-05:before,
-        .arrow-equal.color-05:before,
-        .arrow-equal.color-05:after{box-shadow: 0 0 0 4px #ffd89e;}
-        .arrow-plus.color-06,
-        .arrow-plus.color-06:before,
-        .arrow-plus.color-06:after,
-        .arrow-equal.color-06:before,
-        .arrow-equal.color-06:after{background: #ffeef3;}
-        .arrow-plus.color-06,
-        .arrow-plus.color-06:before,
-        .arrow-equal.color-06:before,
-        .arrow-equal.color-06:after{box-shadow: 0 0 0 4px #ffc4c9;}
-        .arrow-plus{position: relative;width: 20px;height: 70px;border-radius: 5px;}
-        .arrow-plus:before,
-        .arrow-plus:after{content: "";display: block;position: absolute;}
-        .arrow-plus:before{top: 25px;left: -25px;width: 70px;height: 20px;border-radius: 5px;}
-        .arrow-plus:after{top: 16px;left: 0;width: 20px;height: 40px;}
-        .arrow-equal{display: flex;flex-direction: column;justify-content: space-between;position: relative;width: 64px;height: 54px;}
-        .arrow-equal:before,
-        .arrow-equal:after{content: "";width: 64px;height: 19px;border-radius: 5px;background: #f5f7e5;box-shadow: 0 0 0 4px #d7dea3;}
-        .page-02 .box-base.grid-wrap{width: 100%;padding: 10px;}
-        .page-02 .box-base.grid-wrap .emp{display: block;width: 110px;padding-right: 10px;text-align: center;}
-        .page-02 .ex-box{margin-bottom: 40px;}
-        .page-02 .ex-box .grid-wrap.n1{margin: 0 0 20px;}
-        .page-02 .ex-box .grid-wrap.n1 .box-base{min-width: 190px;}
-        .page-02 .ex-box .grid-wrap.n2 .emp + .box-base{width: 100%;margin: 0;}
+            .group-speech-03 .char-box-01 .speech-box{width:450px; right:-10px; bottom:316px;}
+            .group-speech-03 .char-box-02 .speech-box{width:491px;}
+            .group-speech-03 .char-box-03 .speech-box{width:360px; right:-220px; bottom:315px;}
 
-        .page-02 .grid-wrap.n3 .hidden-box{flex-direction: column;}
-        .page-02 .grid-wrap.n3 .grid-1 + .grid-1{margin-left: 20px;}
-        .page-02 .grid-wrap.n3 .arrow-plus,
-        .page-02 .grid-wrap.n3 .arrow-equal{transform: scale(.9);}
-        .page-02 .grid-wrap.n3 .arrow-plus{margin: 0 20px;}
-        .page-02 .grid-wrap.n3 .box-base{min-width: 90px;padding-left: 10px;padding-right: 10px;}
-        .page-02 .grid-wrap.n4{margin-bottom: 20px;}
-        .page-02 .grid-wrap.n4 > * + *{margin-left: 0;}
-        .page-02 .grid-wrap.n5 .emp{width: 110px;padding-right: 10px;}
-        .page-02 .grid-wrap.n5 .emp + .box-base{width: 100%;margin: 0;}
-        .page-02 .icon-separate,
-        .page-02 .hidden-box .icon-box .icon{position: absolute;top: 28px;left: 18px;}
-    </style>
-</head>
+            .group-speech-03 .char-box-01 .arrow{right:160px;}
+            .group-speech-03 .char-box-03 .arrow{right:210px;}
 
-<body>
-    <div id="wrap">
-        <div class="main normal" data-main-tabs="1,2">
-            <div class="header">
-                <div class="title-02" aria-label="교과서 활동"></div>
-            </div>
-
-
-
-            <div class="content page-02">
-                <div class="bullet-box direction">
-                    <div class="text" style="letter-spacing: -2.4px;">
-                        어떤 말을 합해서 다른 한 낱말을 만들었는지 <span class="ex-rect-icon"></span>와 같이 알아보세요.
-                    </div>
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="main normal">
+                <div class="header">
+                    <h1 class="title-02" aria-label="교과서 활동"></h1>
                 </div>
 
-                <div class="ex-box align-cc" style="padding: 20px 30px;">
-                    <div class="icon"></div>
-                    <div style="width: 100%;padding: 0 20px;">
-                        <div class="grid-wrap n1">
-                            <div class="box-base color-05 bgcolor-05">
-                                <div class="text ta-c">방울토마토</div>
-                            </div>
-                            <div class="arrow-equal color-05"></div>
-                            <div class="box-base color-05">
-                                <div class="text ta-c">방울</div>
-                            </div>
-                            <div class="arrow-plus color-05"></div>
-                            <div class="box-base color-05">
-                                <div class="text ta-c">토마토</div>
-                            </div>
-                        </div>
-                        <div class="box-base bgcolor-05 grid-wrap n2">
-                            <span class="emp">뜻</span>
-                            <div class="box-base">
-                                <div class="text ti">일반 토마토보다 훨씬 작으며 방울 모양의 토마토</div>
-                            </div>
-                        </div>
+                <div class="content page-01">
+                    <div class="bullet-box direction">
+                        <div class="text">기행문을 쓸 때 내용을 어떻게 나타내야 할까요?</div>
                     </div>
-                </div>
 
-                <div class="grid-wrap n3">
-                    <div class="grid-1 hidden-box">
-                        <div class="grid-wrap n4">
-                            <div class="box-base color-01 bgcolor-01">
-                                <div class="text ta-c">애호박</div>
+                    <div class="content-inner">
+                        <div class="box-char">
+                            <div class="box-base bgcolor-06 char-05">
+                                시간과 <span class="hidden-text ex" style="margin-left: 12px;">장소</span>가 잘 드러나게 쓴다.
                             </div>
-                            <div class="arrow-equal color-01"></div>
-                            <div class="box-base color-01">
-                                <div class="text ta-c">애-</div>
+                            <div class="box-base bgcolor-02 char-02 ps-r" style="padding: 0 180px 0 90px;">
+                                <span class="hidden-text ex">보고 들은 내용</span>을 생생하고 자세하게 풀어 쓴다.
                             </div>
-                            <div class="arrow-plus color-01"></div>
-                            <div class="box-base color-01">
-                                <div class="text ta-c">호박</div>
-                            </div>
-                        </div>
-                        <div class="box-base bgcolor-01 grid-wrap n5">
-                            <span class="emp">뜻</span>
-                            <div class="box-base">
-                                <div class="text ti">덜 여문 어린 호박.</div>
+                            <div class="box-base bgcolor-01 char-03">
+                                <span class="hidden-text ex">생각이나 느낌</span>도 함께 쓴다.
                             </div>
                         </div>
                     </div>
-                    <div class="grid-1  hidden-box">
-                        <div class="grid-wrap n4">
-                            <div class="box-base color-06 bgcolor-06">
-                                <div class="text ta-c">산딸기</div>
-                            </div>
-                            <div class="arrow-equal color-06"></div>
-                            <div class="box-base color-06">
-                                <div class="text ta-c">산-</div>
-                            </div>
-                            <div class="arrow-plus color-06"></div>
-                            <div class="box-base color-06">
-                                <div class="text ta-c">딸기</div>
-                            </div>
-                        </div>
-                        <div class="box-base bgcolor-06 grid-wrap n5">
-                            <span class="emp">뜻</span>
-                            <div class="box-base">
-                                <div class="text ti">산에서 나는 딸기.</div>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
 
             </div>
 
 
-            <div class="content page-01">
-                <div class="bullet-box direction">
-                    <div class="text">
-                        단일어와 복합어를 찾아 써 보세요.
-                    </div>
-                </div>
-                <div class="info-box one-line"><span class="emp">낱말</span>을 클릭하세요.</div>
-                <div class="content-inner">
-                    <div class="box-base-wrap">
-                        <button type="button" class="btn-find-word" data-targetname="bt-n1">
-                            <div class="box-base bgcolor-04">
-                                <div class="text ta-c emp" >사과</div>
-                            </div>
-                        </button>
-                        <button type="button" class="btn-find-word" data-targetname="bt-n6">
-                            <div class="box-base bgcolor-04">
-                                <div class="text ta-c emp" >산딸기</div>
-                            </div>
-                        </button>
-                        <button type="button" class="btn-find-word" data-targetname="bt-n2">
-                            <div class="box-base bgcolor-04">
-                                <div class="text ta-c emp" >복숭아</div>
-                            </div>
-                        </button>
-                        <button type="button" class="btn-find-word" data-targetname="bt-n3">
-                            <div class="box-base bgcolor-04">
-                                <div class="text ta-c emp" >자두</div>
-                            </div>
-                        </button>
-                        <button type="button" class="btn-find-word" data-targetname="bt-n4">
-                            <div class="box-base bgcolor-04">
-                                <div class="text ta-c emp" >수박</div>
-                            </div>
-                        </button>
-                        <button type="button" class="btn-find-word" data-targetname="bt-n7">
-                            <div class="box-base bgcolor-04">
-                                <div class="text ta-c emp" >방울토마토</div>
-                            </div>
-                        </button>
-                        <button type="button" class="btn-find-word" data-targetname="bt-n8">
-                            <div class="box-base bgcolor-04">
-                                <div class="text ta-c emp" >애호박</div>
-                            </div>
-                        </button>
-                        <button type="button" class="btn-find-word" data-targetname="bt-n5">
-                            <div class="box-base bgcolor-04">
-                                <div class="text ta-c emp" >오이</div>
-                            </div>
-                        </button>
-                    </div>
-                    <div class="table-box color-03">
-                        <table class="table">
-                            <colgroup>
-                                <col style="width: 200px;">
-                                <col style="width: 20%;">
-                                <col style="width: 20%;">
-                                <col style="width: 20%;">
-                                <col style="width: 20%;">
-                                <col style="width: 20%;">
-                            </colgroup>
-                            <tbody>
-                                <th>단일어</th>
-                                <td><div class="text bt-n1 hide">사과</div></td>
-                                <td><div class="text bt-n2 hide">복숭아</div></td>
-                                <td><div class="text bt-n3 hide">자두</div></td>
-                                <td><div class="text bt-n4 hide">수박</div></td>
-                                <td><div class="text bt-n5 hide">오이</div></td>
-                            </tbody>
-                        </table>
-                        <table class="table">
-                            <colgroup>
-                                <col style="width:200px;">
-                                <col style="width: 30%;">
-                                <col style="width: 40%;">
-                                <col style="width: 30%;">
-                            </colgroup>
-                            <tbody>
-                                <th>복합어</th>
-                                <td><div class="text bt-n6 hide">산딸기</div></td>
-                                <td><div class="text bt-n7 hide">방울토마토</div></td>
-                                <td><div class="text bt-n8 hide">애호박</div></td>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
+            <div class="teacher-question num-04" style="letter-spacing: -3.1px;">
+                기행문을 쓸 때 어떻게 나타내야 하는지 정리해 봅시다.
             </div>
 
         </div>
 
-        <div class="teacher-question num-04" style="letter-spacing: -2.5px;">
-            <span class="emp">3</span>의 그림에 있는 낱말들의 짜임을 자세히 알아봅시다.
-        </div>
-
-    </div>
-
-    <script src="../common/js/libs/underscore-min.js"></script>
-    <script src="../common/js/libs/anime.min.js"></script>
-    <script src="../amt/js/amt.js"></script>
-    <script src="../common/js/common.js"></script>
-    <script src="../common/js/canvasAnimation.js"></script>
-    <script src="../common/js/canvasAnimationData.js"></script>
-    <script src="../common/js/content.js"></script>
-    <script>
-        (function(){
-            var btn_find_word = document.querySelectorAll( ".btn-find-word" );
-            for (var i = 0; i < btn_find_word.length; i++){
-                btn_find_word[i].addEventListener( "click", clickAct1 );
-
-            }
-            function clickAct1(e){
-                var word_find_tg = this.getAttribute( "data-targetname" );
-                console.log( document.querySelector( "." + word_find_tg )  )
-                document.querySelector( "." + word_find_tg ).classList.remove( "hide" );
-            }
-        })();
-    </script>
-</body>
-
+        <script src="../common/js/libs/underscore-min.js"></script>
+        <script src="../common/js/libs/anime.min.js"></script>
+        <script src="../amt/js/amt.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="../common/js/canvasAnimation.js"></script>
+        <script src="../common/js/canvasAnimationData.js"></script>
+        <script src="../common/js/content.js"></script>
+    </body>
 </html>
