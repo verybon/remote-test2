@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+
+    <style>
+    .ani-box > div:not(:last-child), .ani-box.two > div:not(:last-child){
+        margin-right:30px;
+    }
+    /* ani-box > div, .ani-box.two > div{transform: scale(0.8);} */
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <div class="title-02" aria-label="교과서 활동"></div>
+            </div>
+
+            <div class="content">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        제목을 보고 이 글의 내용을 짐작해 보세요.
+                    </div>
+                </div>
+                <div class="info-box one-line"><span class="emp">인물</span>을 클릭하세요.</div>
+
+                <div class="ani-box one-line">
+                    <div class="char-bg-ani-box" data-name="char01" data-color="color-01" data-tail="tail-01" data-audio="./media/audios/nkor_0501_09_0304_201.mp3"></div>
+                </div>
+
+                <div class="button-helper">
+                    <span>제목을 보고 내용 짐작하기</span>
+                </div>
+                <div class="popup-mini helper" data-button=".button-helper" style="width: 680px;">
+                    <div class="box-top">
+                        <div class="popup-title-box">
+                            <span class="popup-title">톡톡 도움말</span>
+                            <span class="popup-sub-title"></span>
+                        </div>
+                        <div class="button-close"></div>
+                    </div>
+                    <div class="box-content">
+                        <div class="bullet-box empty-circle">
+                            점과 선으로 어떤 모양을 만들 수 있을지 상상해 봐요.
+                        </div>
+                        <div class="bullet-box empty-circle">
+                            암호는 언제 필요한지 떠올려 봐요.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-01">
+            <span class="quot-open">「</span>점과 선으로 만든 암호<span class="quot-close">」</span>라는 제목을 보고 이 글의 내용을 짐작해 봅시다.
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
