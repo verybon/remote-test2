@@ -10,73 +10,294 @@
     <link rel="stylesheet" href="../common/css/common.css" />
     <link rel="stylesheet" href="../common/css/content.css" />
 
+    <style>
+        .page-01 .pic-box.sole{overflow: visible;}
+        .page-01 .pic-box.sole .image-box{height: 100%;}
+        .page-02 .content-inner{display: flex;flex-wrap: wrap;align-items: flex-start;justify-content: space-between;}
+        .page-02 .content-inner .box-base{display: flex;align-items: center;justify-content: space-between;width: calc(50% - 10px);height: 200px;padding: 0;margin-bottom: 20px;}
+        .page-02 .content-inner .box-base:nth-child(2n){margin-left: 20px;}
+        .page-02 .content-inner .box-base .image-box{width: 50%;height: 100%;}
+        .page-02 .content-inner .box-base .text-box{display: flex;align-items: center;justify-content: center;width: 50%;height: 100%;}
+        .page-04 .box-base.n1{min-width: 270px;padding: 10px;}
+        .page-04 .box-base.n1 .box-base:nth-child(1){padding: 0 5px 10px;text-align: center;}
+        .page-04 .box-base.n1 .box-base:nth-child(2){padding: 10px;}
+        .page-04 .box-base.n1 .hidden-box .text{width: 100%;}
+    </style>
 </head>
+
 <body>
     <div id="wrap">
-        <div class="main normal">
+        <div class="main normal" data-main-tabs="겪은 일,1,2,3,4,5">
             <div class="header">
-                <h1 class="title-02" aria-label="교과서 활동"></h1>
+                <div class="title-02" aria-label="교과서 활동"></div>
             </div>
 
-            <div class="content">
+            <div class="content page-01">
                 <div class="bullet-box direction">
                     <div class="text">
-                        <span class="quot-open">「</span>잘못 뽑은 반장<span class="quot-close">」</span>을 읽고, 이야기의 내용을 정리해 보세요.
+                        진주가 비 오는 날에 겪은 일을 살펴보세요.
                     </div>
                 </div>
-                <div class="image-box" style="position: relative;top: 0; margin: 0 auto;width: 1000px;height: 400px;text-align: center;">
-                    <img src="./images/nkor_0501_10_0304_201.jpg" alt="" style="display: inline-block;width: auto;height: 100%;border-radius: 20px;" draggable="false">
+                <div class="top-line-box">
+                    <div class="sub-tab-box" data-sub-tabs="1,2,3,4,5">
+                        <div class="sub-content sub-page-01">
+                            <div class="pic-box sole pic-box-01">
+                                <div class="rect-num num-01 color-01">
+                                </div>
+                                <div class="image-box" style="width:100%;background:url(./images/nkor_0501_10_0506_201_1.png) no-repeat 50% 50% / contain;">
+                                </div>
+                                <div class="speech-box color-02 tail-01" style="top: -40px;left: 60px;width: 370px;">
+                                    <div class="bg"></div>
+                                    <div class="arrow bl"></div>
+                                    <div class="speech-box-inner ti">
+                                        오늘 비가 와서 3교시 체육 수업은 체육관에서 한대 !
+                                    </div>
+                                </div>
+                                <div class="speech-box color-03 tail-02" style="top: 40px;left: 510px;width: 490px;">
+                                    <div class="bg"></div>
+                                    <div class="arrow bl" style="left: 300px;"></div>
+                                    <div class="speech-box-inner ti">
+                                        다행이다. 그런데 성훈이하고는 다른 편이었으면…….
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sub-content sub-page-02">
+                            <div class="pic-box sole pic-box-01">
+                                <div class="rect-num num-02 color-01">
+                                </div>
+                                <div class="image-box" style="width:100%;background:url(./images/nkor_0501_10_0506_201_2.png) no-repeat 50% 50% / contain;">
+                                </div>
+                                <div class="speech-box color-04 tail-01" style="top: -40px;left: 60px;width: 310px;">
+                                    <div class="bg"></div>
+                                    <div class="arrow br"></div>
+                                    <div class="speech-box-inner ti">
+                                        야 ! 민영이 막아 !
+                                    </div>
+                                </div>
+                                <div class="speech-box color-03 tail-02" style="top: 40px;left: 720px;width: 260px;">
+                                    <div class="bg"></div>
+                                    <div class="arrow bl"></div>
+                                    <div class="speech-box-inner ti">
+                                        자기는 얼마나 잘한다고…….
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sub-content sub-page-03">
+                            <div class="pic-box sole pic-box-01">
+                                <div class="rect-num num-03 color-01">
+                                </div>
+                                <div class="image-box" style="width:100%;background:url(./images/nkor_0501_10_0506_201_3.png) no-repeat 50% 50% / contain;">
+                                </div>
+                                <div class="speech-box color-03 tail-01" style="top: -40px;left: 60px;width: 290px;">
+                                    <div class="bg"></div>
+                                    <div class="arrow br"></div>
+                                    <div class="speech-box-inner ti">
+                                        그것도 못 막냐?
+                                    </div>
+                                </div>
+                                <div class="speech-box color-04 tail-01" style="top: 40px;left: 720px;width: 330px;">
+                                    <div class="bg"></div>
+                                    <div class="arrow bl"></div>
+                                    <div class="speech-box-inner ti">
+                                        너도 잘 못 막으면서 왜 나한테만 그래?
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sub-content sub-page-04">
+                            <div class="pic-box sole pic-box-01">
+                                <div class="rect-num num-04 color-01">
+                                </div>
+                                <div class="image-box" style="width:100%;background:url(./images/nkor_0501_10_0506_201_4.png) no-repeat 50% 50% / contain;">
+                                </div>
+                                <div class="speech-box color-06 tail-01" style="top: -40px;left: 60px;width: 370px;">
+                                    <div class="bg"></div>
+                                    <div class="arrow br"></div>
+                                    <div class="speech-box-inner ti">
+                                        진주랑 성훈이는 좀 더 대화를 하는 게 좋겠어. 서로 하고 싶은 말 없니?
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="sub-content sub-page-05">
+                            <div class="pic-box sole pic-box-01">
+                                <div class="rect-num num-05 color-01">
+                                </div>
+                                <div class="image-box" style="width:100%;background:url(./images/nkor_0501_10_0506_201_5.png) no-repeat 50% 50% / contain;">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-                <div class="content-link-box">
-                    <!-- 함께 듣기 -->
-                    <div class="link-button type-06" data-module="link" data-type="html" data-src="./nkor_0501_10_0304_510.html">
-                        <div class="button-image"></div>
-                    </div>
-                    <div class="v-line"></div>
-
-                    <!-- 1분 줄거리 -->
-                    <div class="link-button type-05" data-module="link" data-type="html" data-src="./nkor_0501_10_0304_530.html">
-                        <div class="button-image"></div>
-                    </div>
-                    <div class="v-line"></div>
-
-                    <!-- 정리 총총 -->
-                    <div class="link-button type-02" data-module="link" data-type="html" data-src="./nkor_0501_10_0304_550.html">
-                        <div class="button-image"></div>
-                    </div>
-                    <div class="v-line"></div>
-
-                    <!-- 낱말 퐁당 -->
-                    <div class="link-button type-03" data-module="link" data-type="html" data-src="./nkor_0501_10_0304_570.html">
-                        <div class="button-image"></div>
-                    </div>
-                    <div class="v-line"></div>
-
-                    <!-- 쫑! 퀴즈 -->
-                    <div class="link-button type-04" data-module="link" data-type="html" data-src="./nkor_0501_10_0304_590.html">
-                        <div class="button-image"></div>
-                    </div>
-                    <!-- <div class="v-line"></div> -->
-
-
-
-                    <!-- 이야기 듣기 -->
-                    <!-- <div class="link-button type-06"> -->
-                    <!--     <div class="button-image"></div> -->
-                    <!-- </div> -->
-                </div>
-<!--
-                <div class="ani-box">
-                    <div class="char-bg-ani-box" data-name="char01" data-color="color-01" data-tail="tail-01" data-audio="./media/audios/nkor_0102_01_0304_201.mp3"></div>
-                </div> -->
-
-                <!-- <div class="info-box"><span class="emp">인물</span>을 클릭하세요.</div> -->
-                <!-- <div class="info-box one-line-bottom">시를 읽은 뒤 <span class="emp">인물</span>을 클릭하세요.</div> -->
             </div>
+
+            <div class="content page-02">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        어떤 인물이 나오나요?
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="box-base bgcolor-05">
+                        <div class="image-box">
+                        </div>
+                        <div class="text-box">
+                            <div class="text ta-c emp">민영</div>
+                        </div>
+                    </div>
+                    <div class="box-base bgcolor-04">
+                        <div class="image-box">
+                        </div>
+                        <div class="hidden-box text-box">
+                            <div class="text ta-c emp">진주</div>
+                        </div>
+                    </div>
+                    <div class="box-base bgcolor-01">
+                        <div class="image-box">
+                        </div>
+                        <div class="hidden-box text-box">
+                            <div class="text ta-c emp">성훈</div>
+                        </div>
+                    </div>
+                    <div class="box-base bgcolor-03">
+                        <div class="image-box">
+                        </div>
+                        <div class="hidden-box text-box">
+                            <div class="text ta-c emp">선생님</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content page-03">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        어떤 사건이 있었나요?
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="bg-color-box bg-color-05">
+                        <div class="no-bg" style="padding: 8px 13px;font-size: 38px;">
+                            <div class="text ti">
+                                체육관에서 체육 수업을 할 수 있어 좋아했으나 진주는 성훈이와 같은 편을 하고 싶지 않았다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-color-box bg-color-05">
+                        <div class="hidden-box no-bg">
+                            <div class="text ti">
+                                체육 시간에 간이 축구를 하다가 진주와 성훈이가 다투었다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-color-box bg-color-05">
+                        <div class="hidden-box no-bg">
+                            <div class="text ti">
+                                상담실에서 진주와 성훈이가 선생님과 이야기를 나누었다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content page-04">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        사건이 일어났던 때와 장소는 어떻게 변했나요?
+                    </div>
+                </div>
+                <div class="grid-wrap">
+                    <div class="box-base n1 bgcolor-04">
+                        <div class="box-base bgcolor-04">
+                            <div class="emp">2교시 쉬는 시간</div>
+                        </div>
+                        <div class="box-base">
+                            <div class="hidden-box">
+                                <div class="text ta-c">
+                                    교실
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-b"></div>
+                    <div class="box-base n1 bgcolor-03">
+                        <div class="box-base bgcolor-03">
+                            <div class="emp">3교시 체육 시간</div>
+                        </div>
+                        <div class="box-base">
+                            <div class="hidden-box">
+                                <div class="text ta-c">
+                                    체육관
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-b"></div>
+                    <div class="box-base n1 bgcolor-01">
+                        <div class="box-base bgcolor-01">
+                            <div class="emp">3교시 쉬는 시간</div>
+                        </div>
+                        <div class="box-base">
+                            <div class="hidden-box">
+                                <div class="text ta-c">
+                                    상담실
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content page-05">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        진주와 비슷한 경험이 있다면 이야기해 보세요.
+                    </div>
+                </div>
+                <div class="info-box one-line"><span class="emp">인물</span>을 클릭하세요.</div>
+                <div class="ani-box one-line">
+                    <div class="char-bg-ani-box" data-name="char02" data-color="color-01" data-tail="tail-01" data-audio="./media/audios/nkor_0501_10_0506_201.mp3"></div>
+                </div>
+            </div>
+
+            <div class="content page-06">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        그림의 내용을 이야기로 어떻게 만들면 좋을지 생각해 보세요.
+                    </div>
+                </div>
+                <div class="content-inner">
+                    <div class="box-char">
+                        <div class="box-base bgcolor-06 char-05 hidden-box">
+                            <div class="text">
+                                일이 일어난 차례대로 씁니다.
+                            </div>
+                        </div>
+                        <div class="box-base bgcolor-02 char-02 ps-r hidden-box">
+                            <div class="text ta-c">
+                                진주와 성훈이가 사이가 안 좋은 까닭을 <br>이해하도록 씁니다.
+                            </div>
+                        </div>
+                        <div class="box-base bgcolor-01 char-03 hidden-box">
+                            <div class="text">
+                                 인물의 마음이 잘 나타나도록 씁니다.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
         <div class="teacher-question num-01">
-            주인공의 경험을 어떻게 이야기로 나타냈는지 생각하며 <span class="quot-open">「</span>잘못 뽑은 반장<span class="quot-close">」</span>을 읽어 봅시다.
+            다음은 진주가 비 오는 날에 겪은 일입니다. 그림을 보고 물음에 답해 봅시다.
         </div>
 
     </div>
