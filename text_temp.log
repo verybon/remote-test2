@@ -5,7 +5,7 @@
 
 
 ==================================
-#컨텐츠 이너 #히든박스
+#컨텐츠이너 #히든박스
 
 <div class="bg-color-box bg-color-05">
     <div class="hidden-box no-bg">
@@ -36,17 +36,36 @@
 
 
 ==================================
-#기본탭
-
-<div class="main normal" data-main-tabs="1, 2">
-
-
-==================================
 #서브탭
 
 <div class="top-line-box type-qna">
     <div class="sub-tab-box" data-sub-tabs="1,2,3,4">
         <div class="sub-content sub-page-01"></div>
+    </div>
+</div>
+
+
+==================================
+#톡톡 도움말
+
+<div class="button-helper">
+    <span>톡톡 도움말</span>
+</div>
+<div class="popup-mini helper" data-button=".button-helper" style="width: 570px;">
+    <div class="box-top">
+        <div class="popup-title-box">
+            <span class="popup-title">톡톡 도움말</span>
+            <span class="popup-sub-title"></span>
+        </div>
+        <div class="button-close"></div>
+    </div>
+    <div class="box-content">
+        <div class="ti">
+            블릿없는경우
+        </div>
+        <div class="bullet-box empty-circle">
+            블릿있는경우
+        </div>
     </div>
 </div>
 
@@ -134,31 +153,6 @@
     </div>
     <div class="text-box bg-color-02">
         <div class="bullet-box empty-circle">
-        </div>
-    </div>
-</div>
-
-
-==================================
-#톡톡 도움말
-
-<div class="button-helper">
-    <span>톡톡 도움말</span>
-</div>
-<div class="popup-mini helper" data-button=".button-helper" style="width: 570px;">
-    <div class="box-top">
-        <div class="popup-title-box">
-            <span class="popup-title">톡톡 도움말</span>
-            <span class="popup-sub-title"></span>
-        </div>
-        <div class="button-close"></div>
-    </div>
-    <div class="box-content">
-        <div class="ti">
-            블릿없는경우
-        </div>
-        <div class="bullet-box empty-circle">
-            블릿있는경우
         </div>
     </div>
 </div>
