@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+
+    <!-- gate ani -->
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/resetAll.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/commonAll.css" />
+
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+    <style>
+        .main.confirm-quiz .round-bg-box{margin-bottom: 0;}
+        .sub-page-01 .single-choice.word{padding: 0 0 0 60px;}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main confirm-quiz" data-content="confirm-quiz">
+
+            <div class="quiz-box">
+                <div class="header hide">
+                    <div class="title image-box">
+                        <img src="../common/images/title_confirm_quiz.png" alt="">
+                    </div>
+                    <div class="character">
+                        <div class="image-box">
+                            <img src="../common/images/confirm_quiz_char.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-tab-box" data-sub-tabs="문제 1,문제 2">
+
+                    <div class="sub-content sub-page-01">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text">다음 글에 드러난 글쓴이의 마음으로 알맞은 것을 고르시오.</div>
+                            </div>
+                        </div>
+                        <div class="grid-wrap">
+                            <div class="round-bg-box ti grid-3">
+                                <div class="text">“우아, 제가 지금 혼자 타고 있는 거예요?”</div>
+                                <div class="text">“그럼. 아까부터 그랬단다.”</div>
+                                <div class="text">어머니께서 씽긋 미소를 지으셨다.</div>
+                                <div class="text">“야호!”</div>
+                            </div>
+
+                            <div class="single-choice word grid-2" data-quiz="singleChoice" data-answer="2" data-visible=".empty-rect .text">
+                                <div>
+                                    <div class="button">
+                                        <div class="bullet-box circle-num num-01 color-01">
+                                            슬픈 마음
+                                        </div>
+                                    </div>
+                                    <div class="button">
+                                        <div class="bullet-box circle-num num-02 color-01">
+                                            긴장된 마음
+                                        </div>
+                                    </div>
+                                    <div class="button">
+                                        <div class="bullet-box circle-num num-03 color-01">
+                                            뿌듯한 마음
+                                        </div>
+                                    </div>
+                                    <div class="button">
+                                        <div class="bullet-box circle-num num-04 color-01">
+                                            화나는 마음
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                    </div>
+
+                    <div class="sub-content sub-page-02">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text ">글쓴이의 마음을 짐작하여 글 읽는 방법으로 알맞은 것을 고르시오.</div>
+                            </div>
+                        </div>
+
+                        <div class="single-choice speech" data-quiz="singleChoice" data-answer="2" data-mark="0" data-mark-gap="580;20">
+                            <div class="button color-03">
+                                <div class="face type-05"></div>
+                                <div class="speech-box">
+                                    <div class="arrow"></div>
+                                    <div class="round-box">글쓴이에게 일어난 일의 차례는 중요하지 않아.</div>
+                                </div>
+                            </div>
+
+                            <div class="button color-01">
+                                <div class="face type-01"></div>
+                                <div class="speech-box">
+                                    <div class="arrow"></div>
+                                    <div class="round-box">글쓴이와 비슷한 내 경험을 떠올리지 않도록 해야 해.</div>
+                                </div>
+                            </div>
+
+                            <div class="button color-04">
+                                <div class="face type-07"></div>
+                                <div class="speech-box">
+                                    <div class="arrow"></div>
+                                    <div class="round-box">글쓴이의 경험, 말과 행동, 마음이 드러난 표현을 찾아 봐.</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="gate_container checkquiz">
+            <div class="gate_topbox">
+                <div class="gate_title">확인 문제</div>
+                <div class="gate_btn"><span class="start-button">시작</span></div>
+            </div>
+            <div class="gate_ani">
+                <div id="animation_container">
+                    <canvas id="canvas"></canvas>
+                    <div id="dom_overlay_container" class="gate_ani_cover"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gate ani -->
+    <script src="../common/js/gateAni/createjs-2015.11.26.min.js"></script>
+    <script src="../common/js/gateAni/commonConfirm_Main.js"></script>
+    <script src="../common/js/gateAni/canvasMain.js"></script>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
