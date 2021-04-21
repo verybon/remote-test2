@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+
+    <!-- gate ani -->
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/resetAll.css" />
+    <link rel="stylesheet" type="text/css" href="../common/css/gateAni/commonAll.css" />
+
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+</head>
+<body>
+    <div id="wrap">
+        <div class="main confirm-quiz" data-content="confirm-quiz">
+
+            <div class="quiz-box">
+                <div class="header hide">
+                    <div class="title image-box">
+                        <img src="../common/images/title_confirm_quiz.png" alt="">
+                    </div>
+                    <div class="character">
+                        <div class="image-box">
+                            <img src="../common/images/confirm_quiz_char.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quiz-tab-box" data-sub-tabs="문제 1,문제 2">
+
+                    <div class="sub-content sub-page-02">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text">다음 빈칸에 들어갈 꾸며 주는 말로 알맞지 <span class="underline">않은</span> 것을 고르시오.</div>
+                            </div>
+                        </div>
+
+                        <div class="round-bg-box ta-c">
+                            <span class="empty-rect" style="width: 110px;"><span class="hide">신나는</span></span> 딸기가 있다.
+                        </div>
+
+                        <div class="single-choice word" data-quiz="singleChoice" data-answer="1" data-visible=".empty-rect .text">
+                            <div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-01 color-01">
+                                        빨간
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-03 color-01">
+                                        신나는
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-02 color-01">
+                                        맛있는
+                                    </div>
+                                </div>
+                                <div class="button">
+                                    <div class="bullet-box circle-num num-04 color-01">
+                                        덜 익은
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bottom-button button-answer">
+                            <div class="text">정답 확인</div>
+                        </div>
+                    </div>
+
+                    <div class="sub-content sub-page-02">
+                        <div class="direction">
+                            <div class="bullet-box empty-circle color-01">
+                                <div class="text">다음 그림을 보고 빈칸에 꾸며 주는 말을 알맞게 넣으시오.</div>
+                            </div>
+                        </div>
+                        <div class="image-box2" style="height: 340px;margin-bottom: 20px;">
+                            <img src="./images/nkor_0201_09_0304_401.png" alt="" style="display:block;width: auto;height: 340px;border-radius: 15px;" />
+                        </div>
+                        <div class="round-bg-box ti">
+                            친구와 함께 운동장에서
+                            <div class="empty-rect" style="width: 200px;height: 58px;vertical-align: -11px;">
+                                <div class="input-box" style="width: 100%; height:100%; padding:0;background: transparent;">
+                                    <textarea name="" placeholder="직접 쓰기"></textarea>
+                                </div>
+                            </div> 축구를 했다.
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="gate_container checkquiz">
+            <div class="gate_topbox">
+                <div class="gate_title">확인 문제</div>
+                <div class="gate_btn"><span class="start-button">시작</span></div>
+            </div>
+            <div class="gate_ani">
+                <div id="animation_container">
+                    <canvas id="canvas"></canvas>
+                    <div id="dom_overlay_container" class="gate_ani_cover"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- gate ani -->
+    <script src="../common/js/gateAni/createjs-2015.11.26.min.js"></script>
+    <script src="../common/js/gateAni/commonConfirm_Main.js"></script>
+    <script src="../common/js/gateAni/canvasMain.js"></script>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
