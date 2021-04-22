@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+
+    <style>
+
+       .box-linedot{width:100%; position: relative; border:6px solid #ebebeb; padding:40px 50px; }
+       .box-linedot .dot{position:absolute; width:20px; height: 20px; box-shadow:3px 3px 0 rgba(0,0,0,0.1); border-radius: 50%;}
+       .box-linedot .dot.n1{background-color: #ff612c; top:10px; left:10px;}
+       .box-linedot .dot.n2{background-color: #9966cc; top:10px; right:10px;}
+       .box-linedot .dot.n3{background-color: #ffcc33; bottom:10px; left:10px;}
+       .box-linedot .dot.n4{background-color: #ff6633; bottom:10px; right:10px;}
+       .bullet-box + .bullet-box{margin-top:10px}
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal">
+            <div class="header">
+                <h1 class="title-02" aria-label="교과서 활동"></h1>
+            </div>
+
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        떠올린 일을 일기로 써 보세요.
+                    </div>
+                </div>
+
+                <div class="content-inner">
+                    <div class="box-linedot">
+                        <div class="dot n1"></div>
+                        <div class="dot n2"></div>
+                        <div class="dot n3"></div>
+                        <div class="dot n4"></div>
+
+                        <div class="hidden-box">
+                            <div class="text" style="width: 100%;">
+                                <div style="display: flex;align-items: center;justify-content: space-between;width: 100%;font-size: 32px;">
+                                    <div>20◯◯년 6월 30일 금요일</div>
+                                    <div>날씨: 하늘에 회색 구름이 가득</div>
+                                </div>
+                                <div class="ta-c">시소</div>
+                                <div class="ti" style="font-size: 35px;">나는 학교를 마치고 지연이와 놀이터에서 놀기로 했다. 그런데 지연이가 점심을 늦게 먹는 바람에 약속 시간보다 30분 늦게 도착했다. 나는 화가 많이 났다. 지연이는 늦어서 미안하다고 진심으로 사과했다. 나는 잠깐 망설였지만 괜찮다고 했다. 지연이는 사과를 받아 주어 정말 고맙다고 했다. 나도 마음이 많이 풀려 지연이와 재미있게 시소를 탔다.</div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-06">
+            떠올린 일을 일기로 써 봅시다.
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/canvasAnimation.js"></script>
+    <script src="../common/js/canvasAnimationData.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
