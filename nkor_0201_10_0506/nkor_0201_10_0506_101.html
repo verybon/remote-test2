@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+        <title></title>
+        <link rel="stylesheet" href="../common/css/sanitize.css" />
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/content.css" />
+        <style>
+            .example-box{position: relative;}
+            .main.summary .example-box .info-box{left:0; right:auto; top:0;}
+
+            .grid-wrap .button{width: 100%;padding: 0;}
+            .grid-wrap .button + .button{margin-top: 20px;}
+            .grid-wrap .box-base {min-height:180px; height:180px; display: flex; align-items: center; border-radius: 30px;}
+            .grid-wrap{margin-bottom:20px}
+            .multiple-choice{margin-top: 50px;}
+            .button.correct .box-base{font-family: notoB;}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="main normal">
+                <div class="header">
+                    <h1 class="title-03"></h1>
+                </div>
+
+                <div class="content page-01" data-content="confirm-quiz">
+                    <span class="start-button remove">시작</span>
+                    <div class="bullet-box direction">
+                        <div class="text">
+                           그림 속 친구에게 해 주고 싶은 말을 골라 보세요.
+                        </div>
+                    </div>
+                    <div class="info-box one-line">
+                        <span class="emp">하고 싶은 말 상자</span>를 클릭하세요.
+                    </div>
+
+
+                    <div class="tab-box bottom-tab">
+                        <div class="tab-content-box">
+                            <div class="tab-content content-01">
+
+                                <div class="multiple-choice " data-quiz="singleChoice" data-answer="1">
+                                    <div class="grid-wrap ">
+                                        <div class="image-box grid-1">
+                                            <div class="image" style="width: 590px;height: 400px;border-radius: 15px;background: url(./images/nkor_0201_10_0506_101_1.png) no-repeat 50% 50% / cover;"></div>
+                                        </div>
+                                        <div class="grid-1">
+                                            <button type="button" class="button">
+                                                <div class="box-base ti ps-r color-04">
+                                                    40점밖에 못 받았어? 공부 안 했구나?
+                                                </div>
+                                            </button>
+
+                                            <button type="button" class="button">
+                                                <div class="box-base ti ps-r color-04" >
+                                                    친구야 더 열심히 공부하면 다음엔 좋은 결과가 나올 거야.
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="tab-content content-02">
+                                <div class="multiple-choice " data-quiz="singleChoice" data-answer="0">
+                                    <div class="grid-wrap ">
+                                        <div class="image-box grid-1">
+                                            <div class="image" style="width: 590px;height: 400px;border-radius: 15px;background: url(./images/nkor_0201_10_0506_101_2.png) no-repeat 50% 50% / cover;"></div>
+                                        </div>
+                                        <div class="grid-1">
+                                            <button type="button" class="button">
+                                                <div class="box-base ti ps-r color-04">
+                                                    글씨는 많이 연습하면 잘 쓸 수 있을 거야. 나랑 같이 써 보자.
+                                                </div>
+                                            </button>
+
+                                            <button type="button" class="button">
+                                                <div class="box-base ti ps-r color-04" >
+                                                    뭐라고 쓴 거야? 너무 못써서 하나도 못 알아보겠다.
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content content-03">
+                                <div class="multiple-choice " data-quiz="singleChoice" data-answer="1">
+                                    <div class="grid-wrap ">
+                                        <div class="image-box grid-1">
+                                            <div class="image" style="width: 590px;height: 400px;border-radius: 15px;background: url(./images/nkor_0201_10_0506_101_3.png) no-repeat 50% 50% / cover;"></div>
+                                        </div>
+                                        <div class="grid-1">
+                                            <button type="button" class="button">
+                                                <div class="box-base ti ps-r color-04">
+                                                    너 선생님한테 급식 다 안 먹었다고 이를 거야!
+                                                </div>
+                                            </button>
+
+                                            <button type="button" class="button">
+                                                <div class="box-base ti ps-r color-04" >
+                                                    다음부터는 조금만 달라고해서 다 먹도록 하는 게 어때?
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="button-box">
+                            <div class="prev-button"></div>
+                            <div class="button"></div>
+                            <div class="button"></div>
+                            <div class="button"></div>
+                            <div class="next-button"></div>
+                        </div>
+                    </div>
+
+                    <div class="bottom-button button-answer remove">
+                        <div class="text">정답 확인</div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="teacher-question bullet-circle">
+                그림을 보고 나는 친구에게 어떤 말을 해 줄 것인지 선택해 봅시다.
+            </div>
+
+        </div>
+
+        <script src="../common/js/libs/underscore-min.js"></script>
+        <script src="../common/js/libs/anime.min.js"></script>
+        <script src="../amt/js/amt.js"></script>
+        <script src="../common/js/quiz.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="../common/js/content.js"></script>
+    </body>
+</html>
