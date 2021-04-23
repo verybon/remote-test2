@@ -50,9 +50,9 @@
 
 
 ==================================
-#서브탭
+#서브탭(top-line-box type-qna)
 
-<div class="top-line-box type-qna">
+<div class="top-line-box">
     <div class="sub-tab-box" data-sub-tabs="1,2,3,4">
         <div class="sub-content sub-page-01"></div>
     </div>
