@@ -1,8 +1,23 @@
-“꼭꼭 밟아라.”하십니다
+“해라.”
 ‘나’
 자음 &middot; 모음 까만 아기 양 - 앞부분까만 아기 양_앞부분
 물건은…….
 
+==================================
+#약물
+
+<span class="ex-rect-icon"></span>
+<span class="bullet-box rect-num bg-w num-03 color-01"></span>
+<span class="rect-num num-01 color-01"></span>
+<div class="rect-kor kor-01 bg-w color-01"></div>
+<span class="dir-rect color-01">3</span>
+<span class="dir-o"></span>
+<span class="quot-open">「</span>ㅃㅃ<span class="quot-close">」</span>
+
+==================================
+#지시문
+
+<div class="info-box one-line"><span class="emp">인물</span>을 클릭하세요.</div>
 
 ==================================
 #컨텐츠이너 #히든박스
@@ -14,7 +29,6 @@
         </div>
     </div>
 </div>
-
 
 ==================================
 #탭 박스 #이미지박스
@@ -118,24 +132,6 @@
         우리 모둠 이름은…….
     </div>
 </div>
-
-
-==================================
-#약물
-
-<span class="ex-rect-icon"></span>
-<span class="bullet-box rect-num bg-w num-03 color-01"></span>
-<span class="rect-num num-01 color-01"></span>
-<div class="rect-kor kor-01 bg-w color-01"></div>
-<span class="dir-rect color-01">3</span>
-<span class="dir-o"></span>
-<span class="quot-open">「</span>ㅃㅃ<span class="quot-close">」</span>
-
-
-==================================
-#지시문
-
-<div class="info-box one-line"><span class="emp">인물</span>을 클릭하세요.</div>
 
 
 ==================================
