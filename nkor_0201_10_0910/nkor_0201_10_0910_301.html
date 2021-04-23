@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+        <title></title>
+        <link rel="stylesheet" href="../common/css/sanitize.css" />
+        <link rel="stylesheet" href="../common/css/common.css" />
+        <link rel="stylesheet" href="../common/css/content.css" />
+        <style>
+             .example-box{position: relative;}
+            .main.summary .example-box .info-box{left:0; right:auto; top:0;}
+
+            .grid-wrap .button{padding:0; }
+            .grid-wrap .box-base {min-height:180px; height:180px; display: flex; align-items: center; justify-content: center; border-radius: 30px;}
+            .grid-wrap{margin-bottom:20px}
+            .multiple-choice{margin-top: 50px;}
+            .button.correct .box-base{font-family: notoB;}
+        </style>
+    </head>
+    <body>
+        <div id="wrap">
+            <div class="main summary " data-main-tabs="되돌아보기,생활 속으로" >
+                <div class="header">
+                    <div class="title-box">
+                        <div class="title">단원 정리</div>
+                    </div>
+                </div>
+
+                <span class="start-button remove">시작</span>
+                <div class="content page-01 confirm-quiz" data-content="confirm-quiz">
+                    <div class="direction">
+                        <div class="bullet-box empty-circle color-01">
+                            <div class="text">
+                                듣는 사람의 기분을 생각하며 말하는 알맞은 방법을 찾아봅시다.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-box one-line-bottom">
+                        <span class="emp">각 상자</span>를 클릭하세요.
+                    </div>
+
+                    <div class="multiple-choice " data-quiz="multipleChoice" data-answer="0;1;2">
+                        <div class="grid-wrap ">
+                            <button type="button" class="button grid-1">
+                                <div class="box-base ps-r color-01 ti">
+                                    말하는 내용에 어울리는 표정으로 말하는 것이 좋아.
+                                </div>
+                            </button>
+
+                            <button type="button" class="button grid-1">
+                                <div class="box-base ps-r color-05 ti" >
+                                    듣는 사람의 상황을 먼저 생각해야 해.
+                                </div>
+                            </button>
+                        </div>
+                        <div class="grid-wrap ">
+                            <button type="button" class="button  grid-1">
+                                <div class="box-base ps-r color-06 ti" >
+                                    듣는 사람을 진심으로 위하는 마음이어야 해.
+                                </div>
+                            </button>
+
+                            <button type="button" class="button  grid-1">
+                                <div class="box-base ps-l color-03 ti">
+                                    듣는 사람이 기다리지 않게 할 말을 빨리 생각해야 해.
+                                </div>
+                            </button>
+                        </div>
+                    </div>
+
+
+                    <div class="bottom-button button-answer">
+                        <div class="text">정답 확인</div>
+                    </div>
+
+                </div>
+
+                <div class="content page-02">
+                    <div class="direction">
+                        <div class="bullet-box empty-circle color-01">
+                            <div class="text">
+                                단원 학습을 시작할 때 세운 계획을 잘 실천했는지 확인해 봅시다.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section-selfcheck">
+                        <div class="selfcheck">
+                            <div class="text-box ti">
+                                글에 나오는 인물의 마음을 말할 수 있습니다.
+                            </div>
+                            <div class="check-box">
+                                <div class="wrap">
+                                    <div class="button-01"></div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="button-02"></div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="button-03"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selfcheck">
+                            <div class="text-box ti" style="letter-spacing: -0.1px;">
+                                듣는 사람의 기분을 생각하며 대화를 나눌 수 있습니다.
+                            </div>
+                            <div class="check-box">
+                                <div class="wrap">
+                                    <div class="button-01"></div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="button-02"></div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="button-03"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="selfcheck">
+                            <div class="text-box ti">
+                                경험을 떠올려 일기를 쓸 수 있습니다.
+                            </div>
+                            <div class="check-box">
+                                <div class="wrap">
+                                    <div class="button-01"></div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="button-02"></div>
+                                </div>
+                                <div class="wrap">
+                                    <div class="button-03"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="example-box">
+                            <div class="info-box"><span class="emp">기호</span>를 클릭하세요.</div>
+                            <div class="example ico-01">
+                                매우 그렇다
+                            </div>
+                            <div class="example ico-02">
+                                그렇다
+                            </div>
+                            <div class="example ico-03">
+                                좀 더 노력해야 한다
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="info-box"><span class="emp">기호</span>를 클릭하세요.</div> -->
+                </div>
+            </div>
+        </div>
+
+        <script src="../common/js/libs/underscore-min.js"></script>
+        <script src="../common/js/libs/anime.min.js"></script>
+        <script src="../amt/js/amt.js"></script>
+        <script src="../common/js/quiz.js"></script>
+        <script src="../common/js/common.js"></script>
+        <script src="../common/js/content.js"></script>
+    </body>
+</html>
