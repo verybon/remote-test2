@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0 user-scalable=0" />
+    <title></title>
+    <link rel="stylesheet" href="../common/css/sanitize.css" />
+    <link rel="stylesheet" href="../common/css/common.css" />
+    <link rel="stylesheet" href="../common/css/content.css" />
+
+    <style>
+        .sub-content-box{
+            position: relative;
+        }
+        .bullet-box.teacher{
+            position: relative;
+            padding-left: 65px;
+        }
+        .first-box,
+        .left-box,
+        .right-box {
+            position: relative;
+        }
+        .first-box .image-box{
+            overflow: hidden;
+            position: absolute;
+            left: 0;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background-color: #eee;
+        }
+        .left-box .round-text-box{
+            position: absolute;
+            width: 300px;
+            height: 180px;
+            background: #ffeef3;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 5px 20px;
+            text-align: center;
+        }
+        .right-box .round-text-box{
+            position: absolute;
+            width: 300px;
+            height: 180px;
+            padding: 5px 20px;
+            background: #f6effb;
+            border-radius: 15px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        .first-box .image-box:nth-child(1){
+            top: 75px;
+            left: 50px;
+        }
+        .first-box .image-box:nth-child(2){
+            top: 305px;
+            left: 50px;
+        }
+        .left-box .round-text-box:nth-child(1) {
+            top: 60px;
+            left: 330px;
+        }
+        .left-box .round-text-box:nth-child(2) {
+            top: 290px;
+            left: 330px;
+        }
+        .right-box .round-text-box:nth-child(1) {
+            top: 55px;
+            left: 760px;
+        }
+        .right-box .round-text-box:nth-child(2) {
+            top: 290px;
+            left: 760px;
+        }
+        .round-circle {
+            width: 180px;
+            height: 180px;
+            border-radius: 100%;
+        }
+        .s-point-01{
+            top: 195px;
+            left: 230px;
+        }
+        .s-point-02{
+            top: 425px;
+            left: 230px;
+        }
+        .s-point-03{
+            top: 195px;
+            left: 650px;
+        }
+        .s-point-04{
+            top: 425px;
+            left: 650px;
+        }
+        .e-point-01{
+            top: 195px;
+            left: 320px;
+        }
+        .e-point-02{
+            top: 425px;
+            left: 320px;
+        }
+        .e-point-03{
+            top: 195px;
+            left: 750px;
+        }
+        .e-point-04{
+            top: 425px;
+            left: 750px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <div class="main normal" data-content="confirm-quiz">
+            <div class="header">
+                <div class="title-02" aria-label="교과서 활동"></div>
+            </div>
+
+            <div class="content page-01">
+                <div class="bullet-box direction">
+                    <div class="text">
+                        지석이와 민지가 한 말과 그때의 기분을 이어 보세요.
+                    </div>
+                </div>
+                <div class="info-box one-line-bottom">각 상자의 <span class="emp">점을 끌어</span> 옳은 답과 연결하세요.</div>
+                <span class="start-button remove">시작</span>
+                    <div class="quiz-box">
+                        <div class="quiz-tab-box">
+                            <div class="sub-content">
+                                <div class="sub-content-box">
+                                    <div class="first-box">
+                                        <div class="image-box" style="background: url(./images/nkor_0201_10_0708_2.png) no-repeat 100% 80% / 180px auto;"></div>
+                                        <div class="image-box" style="background: url(./images/nkor_0201_10_0708_1.png) no-repeat 0% 100% / 180px auto;"></div>
+                                    </div>
+                                    <div class="left-box">
+                                        <div class="round-text-box">
+                                            <div class="text">
+                                                “괜찮아. 실수로 그런 건데, 뭘.”
+                                            </div>
+                                        </div>
+                                        <div class="round-text-box">
+                                            <div class="text">
+                                                “공을 몰고 가느라 너를 보지 못했어. 정말 미안해.”
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="right-box">
+                                        <div class="round-text-box">
+                                            <div class="text">
+                                                민지에게 미안한 마음이 들었을 것이다.
+                                            </div>
+                                        </div>
+                                        <div class="round-text-box">
+                                            <div class="text">
+                                                미안해하는 지석이를 배려하는 마음이 들었을 것이다.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="line-drawing" data-quiz="lineDrawing" data-answer="1;0;3;2">
+                                    <div class="start-point s-point-01">
+                                        <div></div>
+                                    </div>
+                                    <div class="start-point s-point-02">
+                                        <div></div>
+                                    </div>
+                                    <div class="start-point s-point-03">
+                                        <div></div>
+                                    </div>
+                                    <div class="start-point s-point-04">
+                                        <div></div>
+                                    </div>
+
+                                    <div class="end-point e-point-01">
+                                        <div></div>
+                                    </div>
+                                    <div class="end-point e-point-02">
+                                        <div></div>
+                                    </div>
+                                    <div class="end-point e-point-03">
+                                        <div></div>
+                                    </div>
+                                    <div class="end-point e-point-04">
+                                        <div></div>
+                                    </div>
+
+                                </div>
+
+                                <div class="bottom-button button-answer remove">
+                                    <div class="text">정답 확인</div>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+        </div>
+
+        <div class="teacher-question num-03" style="letter-spacing: -2.7px;">
+            지석이와 민지가 듣는 사람의 기분을 생각하며 한 말과 그때의 기분을 찾아 선으로 이어 봅시다.
+        </div>
+
+    </div>
+
+    <script src="../common/js/libs/underscore-min.js"></script>
+    <script src="../common/js/libs/anime.min.js"></script>
+    <script src="../amt/js/amt.js"></script>
+    <script src="../common/js/quiz.js"></script>
+    <script src="../common/js/common.js"></script>
+    <script src="../common/js/content.js"></script>
+</body>
+
+</html>
